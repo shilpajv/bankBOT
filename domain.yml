@@ -1,0 +1,623 @@
+intents:
+  - welcome
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - out_of_scope
+  - branch_locator
+  - atm_locator
+  - loan_types
+  - loan_education_about
+  - loan_education_interest_rate
+  - loan_education_documents_required
+  - loan_education_time_required
+  - loan_education_term_period
+  - loan_education_max_amount
+  - loan_education_min_amount
+  - loan_education_processing_fees
+  - loan_education_courses_covered
+  - loan_education_approved_universities
+  - loan_education_security
+  - loan_home_about
+  - loan_home_interest_rate
+  - loan_home_documents_required
+  - loan_home_time_required
+  - loan_home_term_period
+  - loan_home_max_amount
+  - loan_home_min_amount
+  - loan_personal_about
+  - loan_personal_interest_rate
+  - loan_personal_documents_required
+  - loan_personal_time_required
+  - loan_personal_term_period
+  - loan_personal_max_amount
+  - loan_personal_min_amount
+  - account_types
+  - account_savings_about
+  - account_savings_good_for
+  - account_savings_bad_for
+  - account_current_about
+  - account_current_good_for
+  - account_current_bad_for
+  - account_rd_about
+  - account_fd_about
+  - card_types
+  - card_credit_about
+  - card_credit_types
+  - card_debit_about
+  - card_debit_types
+  - internet_banking_about
+  - internet_banking_types
+  - internet_banking_imps_about
+  - internet_banking_imps_timing
+  - internet_banking_imps_max_amount
+  - internet_banking_imps_min_amount
+  - internet_banking_neft_about
+  - internet_banking_neft_timing
+  - internet_banking_neft_max_amount
+  - internet_banking_neft_min_amount
+  - internet_banking_rtgs_about
+  - internet_banking_rtgs_timing
+  - internet_banking_rtgs_max_amount
+  - internet_banking_rtgs_min_amount
+  - sms_banking_about
+  - sms_banking_facilities
+  - main_menu
+  - loan_menu
+  - loan_education_menu
+  - loan_home_menu
+  - loan_personal_menu
+  - account_menu
+  - account_savings_menu
+  - account_current_menu
+  - card_menu
+  - card_credit_menu
+  - card_debit_menu
+  - internet_banking_menu
+  - internet_banking_types_menu
+  - internet_banking_imps_menu
+  - internet_banking_neft_menu
+  - internet_banking_rtgs_menu
+  - sms_banking_menu
+  - ask_faq
+templates:
+  utter_welcome:
+    - text:
+        Welcome to ABC Bank. Are you looking for any information regarding the services
+        we provide?
+  utter_greet:
+    - text: Hey!
+    - text: Hello.
+    - text: Heya!
+    - text: Hi.
+  utter_goodbye:
+    - text: Bye.
+    - text: Bubye.
+    - text: Bye bye.
+    - text: Sayonara.
+    - text: See ya.
+    - text: See you later.
+  utter_ask_more:
+    - text:
+        What more can I assist you with? To show all the services, type 'all services'
+        or 'main menu'.
+  utter_ask_rephrase:
+    - text: Please can you rephrase your sentence?
+    - text: Can you do me a solid and try to rephrase your message?
+  utter_default:
+    - text: I can't help you with that, I'm sorry.
+    - text: Sorry, I can’t deal with that request.
+    - text: I'm sorry, I can''t handle that request.
+    - text: Even a A.I. chat bot is not completely perfect.
+  utter_branch_locator:
+    - text:
+        Click [here](https://sbi.co.in/web/home/locator/branch) to visit the branch
+        locator web page.
+  utter_atm_locator:
+    - text:
+        Click [here](https://www.npci.org.in/atm/locator/demo) to visit the ATM
+        locator web page.
+  utter_loan_types:
+    - text:
+        "There are three types of loans provided by our bank. They are:\n1. Education\
+        \ Loan.\n2. Home Loan.\n3. Personal Loan."
+  utter_loan_education_about:
+    - text:
+        An education loan is designed to financially aid the applicant in affording
+        the cost of education.
+  utter_loan_education_interest_rate:
+    - text: The interest rate for education loan ranges from 8.45% to 15.2% pa.
+  utter_loan_education_documents_required:
+    - text:
+        "The following documents are required for an education loan:\n1. Proof of\
+        \ ID.\n2. Proof of address.\n3. Income proof.\n4. Education proof.\\n5. Photos\
+        \ of applicant."
+  utter_loan_education_time_required:
+    - text: Education loans are sanctioned within 2-3 working business days.
+  utter_loan_education_term_period:
+    - text: The loan tenure for education loan is 15 years.
+  utter_loan_education_max_amount:
+    - text: The maximum amount for education loan is up to 1.5 crore.
+  utter_loan_education_min_amount:
+    - text: The minimum amount for education loan is Rs. 50,000.
+  utter_loan_education_processing_fees:
+    - text:
+        "The processing fees for education loans are as follows:\nLoans up to Rs.\
+        \ 20 lakhs -> NiL.\nLoans above Rs. 20 lakhs -> Rs. 10,000 (plus taxes)."
+  utter_loan_education_courses_covered:
+    - text:
+        "1. Graduation, Post-Graduation Including Regular Technical And Professional\
+        \ Degree/Diploma Courses Conducted By Colleges/Universities Approved By UGC/AICTE/IMC/GOVT.\
+        \ etc Regular Degree/Diploma Courses Conducted By Autonomous Institutions Like\
+        \ IIT, IIM Education.\n2. Teacher Training/ Nursing Courses Approved By Central\
+        \ Government Or The State Government.\n3. Regular Degree/Diploma Courses Like\
+        \ Aeronautical, Pilot Training, Shipping Etc. Approved By Director General Of\
+        \ Civil Aviation/Shipping/ Concerned Regulatory Authority.\n4. Job Oriented\
+        \ Professional/ Technical Graduation Degree Courses/Post Graduation Degree And\
+        \ Diploma Courses Like MCA, MBA, MS, etc Offered By Reputed Universities Courses\
+        \ Conducted By CIMA (Chartered Institute Of Management Accountants) - London,\
+        \ CPA (Certified Public Accountant) In USA etc."
+  utter_loan_education_approved_universities:
+    - text:
+        "These are the approved universities in India: IITs, IIMs, BITS Pilani,\
+        \ NITs, IIITs and other Ivy League institutes.\nThese are the approved universities\
+        \ abroad: MIT, Oxford, UTA and other institutes."
+  utter_loan_education_security:
+    - text:
+        "You need to provide the following security against an education loan:\n\
+        1. Mortgage of premises.\n2. Mortgage of flat.\n3. Insurance policy.\n4. Shares\
+        \ of listed companies regularly traded in Stock Exchange."
+  utter_loan_home_about:
+    - text:
+        An home loan is designed to financially aid the applicant in affording the
+        cost of home.
+  utter_loan_home_interest_rate:
+    - text: The interest rate for home loan ranges from 8.40% to 8.50% pa.
+  utter_loan_home_documents_required:
+    - text:
+        "The following documents are required for an home loan:\n1. Proof of ID.\\\
+        n2. Proof of address.\n3. Income proof.\n4. Education proof.\n5. Photos of applicant."
+  utter_loan_home_time_required:
+    - text: Home loans are sanctioned within 2-3 working business days.
+  utter_loan_home_term_period:
+    - text: The loan tenure for home loan is 5 to 30 years.
+  utter_loan_home_max_amount:
+    - text: The maximum amount for home loan is up to 5 crore.
+  utter_loan_home_min_amount:
+    - text: The minimum amount for home loan is Rs. 30 lakhs.
+  utter_loan_personal_about:
+    - text:
+        An personal loan is designed to financially aid the applicant for non-general
+        personal purposes.
+  utter_loan_personal_interest_rate:
+    - text: The interest rate for personal loan ranges from 10.75% to 21.5% pa.
+  utter_loan_personal_documents_required:
+    - text:
+        "The following documents are required for an personal loan:\n1. Proof of\
+        \ ID.\n2. Proof of address.\n3. Income proof.\n4. Education proof.\\n5. Photos\
+        \ of applicant."
+  utter_loan_personal_time_required:
+    - text: Personal loans are sanctioned within 48 working business hours.
+  utter_loan_personal_term_period:
+    - text: The loan tenure for personal loan is 5 years.
+  utter_loan_personal_max_amount:
+    - text: The maximum amount for personal loan is up to 1 crore.
+  utter_loan_personal_min_amount:
+    - text: The minimum amount for personal loan is Rs. 1,000.
+  utter_account_types:
+    - text:
+        "There are currently four types of bank accounts. These are: Savings, Checking,
+        RD and FD."
+  utter_account_savings_about:
+    - text: Savings accounts are typically the first official bank account anybody opens.
+  utter_account_savings_good_for:
+    - text:
+        Your first bank account. Kids, adults looking for a place to park savings
+        or extra cash.
+  utter_account_savings_bad_for:
+    - text:
+        Savings accounts typically yield a low-interest rate in comparison to money
+        market accounts and CDs. They do not come with a debit card for purchases, and
+        banks limit some types of withdrawals to six per month.
+  utter_account_current_about:
+    - text:
+        Checking accounts provide you with a basic account to deposit checks, make
+        withdrawals, and pay bills.
+  utter_account_current_good_for:
+    - text:
+        Anyone who needs a place to deposit a paycheck or cash, those who keep a
+        relatively small balance, and people who enjoy the convenience of a check card.
+  utter_account_current_bad_for:
+    - text:
+        Checking accounts are subject to a variety of fees, which can become expensive
+        quickly. But many checking accounts let you skip maintenance fees and minimum
+        balance requirements.
+  utter_account_rd_about:
+    - text:
+        Recurring deposit account or RD account is opened by those who want to save
+        certain amount of money regularly for a certain period of time and earn a higher
+        interest rate. In RD account a fixed amount is deposited every month for a specified
+        period and the total amount is repaid with interest at the end of the particular
+        fixed period.
+  utter_account_fd_about:
+    - text:
+        In Fixed Deposit Account (also known as FD Account), a particular sum of
+        money is deposited in a bank for specific period of time. It is a onetime deposit
+        and one time take away (withdraw) account. The money deposited in this account
+        cannot be withdrawn before the expiry of period.
+  utter_card_types:
+    - text:
+        "There are two types of cards available in our bank. They are:\nCredit Cards\
+        \ and Debit Cards."
+  utter_card_credit_about:
+    - text:
+        A credit card is a thin rectangular slab of plastic issued by a financial
+        company, that lets cardholders borrow funds with which to pay for goods and
+        services. Credit cards impose the condition that cardholders pay back the borrowed
+        money, plus interest, as well as any additional agreed-upon charges.
+  utter_card_credit_types:
+    - text:
+        "There are many types of credit card available. Some of them are:\nPlatinum\
+        \ Credit Card,\nPrime Credit Card,\nElite Credit Card and many more. Visit [this\
+        \ link](https://www.sbicard.com/en/personal/credit-cards.page) to get more information."
+  utter_card_debit_about:
+    - text:
+        A debit card is a plastic payment card that can be used instead of cash
+        when making purchases. It is similar to a credit card, but unlike a credit card,
+        the money is immediately transferred directly from the cardholders bank account
+        when performing any transaction.
+  utter_card_debit_types:
+    - text: "The various types of debit cards available are: RuPay, Visa and MasterCard."
+  utter_internet_banking_about:
+    - text:
+        Internet Banking allows the user to conduct financial transactions via the
+        internet. It is also known as online banking or web banking. Through Internet
+        Banking, basic banking transactions such as paying bills and transferring funds
+        between accounts can easily be performed at times convenient to consumers.
+  utter_internet_banking_types:
+    - text: Internet banking has various types such as RTGS, NEFT, and IMPS.
+  utter_internet_banking_imps_about:
+    - text:
+        Immediate Payment Service (IMPS) is an instant payment inter-bank electronic
+        funds transfer system in India. IMPS offers an inter-bank electronic fund transfer
+        service through mobile phones.
+  utter_internet_banking_imps_timing:
+    - text: The service is available 24/7 throughout the year including bank holidays.
+  utter_internet_banking_imps_max_amount:
+    - text: A maximum of Rs. 2,00,000\- can be transferred through the IMPS protocol.
+  utter_internet_banking_imps_min_amount:
+    - text: There is currently a lower limit of Rs. 1\- on IMPS transaction.
+  utter_internet_banking_neft_about:
+    - text:
+        The funds transferred under this method are settled in batches (based on
+        Deferred Net Settlement (DNS) and at a specific time of the day. If the transfer
+        is initiative beyond the cut-off time specified by RBI, the funds are typically
+        settled on the next working day.
+  utter_internet_banking_neft_timing:
+    - text:
+        "The timings for NEFT transactions are: Weekdays: 12 batches between 8:00
+        a.m. - 6:30 p.m. Saturday: 6 batches between 8:00 a.m. 1:00 p.m. Sunday and
+        bank holidays: Unavailable."
+  utter_internet_banking_neft_max_amount:
+    - text: There is currently no upper limit on NEFT transactions.
+  utter_internet_banking_neft_min_amount:
+    - text: There is a minimum amount of Rs. 1/- in NEFT transactions.
+  utter_internet_banking_rtgs_about:
+    - text:
+        RTGS comes with limits on the minimum; however, there’s no maximum fund
+        value and it is efficiently used in situations where individuals and businesses
+        require immediate settlement of high-value funds that are well within the specified
+        limits. Efficiency, speed, and reliability factors are few among the many factors
+        that make RTGS as one the most-sought medium of online fund transfers.
+  utter_internet_banking_rtgs_timing:
+    - text: "The timings for RTGS transactions are: Working Days: 7:00 a.m. - 6:00 p.m."
+  utter_internet_banking_rtgs_max_amount:
+    - text: There is currently no upper limit on RTGS transactions.
+  utter_internet_banking_rtgs_min_amount:
+    - text: There is a minimum amount of Rs. 2,00,000/- in RTGS transactions.
+  utter_sms_banking_about:
+    - text:
+        SMS banking is a form of mobile banking. It is a facility used by some banks
+        or other financial institutions to send messages to customers mobile phones
+        using SMS messaging, or a service provided by them which enables customers to
+        perform some financial transactions using SMS.
+  utter_sms_banking_facilities:
+    - text: "Here are the facilities provided by SMS banking:"
+  utter_main_menu:
+    - text: "Here are the services that we provide:"
+      buttons:
+        - title: Branch Locator
+          payload: /branch_locator
+        - title: ATM Locator
+          payload: /atm_locator
+        - title: Loans
+          payload: /loan_menu
+        - title: Accounts
+          payload: /account_menu
+        - title: Card
+          payload: /card_menu
+        - title: Internet Banking
+          payload: /internet_banking_menu
+        - title: SMS Banking
+          payload: /sms_banking_menu
+  utter_loan_menu:
+    - text: Loan Menu
+      buttons:
+        - title: Education Loan
+          payload: /loan_education_menu
+        - title: Home Loan
+          payload: /loan_home_menu
+        - title: Personal Loan
+          payload: /loan_personal_menu
+        - title: <-- Go Back
+          payload: /main_menu
+  utter_loan_education_menu:
+    - text: Education Loan Menu
+      buttons:
+        - title: About
+          payload: /loan_education_about
+        - title: Interest Rate
+          payload: /loan_education_interest_rate
+        - title: Documents Required
+          payload: /loan_education_documents_required
+        - title: Time Required
+          payload: /loan_education_time_required
+        - title: Term Period
+          payload: /loan_education_term_period
+        - title: Maximum Amount
+          payload: /loan_education_max_amount
+        - title: Minimum Amount
+          payload: /loan_education_min_amount
+        - title: Processing Fees
+          payload: /loan_education_processing_fees
+        - title: Courses Covered
+          payload: /loan_education_courses_covered
+        - title: Approved Universities
+          payload: /loan_education_approved_universities
+        - title: Security
+          payload: /loan_education_security
+        - title: <-- Go Back
+          payload: /loan_menu
+  utter_loan_home_menu:
+    - text: Home Loan Menu
+      buttons:
+        - title: About
+          payload: /loan_home_about
+        - title: Interest Rate
+          payload: /loan_home_interest_rate
+        - title: Documents Required
+          payload: /loan_home_documents_required
+        - title: Time Required
+          payload: /loan_home_time_required
+        - title: Term Period
+          payload: /loan_home_term_period
+        - title: Maximum Amount
+          payload: /loan_home_max_amount
+        - title: Minimum Amount
+          payload: /loan_home_min_amount
+        - title: <-- Go Back
+          payload: /loan_menu
+  utter_loan_personal_menu:
+    - text: Personal Loan Menu
+      buttons:
+        - title: About
+          payload: /loan_personal_about
+        - title: Interest Rate
+          payload: /loan_personal_interest_rate
+        - title: Documents Required
+          payload: /loan_personal_documents_required
+        - title: Time Required
+          payload: /loan_personal_time_required
+        - title: Term Period
+          payload: /loan_personal_term_period
+        - title: Maximum Amount
+          payload: /loan_personal_max_amount
+        - title: Minimum Amount
+          payload: /loan_personal_min_amount
+        - title: <-- Go Back
+          payload: /loan_menu
+  utter_account_menu:
+    - text: Account Menu
+      buttons:
+        - title: Savings Account
+          payload: /account_savings_menu
+        - title: Current Account
+          payload: /account_current_menu
+        - title: RD Account
+          payload: /account_rd_about
+        - title: FD Account
+          payload: /account_fd_about
+        - title: <-- Go Back
+          payload: /main_menu
+  utter_account_savings_menu:
+    - text: Savings Account Menu
+      buttons:
+        - title: About
+          payload: /account_savings_about
+        - title: Advantages
+          payload: /account_savings_good_for
+        - title: Disadvantages
+          payload: /account_savings_bad_for
+        - title: <-- Go Back
+          payload: /account_menu
+  utter_account_current_menu:
+    - text: Current Account Menu
+      buttons:
+        - title: About
+          payload: /account_current_about
+        - title: Advantages
+          payload: /account_current_good_for
+        - title: Disadvantages
+          payload: /account_current_bad_for
+        - title: <-- Go Back
+          payload: /account_menu
+  utter_card_menu:
+    - text: Card Menu
+      buttons:
+        - title: Credit Card
+          payload: /card_credit_menu
+        - title: Debit Card
+          payload: /card_debit_menu
+        - title: <-- Go Back
+          payload: /main_menu
+  utter_card_credit_menu:
+    - text: Credit Card Menu
+      buttons:
+        - title: About
+          payload: /card_credit_about
+        - title: Types
+          payload: /card_credit_types
+        - title: <-- Go Back
+          payload: /card_menu
+  utter_card_debit_menu:
+    - text: Debit Card Menu
+      buttons:
+        - title: About
+          payload: /card_debit_about
+        - title: Types
+          payload: /card_debit_types
+        - title: <-- Go Back
+          payload: /card_menu
+  utter_internet_banking_menu:
+    - text: Internet Banking Menu
+      buttons:
+        - title: About
+          payload: /internet_banking_about
+        - title: Types
+          payload: /internet_banking_types_menu
+        - title: <-- Go Back
+          payload: /main_menu
+  utter_internet_banking_types_menu:
+    - text: Internet Banking Types Menu
+      buttons:
+        - title: IMPS
+          payload: /internet_banking_imps_menu
+        - title: NEFT
+          payload: /internet_banking_neft_menu
+        - title: RTGS
+          payload: /internet_banking_rtgs_menu
+        - title: <-- Go Back
+          payload: /internet_banking_menu
+  utter_internet_banking_imps_menu:
+    - text: Internet Banking IMPS Menu
+      buttons:
+        - title: About
+          payload: /internet_banking_imps_about
+        - title: Maximum Amount
+          payload: /internet_banking_imps_max_amount
+        - title: Minimum Amount
+          payload: /internet_banking_imps_min_amount
+        - title: <-- Go Back
+          payload: /internet_banking_types_menu
+  utter_internet_banking_neft_menu:
+    - text: Internet Banking NEFT Menu
+      buttons:
+        - title: About
+          payload: /internet_banking_neft_about
+        - title: Maximum Amount
+          payload: /internet_banking_neft_max_amount
+        - title: Minimum Amount
+          payload: /internet_banking_neft_min_amount
+        - title: <-- Go Back
+          payload: /internet_banking_types_menu
+  utter_internet_banking_rtgs_menu:
+    - text: Internet Banking RTGS Menu
+      buttons:
+        - title: About
+          payload: /internet_banking_rtgs_about
+        - title: Maximum Amount
+          payload: /internet_banking_rtgs_max_amount
+        - title: Minimum Amount
+          payload: /internet_banking_rtgs_min_amount
+        - title: <-- Go Back
+          payload: /internet_banking_types_menu
+  utter_sms_banking_menu:
+    - text: SMS Banking Menu
+      buttons:
+        - title: About
+          payload: /sms_banking_about
+        - title: Facilities
+          payload: /sms_banking_facilities
+        - title: <-- Go Back
+          payload: /main_menu
+actions:
+  - utter_welcome
+  - utter_greet
+  - utter_goodbye
+  - utter_ask_more
+  - utter_ask_rephrase
+  - utter_default
+  - utter_branch_locator
+  - utter_atm_locator
+  - utter_loan_types
+  - utter_loan_education_about
+  - utter_loan_education_interest_rate
+  - utter_loan_education_documents_required
+  - utter_loan_education_time_required
+  - utter_loan_education_term_period
+  - utter_loan_education_max_amount
+  - utter_loan_education_min_amount
+  - utter_loan_education_processing_fees
+  - utter_loan_education_courses_covered
+  - utter_loan_education_approved_universities
+  - utter_loan_education_security
+  - utter_loan_home_about
+  - utter_loan_home_interest_rate
+  - utter_loan_home_documents_required
+  - utter_loan_home_time_required
+  - utter_loan_home_term_period
+  - utter_loan_home_max_amount
+  - utter_loan_home_min_amount
+  - utter_loan_personal_about
+  - utter_loan_personal_interest_rate
+  - utter_loan_personal_documents_required
+  - utter_loan_personal_time_required
+  - utter_loan_personal_term_period
+  - utter_loan_personal_max_amount
+  - utter_loan_personal_min_amount
+  - utter_account_types
+  - utter_account_savings_about
+  - utter_account_savings_good_for
+  - utter_account_savings_bad_for
+  - utter_account_current_about
+  - utter_account_current_good_for
+  - utter_account_current_bad_for
+  - utter_account_rd_about
+  - utter_account_fd_about
+  - utter_card_types
+  - utter_card_credit_about
+  - utter_card_credit_types
+  - utter_card_debit_about
+  - utter_card_debit_types
+  - utter_internet_banking_about
+  - utter_internet_banking_types
+  - utter_internet_banking_imps_about
+  - utter_internet_banking_imps_max_amount
+  - utter_internet_banking_imps_min_amount
+  - utter_internet_banking_neft_about
+  - utter_internet_banking_neft_max_amount
+  - utter_internet_banking_neft_min_amount
+  - utter_internet_banking_rtgs_about
+  - utter_internet_banking_rtgs_max_amount
+  - utter_internet_banking_rtgs_min_amount
+  - utter_sms_banking_about
+  - utter_sms_banking_facilities
+  - utter_main_menu
+  - utter_loan_menu
+  - utter_loan_education_menu
+  - utter_loan_home_menu
+  - utter_loan_personal_menu
+  - utter_account_menu
+  - utter_account_savings_menu
+  - utter_account_current_menu
+  - utter_card_menu
+  - utter_card_credit_menu
+  - utter_card_debit_menu
+  - utter_internet_banking_menu
+  - utter_internet_banking_types_menu
+  - utter_internet_banking_imps_menu
+  - utter_internet_banking_neft_menu
+  - utter_internet_banking_rtgs_menu
+  - utter_sms_banking_menu
+  - respond_ask_faq

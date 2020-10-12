@@ -1,0 +1,24 @@
+language: en
+pipeline:
+  - name: "WhitespaceTokenizer"
+  - name: "RegexFeaturizer"
+  - name: "CRFEntityExtractor"
+  - name: "EntitySynonymMapper"
+  - name: "CountVectorsFeaturizer"
+  - name: "CountVectorsFeaturizer"
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: "EmbeddingIntentClassifier"
+  - name: "ResponseSelector"
+policies:
+  - name: MemoizationPolicy
+  - name: KerasPolicy
+  - name: MappingPolicy
+  - name: TwoStageFallbackPolicy
+    nlu_threshold: 0.2
+    ambiguity_threshold: 0.1
+    core_threshold: 0.2
+    fallback_core_action_name: action_default_fallback
+    fallback_nlu_action_name: action_default_fallback
+    deny_suggestion_intent_name: out_of_scope

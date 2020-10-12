@@ -1,0 +1,4 @@
+tracker_store:
+  type: SQL
+  dialect: "sqlite"
+  db: "logs\\rasa-chat-log.db"

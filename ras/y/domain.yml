@@ -1,0 +1,79 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - branch_info
+  - account_opening
+  - login issues
+  - credit card
+  - transaction queries
+  - reg_DG
+  - Biometrics
+  - activate_debit
+
+entities:
+  - address
+  - app
+  - account_type
+  - Bank
+  - product
+
+responses:
+  utter_greet:
+  - text: "Hey! Iam a DIGIBOT ,How CAN I help you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_branch:
+  - text: "The branch name in Hyderabad is Somajiguda "
+
+  utter_account_open:
+  - text: "Account opening is simple. You only need Aadhar card and no paperwork "
+
+  utter_ask_handoff:
+  - text: "It looks like you want to be transferred to a human agent."
+
+  utter_login_app:
+    - text: "-check username and password entered(remember its case sensitive)
+      /-if you have forgotten your username or password you can retrieve it by using   'Trouble Logging in' option on login page'
+      /-Or   try internet banking website --https://internet-banking.retail.dbsbank.in/login "
+
+  utter_trans:
+    - text: " you can do transaction using UPI OR BANK transfer"
+
+  utter_cred:
+    - text: "no  we do not provide credit card"
+
+  utter_DG:
+    - text: "you can do ATM withdrawal unlimited times from DBS ATM  AND  3 times for free at other bank "
+
+  utter_bio:
+    - text : "Fingerprint authentication is compulsary within 1 year of account opening."
+
+  utter_activate_debit:
+    - text: "to set your debit card pin  select Menu>my account > Activate Debit Card > enter 3 digit CVV & verify>create new pin"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

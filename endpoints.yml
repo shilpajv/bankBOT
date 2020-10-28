@@ -2,3 +2,6 @@ tracker_store:
   type: SQL
   dialect: "sqlite"
   db: "logs\\rasa-chat-log.db"
+
+action_endpoint:
+  url: "http://localhost:5095/webhook"

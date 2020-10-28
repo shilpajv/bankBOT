@@ -1,0 +1,72 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_handoff
+
+- story: about branch
+  steps:
+  - intent: branch_info
+  - action: utter_branch
+
+- story: greet and account_query
+  steps:
+
+  - action: utter_greet
+  - intent: account_opening
+  - action: utter_account_open
+
+- story: app_login_query
+  steps:
+    - intent: login issues
+    - action: utter_login_app
+
+- story: transaction_queries
+  steps:
+   - intent: transaction queries
+   - action: utter_trans
+
+- story: cred
+  steps:
+    - intent: credit card
+    - action: utter_cred
+
+- story: digiacnt
+  steps:
+    - intent: reg_DG
+    - action: utter_DG
+
+- story: bio
+  steps:
+    - intent: Biometrics
+    - action : utter_bio
+
+- story: activate_debit
+  steps:
+    - intent: activate_debit
+    - action: utter_activate_debit

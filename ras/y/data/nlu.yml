@@ -16,6 +16,10 @@ nlu:
     - goodevening
     - good afternoon
     - namaste
+    - need help
+    - help me
+    - plz tell me
+
 
 - intent: goodbye
   examples: |
@@ -53,6 +57,8 @@ nlu:
     - no way
     - not really
     - uhmm nah
+    - nahi
+    - not getting it
 
 - intent: mood_great
   examples: |
@@ -98,12 +104,14 @@ nlu:
     - [DBS](Bank) bank kaha hai
     - How do I  get my IFSC Code?
     - What the website address?
+    - मेरे निकटतम शाखा
 
 - intent: Biometrics
   examples: |
     - can u specify the list of biometric locations ?
     - how wll be the fngerprint / Biometric verification
     - what is nearby CCD store for biometric verification
+    - verifcation  code not received
 
 - intent: account_opening
   examples: |
@@ -114,7 +122,7 @@ nlu:
     - mujhe [DBS](Bank) mein account kholna hai
     - kya kagaz chahiye
     - how much money needed to open account
-    - [Aadhar](product) OTP not
+    - [Aadhar](product) OTP not recvd
     - how to link [Aadhar] card?
     - खाता kholna hai
     - अकाउन्ट kaise open karna ?
@@ -124,29 +132,43 @@ nlu:
   examples: |
     - what if I forget my password?
     - I was not allowed to login to my [app](account_type) and get error
-    - How to Change password?
+    - How to Change passwrd?
     - How do  login to my digibank account
     - my account not login
     - login problem
     - unable to login to mobile app
+    - issue while logging in
     - can't access my app in device
     - [app](account_type) does not open
     - bhul gaya password
     - digiapp stop working
     - पासवर्ड सेट कैसे करेंगे?
+    - app me log-in not happening
+    - user ID lost
+    - AC not opening
+    - Authentication failed. Check for correct pwd
+    - A username was not supplied or the username is invalid.
+    - यूज़र नेम कैसे बनाते हैं
 
 - intent: transaction queries
   examples: |
-    - how to transfer funds from [digibank?](account_type)
+    - how to transfer funds from [digibank](account_type) ?
     - [app](account_type) transfer to another bank is allowed or not?
-    - Please refund  100 to my digiapp
+    - Please refund  [100](amount) rs to my digiapp
     - पैसे कैसे bhej sakte dusre account ko
+    - money send to other accnt
+    - cannot add fund
+    - paise kaha se bhej sakte hain
+    - pasa कैसे ट्रांसफर करें?
+    - डिजीबैंक  से फंड कैसे ट्रांसफर करें
+
 
 - intent: credit card
   examples: |
     - does DBS gives credit card?
     - how to apply for credt card?
     - क्रेडिट कार्ड chahye
+    - how can i get credit card?
 
 - intent: reg_DG
   examples: |
@@ -154,6 +176,7 @@ nlu:
     - 3 se zyada baar [ATM](product) se paise nikal sakte kya?
     - एटीएम se kitne baar money withdraw kar sakte
     - how to withdraw money?
+    - मैं कितनी बार [ATM](product) निकासी कर सकता हूं?
 
 - intent: activate_debit
   examples: |
@@ -161,8 +184,39 @@ nlu:
     - i've received card, how do i generate pin?
     - where is my debit card PIN
     - डेबिट कार्ड when deliver?
-    - set Pin
+    - set Pin for card
     - generate OTP TO CREATE PASSWORD OF DEBIT CARD
+
+- intent : upi_query
+  examples: |
+   - i have forgotten the upi pin for my digi accnt
+   - can i set a new pin thru app?
+   - how to setup UPI PIN?
+   - CAN  set UPi
+
+- intent: FD
+  examples: |
+   - what are the interest rate offered by digibnk on [FD](account_type) ?
+   - how to open a [FIXED DEPOSIT](account_type)
+   - AM i eligible 4 [fd]?
+   - tell me about [FD](account_type)
+
+- intent: RD
+  examples: |
+   - what are the interest rate offered by digibnk on [RD](account_type) ?
+   - how to open a [RD](account_type)
+
+- intent: PL apply
+  examples: |
+    - How can I apply for a [personal loan](loan_type) and can I make an offline application?
+    - तुरंत लोन कैसे मिलेगा?
+    - पर्सनल लोन ke liyye kya karna padega?
+    - can i get [PL](loan_type)
+    - mujhe [Personal Loan](loan_type) chahye
+    - लोन ka kya process hai ?
+    - मैं  ऋण के लिए आवेदन कैसे कर सकता हूं ?
+    - लोन के लिए आवेदन कैसे कर सकता हूं
+    - need Loan
 
 
 - synonym: app
@@ -195,3 +249,20 @@ nlu:
     - डेबिट कार्ड
     - एटीएम
 
+- synonym : FD
+  examples: |
+    - Fixed deposit
+    - FDS
+    - Fd
+
+- synonym : RD
+  examples: |
+    - Recurring Deposit
+    - rd
+    - Rd
+
+- synonym : personal loan
+  examples: |
+     - Personal Loan
+     - पर्सनल लोन
+     - PL

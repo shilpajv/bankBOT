@@ -29,6 +29,13 @@ stories:
   - intent: deny
   - action: utter_ask_handoff
 
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_ask_handoff
+
 - story: about branch
   steps:
   - intent: branch_info
@@ -70,3 +77,24 @@ stories:
   steps:
     - intent: activate_debit
     - action: utter_activate_debit
+
+- story: upi query
+  steps:
+    - intent: upi_query
+    - action: utter_upi
+
+- story: FD_open
+  steps:
+   - intent: FD
+   - action: utter_FD
+
+- story: RD_open
+  steps:
+     - intent: RD
+     - action: utter_RD
+
+- story: PL_apply
+  steps:
+    - intent: PL apply
+    - action: utter_PL apply
+

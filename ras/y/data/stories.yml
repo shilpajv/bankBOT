@@ -43,7 +43,6 @@ stories:
 
 - story: greet and account_query
   steps:
-
   - action: utter_greet
   - intent: account_opening
   - action: utter_account_open
@@ -78,6 +77,11 @@ stories:
     - intent: activate_debit
     - action: utter_activate_debit
 
+- story: block_card
+  steps:
+    - intent: block card
+    - action: utter_block_card
+
 - story: upi query
   steps:
     - intent: upi_query
@@ -98,3 +102,35 @@ stories:
     - intent: PL apply
     - action: utter_PL apply
 
+- story: fund_add_path
+  steps:
+    - intent: add_fund
+    - action: utter_add_fund
+    - action: utter_did_that_help
+
+- story: transfer_fail_path
+  steps:
+    - intent: transfer_fail
+    - action: utter_transfer_fail
+    - action: utter_did_that_help
+
+- story: close_account
+  steps:
+    - intent: close_account
+    - action: utter_close_account
+
+- story: new_debit_card
+  steps:
+   - intent: new_debit_card
+   - action: utter_new_debit
+
+- story: loans_offered
+  steps:
+    - intent: loan_offered
+    - action: utter_loan_offered
+    - action: utter_did_that_help
+
+- story: home_loan_query
+  steps:
+    - intent: home_loan_about
+    - action: utter_home_loan_about

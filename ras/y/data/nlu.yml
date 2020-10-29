@@ -112,6 +112,7 @@ nlu:
     - how wll be the fngerprint / Biometric verification
     - what is nearby CCD store for biometric verification
     - verifcation  code not received
+    - agent dnt call for appointment
 
 - intent: account_opening
   examples: |
@@ -122,8 +123,8 @@ nlu:
     - mujhe [DBS](Bank) mein account kholna hai
     - kya kagaz chahiye
     - how much money needed to open account
-    - [Aadhar](product) OTP not recvd
-    - how to link [Aadhar] card?
+    - [Aadhar](ID) OTP not recvd
+    - how to link [Aadhar](ID) card?
     - खाता kholna hai
     - अकाउन्ट kaise open karna ?
 
@@ -162,21 +163,32 @@ nlu:
     - pasa कैसे ट्रांसफर करें?
     - डिजीबैंक  से फंड कैसे ट्रांसफर करें
 
+- intent: block card
+  examples: |
+    - lost my [ATM](card_type) Card, please assist
+    - want to block my debit card
+    - plese help to lock my card
+    - HOW TO stop my card from fraudulent use?
+    - मेरा डेबिट कार्ड ब्लॉक करना चाहते हैं
+    - कार्ड  ब्लॉक कैसे करें
+    - lost my phone
+
 
 - intent: credit card
   examples: |
-    - does DBS gives credit card?
-    - how to apply for credt card?
+    - does DBS gives [credit card](card_type)?
+    - how to apply for [credt card](card_type)?
     - क्रेडिट कार्ड chahye
-    - how can i get credit card?
+    - how can i get [credit card](card_type)?
+    - craditcard plz
 
 - intent: reg_DG
   examples: |
-    - how many times can I do [ATM](product) withdrawal?
-    - 3 se zyada baar [ATM](product) se paise nikal sakte kya?
+    - how many times can I do [ATM](card_type) withdrawal?
+    - 3 se zyada baar [ATM](card_type) se paise nikal sakte kya?
     - एटीएम se kitne baar money withdraw kar sakte
     - how to withdraw money?
-    - मैं कितनी बार [ATM](product) निकासी कर सकता हूं?
+    - मैं कितनी बार [ATM](card_type) निकासी कर सकता हूं?
 
 - intent: activate_debit
   examples: |
@@ -200,23 +212,104 @@ nlu:
    - how to open a [FIXED DEPOSIT](account_type)
    - AM i eligible 4 [fd]?
    - tell me about [FD](account_type)
+   - fd account kholna
 
 - intent: RD
   examples: |
    - what are the interest rate offered by digibnk on [RD](account_type) ?
-   - how to open a [RD](account_type)
+   - how to open a [RD](account_type) a/c
+   - what s process of opening recurring deposit account
+
 
 - intent: PL apply
   examples: |
     - How can I apply for a [personal loan](loan_type) and can I make an offline application?
-    - तुरंत लोन कैसे मिलेगा?
+    - तुरंत [लोन](loan_type) कैसे मिलेगा?
     - पर्सनल लोन ke liyye kya karna padega?
     - can i get [PL](loan_type)
     - mujhe [Personal Loan](loan_type) chahye
+    - kitna int rate hai ppersonal loan ka?
+
+- intent: add_fund
+  examples: |
+    - how to add funds to my account
+    - how to top-up my dgaccount?
+    - khaate mein phand kaise daale?
+    - फंड कैसे जोड़ें ?
+    - money kis tarah se add karein
+    - किस तरह से जमा करें
+    - पैसे  किस तरह से ऐड करें
+    - fund add to my accnt
+    - top up my balance
+
+- intent: transfer_fail
+  examples: |
+    - sir i cant complete account transfer,plz help
+    - खाता हस्तांतरण करने में असमर्थ हूं
+    - में अकाउंट ट्रांसफर न कर पा रहा
+    - unable to do transaction
+    - transacton not allowed
+    - i did fund transfer, but it failed
+    - mere paise cut gaye,par transaction pura ni hua
+    - मेरे पैसे कट गए,पर ट्रांसक्शन पूरा न हुआ
+    - money deducted but not completed transacton
+    - cannot transfer amount
+
+- intent: close_account
+  examples: |
+    - sr plz close my account
+    - mujhe acount band karanaa hai
+    - close my dgbank[account_type] account
+    - bataye mere account kaise band hoga
+    - मेरा [खाता](account_type) बंद करें
+    - accnt band hona
+    - account close kaise hoga
+
+- intent: new_debit_card
+  examples: |
+    - hello  muje naya [debit card](card_type) chahiye
+    - hw to get a new debt card?
+    - नया [डेबिट कार्ड](card_type) चाहिए
+    - can  i get [ATM](card_type) Card?
+
+- intent: loan_offered
+  examples: |
+    - what are the different types of loans?
+    - how many types of loans are there?
+    - tell me about the loans offered by you
+    - what are the kinds of loan
+    - ऋण के प्रकार क्या हैं ?
+    - लोन  कैसे प्राप्त करें ?
+    - कौनसे लोन dete ho?
+    - batao loan ka kya option
+    - kounse loan dete ho
+    - loan applcaton batao
+    - bataye loan kya hai
     - लोन ka kya process hai ?
     - मैं  ऋण के लिए आवेदन कैसे कर सकता हूं ?
     - लोन के लिए आवेदन कैसे कर सकता हूं
     - need Loan
+
+- intent: home_loan_about
+  examples: |
+    - tell me about home bank loans
+    - what is a [home loan](loan_type)?
+    - loan home interest rate
+    - what is the interest rate for [home loan](loan_type)?
+    - tell me the interest rate for home loan
+    - how much is the interest rate for [home loan](loan_type?
+    - what are the documents required for home loan?
+    - tell me the documents required for home loan
+    - what all documents are required for home loan?
+    - can  apply for [home loan](loan_type)
+    - होम लोन के लिए आवेदन कर सकते हैं
+    - ghar ka loan ke liye apply karna hai
+    - housing loan interest rate ?
+    - a loan  to assist in buying a house
+    - ghar lene k liye aap home loan dete
+    - गृह ऋण lena ha mujhe
+    - होम लोन लेना है मुझे
+    - I want to take a home loan
 
 
 - synonym: app
@@ -234,6 +327,7 @@ nlu:
     - cc
     - credit  card account
     - क्रेडिट कार्ड
+    - credt card
 
 - synonym : Aadhar
   examples: |
@@ -248,6 +342,9 @@ nlu:
     - atm card
     - डेबिट कार्ड
     - एटीएम
+    - dc
+    - A.T.M
+
 
 - synonym : FD
   examples: |
@@ -266,3 +363,13 @@ nlu:
      - Personal Loan
      - पर्सनल लोन
      - PL
+     - parsonal loans
+
+- synonym: home loan
+  examples: |
+    - ghar loan
+    - house loan
+    - housng loan
+    - गृह ऋण
+    - होम लोन
+

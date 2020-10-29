@@ -40,6 +40,9 @@ stories:
   steps:
   - intent: branch_info
   - action: utter_branch
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_ask_handoff
 
 - story: greet and account_query
   steps:
@@ -134,3 +137,23 @@ stories:
   steps:
     - intent: home_loan_about
     - action: utter_home_loan_about
+
+- story: balance query
+  steps:
+    - intent: check_sa_balance
+    - action: utter_balance
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_ask_handoff
+
+- story: investment
+  steps:
+    - intent: investment_options
+    - action: utter_inv
+    - intent: deny
+    - action: utter_ask_handoff
+
+- story: lang
+  steps:
+    - intent: lang_supported
+    - action: utter_lang

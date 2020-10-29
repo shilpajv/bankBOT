@@ -46,6 +46,7 @@ nlu:
     - go ahead
     - yes plz
     - yup
+    - हा
 
 - intent: deny
   examples: |
@@ -58,6 +59,7 @@ nlu:
     - not really
     - uhmm nah
     - nahi
+    - नही
     - not getting it
 
 - intent: mood_great
@@ -105,6 +107,7 @@ nlu:
     - How do I  get my IFSC Code?
     - What the website address?
     - मेरे निकटतम शाखा
+    - मेरे पास  ब्रांच कौन सी है?
 
 - intent: Biometrics
   examples: |
@@ -113,6 +116,9 @@ nlu:
     - what is nearby CCD store for biometric verification
     - verifcation  code not received
     - agent dnt call for appointment
+    - KYC VERIFICATION KARNA HAI
+    - फिंगरप्रिंट सत्यापन
+    - फिंगरप्रिंट जाँच
 
 - intent: account_opening
   examples: |
@@ -150,6 +156,8 @@ nlu:
     - Authentication failed. Check for correct pwd
     - A username was not supplied or the username is invalid.
     - यूज़र नेम कैसे बनाते हैं
+    - app hang
+    - sign in not working
 
 - intent: transaction queries
   examples: |
@@ -162,6 +170,10 @@ nlu:
     - paise kaha se bhej sakte hain
     - pasa कैसे ट्रांसफर करें?
     - डिजीबैंक  से फंड कैसे ट्रांसफर करें
+    - पैसे कैसे भेज
+    - how to pay to my other ACC?
+    - कैसे मेरे अन्य ACCount को भुगतान करें
+
 
 - intent: block card
   examples: |
@@ -172,13 +184,14 @@ nlu:
     - मेरा डेबिट कार्ड ब्लॉक करना चाहते हैं
     - कार्ड  ब्लॉक कैसे करें
     - lost my phone
+    - card ghum gaya
 
 
 - intent: credit card
   examples: |
     - does DBS gives [credit card](card_type)?
     - how to apply for [credt card](card_type)?
-    - क्रेडिट कार्ड chahye
+    - क्रेडिट कार्ड चाहिए
     - how can i get [credit card](card_type)?
     - craditcard plz
 
@@ -240,7 +253,9 @@ nlu:
     - किस तरह से जमा करें
     - पैसे  किस तरह से ऐड करें
     - fund add to my accnt
-    - top up my balance
+    - top up my balance by पाँच लाख
+    - account mein paise daalne
+
 
 - intent: transfer_fail
   examples: |
@@ -272,6 +287,15 @@ nlu:
     - नया [डेबिट कार्ड](card_type) चाहिए
     - can  i get [ATM](card_type) Card?
 
+- intent: investment_options
+  examples: |
+    - what are the investment options ?
+    - what kind of investment type i can start
+    - do u have [mutual fund](product)?
+    - can i start mutual fund
+    - क्या मैं म्यूचुअल फंड शुरू कर सकता हूं ?
+    - me [40000](amount) rs daal sakta hu MF(product) me?
+
 - intent: loan_offered
   examples: |
     - what are the different types of loans?
@@ -289,6 +313,7 @@ nlu:
     - मैं  ऋण के लिए आवेदन कैसे कर सकता हूं ?
     - लोन के लिए आवेदन कैसे कर सकता हूं
     - need Loan
+    - loan chahye
 
 - intent: home_loan_about
   examples: |
@@ -311,6 +336,27 @@ nlu:
     - होम लोन लेना है मुझे
     - I want to take a home loan
 
+- intent: check_sa_balance
+  examples: |
+    - what s my savngs acnt bal?
+    - how to check my bal?
+    - मेरे खाते की  राशि की जांच कैसे करें
+    - mere account me kitne paise hai
+    - muje mera balance pata lagana ha
+    - how can i know my balance?
+    - Balance Enquiry
+
+- intent: lang_supported
+  examples: |
+    - what all languages can u reply?
+    - do you understand regional lang?
+    - hindi aata kya samj
+    - telegu me baat kijiye
+    - muje angrezi ni aata
+    - english dont know
+    - hindi mein bolo
+    - आप किन भाषाओं में उत्तर दे सकते हैं ?
+    - can u speak in bengali
 
 - synonym: app
   examples: |

@@ -1,0 +1,18 @@
+[
+  {
+    "text": "start new session",
+    "intent": "session_start",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "starting a new session",
+    "intent": "session_start",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  }
+]

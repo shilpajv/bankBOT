@@ -1,0 +1,26 @@
+version: "2.0"
+stories:
+- story: sad path 2 (/tmp/tmpcmedgrje/c402e7a43e784cf2b82b2a759fd242e2_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye  # predicted: utter_ask_handoff
+  - action: action_listen  # predicted: action_default_fallback
+- story: sad path 3 (/tmp/tmpcmedgrje/c402e7a43e784cf2b82b2a759fd242e2_test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye  # predicted: utter_ask_handoff
+  - action: action_listen  # predicted: action_default_fallback
+- story: bot challenge (/tmp/tmpcmedgrje/c402e7a43e784cf2b82b2a759fd242e2_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: goodbye: are you a bot?
+  - action: utter_iamabot

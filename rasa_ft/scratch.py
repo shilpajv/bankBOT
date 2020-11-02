@@ -1,0 +1,1 @@
+!cd /content/drive/My Drive/Projects/Rasa_Chatbot/rasa

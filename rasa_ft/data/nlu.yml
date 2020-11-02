@@ -1,0 +1,194 @@
+version: "2.0"
+
+nlu:
+- intent: back
+  examples: |
+    - go back
+    - last step
+- intent: nlu_fallback
+  examples: |
+    - fallback
+    - nlu fallback
+- intent: out_of_scope
+  examples: |
+    - out of scope
+    - that is incorrect
+- intent: restart
+  examples: |
+    - start from the beginning
+    - clear all 
+- intent: session_start
+  examples: |
+    - start new session
+    - starting a new session
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hie
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - namaste
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - go ahead
+    - yes plz
+    - yup
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - uhmm nah
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: branch_info
+  examples: |
+    - Where   is branch in [Hyderabad](address) ?
+    - Which is nearest Branch close to me?
+    - Where can I find DBS Branch locations?
+    - Where is [DBS](Bank) Bank ?
+    - [DBS](Bank) bank kaha hai
+    - How do I  get my IFSC Code?
+    - What the website address?
+- intent: Biometrics
+  examples: |
+    - can u specify the list of biometric locations ?
+    - how wll be the fngerprint / Biometric verification
+    - what is nearby CCD store for biometric verification
+- intent: account_opening
+  examples: |
+    - what is the process of account opening?
+    - what are the prerequisites for opening a [Savings] (account_type) account?
+    - how to open account in non-DBS location?
+    - account kholne ke liye kya chahiye
+    - mujhe [DBS](Bank) mein account kholna hai
+    - kya kagaz chahiye
+    - how much money needed to open account
+    - [Aadhar](product) OTP not
+    - how to link [Aadhar] card?
+    - खाता kholna hai
+    - अकाउन्ट kaise open karna ?
+- intent: login issues
+  examples: |
+    - what if I forget my password?
+    - I was not allowed to login to my [app](account_type) and get error
+    - How to Change password?
+    - How do  login to my digibank account
+    - my account not login
+    - login problem
+    - unable to login to mobile app
+    - can't access my app in device
+    - [app](account_type) does not open
+    - bhul gaya password
+    - digiapp stop working
+    - पासवर्ड सेट कैसे करेंगे?
+- intent: transaction queries
+  examples: |
+    - how to transfer funds from [digibank?](account_type)
+    - [app](account_type) transfer to another bank is allowed or not?
+    - Please refund  100 to my digiapp
+    - पैसे कैसे bhej sakte dusre account ko
+- intent: credit card
+  examples: |
+    - does DBS gives credit card?
+    - how to apply for credt card?
+    - क्रेडिट कार्ड chahye
+- intent: reg_DG
+  examples: |
+    - how many times can I do [ATM](product) withdrawal?
+    - 3 se zyada baar [ATM](product) se paise nikal sakte kya?
+    - एटीएम se kitne baar money withdraw kar sakte
+    - how to withdraw money?
+- intent: activate_debit
+  examples: |
+    - how do you activate the digipay debit card?
+    - i've received card, how do i generate pin?
+    - where is my debit card PIN
+    - डेबिट कार्ड when deliver?
+    - set Pin
+    - generate OTP TO CREATE PASSWORD OF DEBIT CARD
+- synonym: app
+  examples: |
+     - aap
+     - dgapp
+     - digiapp
+     - digibank app
+     - अप्प्
+- synonym : credit card
+  examples: |
+    - credit
+    - cc
+    - credit  card account
+    - क्रेडिट कार्ड
+- synonym : Aadhar
+  examples: |
+   - adhar card
+   - aadhar
+   - adhaar
+   - आधार
+- synonym : ATM
+  examples: |
+    - debit card
+    - atm card
+    - डेबिट कार्ड
+    - एटीएम

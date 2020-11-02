@@ -1,0 +1,14 @@
+[
+  {
+    "text": "how to transfer funds from digibank?",
+    "entities": [
+      {
+        "start": 27,
+        "end": 36,
+        "value": "digibank?",
+        "entity": "account_type"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

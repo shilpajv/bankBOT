@@ -254,7 +254,7 @@ nlu:
     - पैसे  किस तरह से ऐड करें
     - fund add to my accnt
     - top up my balance by पाँच लाख
-    - account mein paise daalne
+    - account mein paise daalnec
 
 
 - intent: transfer_fail
@@ -397,6 +397,7 @@ nlu:
     - Fixed deposit
     - FDS
     - Fd
+    - एफडी
 
 - synonym : RD
   examples: |
@@ -419,3 +420,32 @@ nlu:
     - गृह ऋण
     - होम लोन
 
+- lookup: Bank
+  examples: |
+    - DBS
+    - Development Bank of Singapore
+    - ICICI
+    - AXIS
+    - SBI
+    - HDFC
+    - KOTAK
+    - CITIBANK
+
+- lookup: money
+  examples: |
+    - dollar
+    - INR
+    - rupee
+    - rupaya
+    - paise
+    - Rs
+    - रूपया
+    - euro
+
+- regex: account_number
+  examples: |
+    - \d{10,12}
+
+- regex: mob_no
+  examples: |
+    - ^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$

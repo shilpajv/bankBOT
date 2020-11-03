@@ -27,14 +27,14 @@ stories:
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_ask_handoff
+  - action: utter_plz_rephrase
 
 - story: sad path 3
   steps:
   - intent: greet
   - action: utter_greet
   - intent: deny
-  - action: utter_ask_handoff
+  - action: utter_plz_rephrase
 
 - story: about branch
   steps:
@@ -42,7 +42,7 @@ stories:
   - action: utter_branch
   - action: utter_did_that_help
   - intent: deny
-  - action: utter_ask_handoff
+  - action: utter_plz_rephrase
 
 - story: greet and account_query
   steps:
@@ -144,14 +144,14 @@ stories:
     - action: utter_balance
     - action: utter_did_that_help
     - intent: deny
-    - action: utter_ask_handoff
+    - action: utter_plz_rephrase
 
 - story: investment
   steps:
     - intent: investment_options
     - action: utter_inv
     - intent: deny
-    - action: utter_ask_handoff
+    - action: utter_plz_rephrase
 
 - story: lang
   steps:

@@ -1,0 +1,26 @@
+[
+  {
+    "text": "how do you activate the digipay debit card?",
+    "intent": "activate_debit",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  },
+  {
+    "text": "what are the interest rate offered by digibnk on RD ?",
+    "intent": "RD",
+    "intent_prediction": {
+      "name": "FD",
+      "confidence": 0.4591960906982422
+    }
+  },
+  {
+    "text": "how to open a RD a/c",
+    "intent": "RD",
+    "intent_prediction": {
+      "name": "nlu_fallback",
+      "confidence": 1.0
+    }
+  }
+]

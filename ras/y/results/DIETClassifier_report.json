@@ -1,0 +1,76 @@
+{
+  "product": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "address": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "Bank": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "account_type": {
+    "precision": 0.9166666666666666,
+    "recall": 1.0,
+    "f1-score": 0.9565217391304348,
+    "support": 11,
+    "confused_with": {}
+  },
+  "loan_type": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 12,
+    "confused_with": {}
+  },
+  "card_type": {
+    "precision": 1.0,
+    "recall": 0.9333333333333333,
+    "f1-score": 0.9655172413793104,
+    "support": 15,
+    "confused_with": {}
+  },
+  "ID": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "amount": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9782608695652174,
+    "recall": 0.9375,
+    "f1-score": 0.9574468085106383,
+    "support": 48
+  },
+  "macro avg": {
+    "precision": 0.9895833333333333,
+    "recall": 0.9708333333333333,
+    "f1-score": 0.9788912362000818,
+    "support": 48
+  },
+  "weighted avg": {
+    "precision": 0.9809027777777777,
+    "recall": 0.9375,
+    "f1-score": 0.9565330970878198,
+    "support": 48
+  }
+}

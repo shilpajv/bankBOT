@@ -1,0 +1,49 @@
+[
+  {
+    "text": "How do  login to my digibank account",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "account_type",
+        "start": 20,
+        "end": 28,
+        "confidence_entity": 0.8877311944961548,
+        "value": "digibank",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "how to apply for credt card?",
+    "entities": [
+      {
+        "start": 17,
+        "end": 27,
+        "value": "credt card",
+        "entity": "card_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "card_type",
+        "start": 17,
+        "end": 22,
+        "confidence_entity": 0.9805281758308411,
+        "value": "credt",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "what is the interest rate for home loan?",
+    "entities": [
+      {
+        "start": 30,
+        "end": 39,
+        "value": "home loan",
+        "entity": "loan_type"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

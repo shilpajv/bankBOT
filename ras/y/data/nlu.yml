@@ -19,6 +19,7 @@ nlu:
     - need help
     - help me
     - plz tell me
+    - हेलो
 
 
 - intent: goodbye
@@ -108,6 +109,7 @@ nlu:
     - What the website address?
     - मेरे निकटतम शाखा
     - मेरे पास  ब्रांच कौन सी है?
+    - digiSavings account not operational
 
 - intent: Biometrics
   examples: |
@@ -119,6 +121,7 @@ nlu:
     - KYC VERIFICATION KARNA HAI
     - फिंगरप्रिंट सत्यापन
     - फिंगरप्रिंट जाँच
+    - digiSavings account not operational
 
 - intent: account_opening
   examples: |
@@ -163,8 +166,8 @@ nlu:
   examples: |
     - how to transfer funds from [digibank](account_type) ?
     - [app](account_type) transfer to another bank is allowed or not?
-    - Please refund  [100](amount) rs to my digiapp
-    - पैसे कैसे bhej sakte dusre account ko
+    - Please refund  [100](amount) [rs](currency) to my digiapp
+    - [पैसे](currency) कैसे bhej sakte dusre account ko
     - money send to other accnt
     - cannot add fund
     - paise kaha se bhej sakte hain
@@ -211,6 +214,15 @@ nlu:
     - डेबिट कार्ड when deliver?
     - set Pin for card
     - generate OTP TO CREATE PASSWORD OF DEBIT CARD
+
+- intent: rate query
+  examples: |
+    - what are the interest rates offered
+    - how can  i know the interest rates in my account
+    - when will i get my int?
+    - how much interest  can i expect
+    - मैं ब्याज दरों को कैसे जान सकता हूं ?
+    - कितना ब्याज वसूला जाएगा
 
 - intent : upi_query
   examples: |
@@ -270,6 +282,19 @@ nlu:
     - money deducted but not completed transacton
     - cannot transfer amount
 
+- intent: fraud_dispute
+  examples: |
+    - how to report a transaction issue or dispute
+    - i hv been victim of fraud
+    - there was an attempt of fraud attempt and security issue
+    - phishing scam
+    - how to report fraud and suspicious activity
+    - लेन-देन की समस्या या विवाद की रिपोर्ट कैसे करें ?
+    - my credit card  credentials stolen
+    - मेरा क्रेडिट कार्ड क्रेडेंशियल्स चोरी हो गया
+    - mera bank se kisine 5000 [inr](currency) nikal diye, complaint karna hai
+
+
 - intent: close_account
   examples: |
     - sr plz close my account
@@ -279,6 +304,7 @@ nlu:
     - मेरा [खाता](account_type) बंद करें
     - accnt band hona
     - account close kaise hoga
+    - mujhe mera [savings account](account_type) Number [55479944210](account_number) close karna hai
 
 - intent: new_debit_card
   examples: |
@@ -335,6 +361,7 @@ nlu:
     - गृह ऋण lena ha mujhe
     - होम लोन लेना है मुझे
     - I want to take a home loan
+    - mujhe 6 hazar crore [Rs](cuurency) ka ghar ka loan lena hai
 
 - intent: check_sa_balance
   examples: |
@@ -430,8 +457,9 @@ nlu:
     - HDFC
     - KOTAK
     - CITIBANK
+    - बैंक
 
-- lookup: money
+- lookup: currency
   examples: |
     - dollar
     - INR
@@ -441,6 +469,7 @@ nlu:
     - Rs
     - रूपया
     - euro
+    - रुपये
 
 - regex: account_number
   examples: |
@@ -449,3 +478,5 @@ nlu:
 - regex: mob_no
   examples: |
     - ^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$
+
+

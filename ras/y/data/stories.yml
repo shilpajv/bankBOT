@@ -157,3 +157,13 @@ stories:
   steps:
     - intent: lang_supported
     - action: utter_lang
+
+- story: fraud_dispute
+  steps:
+    - intent: fraud_dispute
+    - action: utter_fraud
+
+- story: rate query
+  steps:
+    - intent: rate query
+    - action: utter_rates

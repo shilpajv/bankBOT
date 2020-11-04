@@ -1,0 +1,16 @@
+1. Message from user  —>  along with Name 
+2. Create a copy of message for our data wrangling —> WIP
+3. Create a dictionary to save different type of values we have extracted from the user —> WIP
+4. Lang detect —> Top 3 using fastest —> Done
+5. String standardisation —> Done
+6. Num to numeric —> Done
+7. Detecting different values using regex and save to the dictionary —> WIP
+8. Sending Message to RASA —> Done
+9. Getting output from RASA in the top language which we have detected which requires translation as we are hardcoding the output value
+10. Along with output to the user saving the chat along with the dictionary we have extracted from the input in an excel
+11. Excel
+    1. Name 
+    2. Datetime
+    3. Message
+    4. Dictionary —> extracted values
+    5. Predicted output

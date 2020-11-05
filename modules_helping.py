@@ -4,12 +4,7 @@ import re
 
 num_dict={'k':1000,'K':1000,'l':100000,'L':100000,'m':1000000,'M':1000000,'b':1000000000,'B':1000000000,'t':1000000000000,'T':1000000000000}
 
-standard = {'aap':'aap','bal':'balance','min':'minimum','asap':'as soon as possible','sa':'saving account','mab':"minimum average balance",\
-          'amb':'minimum average balance','amt':'amount','m1':'money','vth draw':'withdraw','fr':'for','dba':'dbs','xtra':'extra',\
-            'txns':'transaction','hallo':'hello','muje':'I','gv':'give','mane':'I','ac':'account','acount':'account','devit':'debit',\
-            'avi':'now','kyu':'why','kb':'when','mene':'i','benefissor':'benificiary','benefissear':'benificiary','bnk':'bank',\
-'tranjection':'transaction','sevng':'saving','seving':"saving",'aacound':'account','हज़ार':"thousand" ,"सौ":"Hundred" ,'pasa':"paise",\
-            'तरीका':"process", "लाख":"lakh" ,'dont': "do not" ,"knw" : "know","acc":"account"}
+
 
 def stand(msg):
     word_list=msg.split()
@@ -95,11 +90,19 @@ def num2numeric(text):
 
 def lang_detect(text):
     model = fasttext.load_model('lid.176.ftz')
-    multi_lang=model.predict('छत्तीस ఐదు akhil is not working for chatbot', k=2)  # top 2 matching languages
+    multi_lang=model.predict(text, k=2)  # top 2 matching languages
     languages=[i.split('__label__')[1] for i in multi_lang[0]]
     confidence=list(multi_lang[1])
     lang_confidence=list(zip(languages,confidence))
     return lang_confidence
 
+standard = {'aap':'app','bal':'balance','min':'minimum','asap':'as soon as possible','sa':'saving account','mab':"minimum average balance",\
+          'amb':'minimum average balance','amt':'amount','m1':'money','vth draw':'withdraw','fr':'for','dba':'dbs','xtra':'extra',\
+            'txns':'transaction','hallo':'hello','muje':'I','gv':'give','mane':'I','ac':'account','acount':'account','devit':'debit',\
+            'avi':'now','kyu':'why','kb':'when','mene':'i','benefissor':'benificiary','benefissear':'benificiary','bnk':'bank',\
+'tranjection':'transaction','sevng':'saving','seving':"saving",'aacound':'account','हज़ार':"thousand" ,"सौ":"Hundred" ,'pasa':"paise",\
+            'तरीका':"process", "लाख":"lakh" ,'dont': "do not" ,"knw" : "know","acc":"account"}
 
+
+print(lang_detect("mere account me kitna balance he "))
     

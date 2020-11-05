@@ -9,8 +9,7 @@
 ## rasa run actions
 
 import requests
-from indic_transliteration import sanscript
-from indic_transliteration.sanscript import transliterate
+
 
 bot_message = ""
 message = ""
@@ -21,15 +20,15 @@ while message != "Bye" :
 
     try:
         message=input('enter text\n')
-        r = requests.post('http://localhost:5002/webhooks/rest/webhook',
-                         json={"message": transliterate(message, sanscript.DEVANAGARI, sanscript.ITRANS)})
+        r = requests.post('http://localhost:5005/webhooks/rest/webhook',json={"message": message})
 
-        print("You said : {}".format(transliterate(message, sanscript.DEVANAGARI, sanscript.ITRANS)))
+        print("You said : {}".format(message))
         print("Bot says, ", end=' ')
         for i in r.json():
             bot_message = i['text']
             print(f"{bot_message}")
-
+    except:
+        pass
 
     
 

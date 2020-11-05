@@ -43,6 +43,12 @@ entities:
 
 
 responses:
+  utter_fraud:
+  -text: "PLs contact customer care for resolution."
+
+  utter_rates:
+  -text: "The rates for xyz are abc."
+
   utter_greet:
   - text: "Hey! Iam a DIGIBOT ,How CAN I help you?"
 

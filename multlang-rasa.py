@@ -31,9 +31,7 @@ while message != "Bye" :
             print(f"{bot_message}")
 
 
-    except:
-
-        print("Sorry could not decpher")
+    
 
 
 

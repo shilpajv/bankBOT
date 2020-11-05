@@ -35,6 +35,9 @@ stories:
   - action: utter_greet
   - intent: deny
   - action: utter_plz_rephrase
+  - intent: deny
+  - action: utter_main
+
 
 - story: about branch
   steps:
@@ -110,6 +113,8 @@ stories:
     - intent: add_fund
     - action: utter_add_fund
     - action: utter_did_that_help
+    - intent: main menu
+    - action: utter_main
 
 - story: transfer_fail_path
   steps:
@@ -157,6 +162,8 @@ stories:
   steps:
     - intent: lang_supported
     - action: utter_lang
+    - intent: main menu
+    - action: utter_main
 
 - story: fraud_dispute
   steps:
@@ -167,3 +174,10 @@ stories:
   steps:
     - intent: rate query
     - action: utter_rates
+    - intent: main menu
+    - action: utter_main
+
+- story: menu help
+  steps:
+    - intent: main menu
+    - action: utter_main

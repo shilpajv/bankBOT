@@ -24,6 +24,7 @@ nlu:
 
 - intent: goodbye
   examples: |
+    - good afternoon
     - cu
     - good by
     - cee you later
@@ -96,6 +97,20 @@ nlu:
     - so saad
     - so sad
 
+- intent: main menu
+  examples: |
+    - cannot understand your answer
+    - that is not my question
+    - no that did not help
+    - firse bataye
+    - nai samaj me aata
+    - that was not what i asked
+    - bekar bot hai ye
+    - please repeat
+    - how can you help me
+    - can u answer my question
+
+
 
 - intent: branch_info
   examples: |
@@ -135,6 +150,9 @@ nlu:
     - how to link [Aadhar](ID) card?
     - खाता kholna hai
     - अकाउन्ट kaise open karna ?
+    - naya account banana hain
+    - how to start a new account?
+    - naya account kholne ka process bataye
 
 
 - intent: login issues
@@ -184,9 +202,10 @@ nlu:
     - plese help to lock my card
     - HOW TO stop my card from fraudulent use?
     - मेरा डेबिट कार्ड ब्लॉक करना चाहते हैं
-    - कार्ड  ब्लॉक कैसे करें
+    - [कार्ड](card_type)  ब्लॉक कैसे करें
     - lost my phone
     - card ghum gaya
+    - mera card kho gaya hai
 
 
 - intent: credit card
@@ -204,6 +223,8 @@ nlu:
     - एटीएम se kitne baar money withdraw kar sakte
     - how to withdraw money?
     - मैं कितनी बार [ATM](card_type) निकासी कर सकता हूं?
+    - what are fees for ATM withdrawal
+    - plz tell the charges for atm transactn
 
 - intent: activate_debit
   examples: |
@@ -213,6 +234,7 @@ nlu:
     - डेबिट कार्ड when deliver?
     - set Pin for card
     - generate OTP TO CREATE PASSWORD OF DEBIT CARD
+    - card activate kyse karte hai
 
 - intent: rate query
   examples: |
@@ -242,8 +264,8 @@ nlu:
   examples: |
    - what are the interest rate offered by digibnk on [RD](account_type) ?
    - how to open a [RD](account_type) a/c
-   - what s process of opening recurring deposit account
-
+   - what is process of opening [recurring deposit](account_type) account ?
+   - kya aap mera interest rate kam kar sakte ho
 
 - intent: PL apply
   examples: |
@@ -360,7 +382,8 @@ nlu:
     - गृह ऋण lena ha mujhe
     - होम लोन लेना है मुझे
     - I want to take a home loan
-    - mujhe 6 hazar crore [Rs](cuurency) ka ghar ka loan lena hai
+    - mujhe 6 hazar crore [Rs](currency) ka ghar ka loan lena hai
+    - home lone ke documents batao
 
 - intent: check_sa_balance
   examples: |

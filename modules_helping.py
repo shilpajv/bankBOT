@@ -131,8 +131,14 @@ def lang_detect(text):
         return 'en'
         
     
-        
-        
+#  examples for language detection
+#           Hi what are you doing, I want loan from bank worh 100k.
+#           Hi mujhe loan chayihe please arrange kar sakhe ho kya?
+#           హాయ్ నాకు loan కావాలి arrange చేయగలవా?
+#           hi मुझे loan चाहिए प्लीज अर्रंगे कर दोना
+#           ही मुझे लोन चाहिए प्लीज अर्रंगे कर दोना
+#           ही मुझे लोन chahiye please kar dona bhai
+#           నాకు రుణం మాత్రమే కావాలి దయచేసి చేయండి
         
    
-    
+

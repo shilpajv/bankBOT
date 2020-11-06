@@ -105,6 +105,10 @@ def num2numeric(text):
     except:
         return text
 
+def is_ascii(s):
+    return all(ord(c) < 128 for c in s)
+from textblob import TextBlob
+
 def lang_detect(text):
     try:
         lang_dict={'english':'en','hindi':'hi'}
@@ -113,8 +117,8 @@ def lang_detect(text):
         languages_general=[i.split('__label__')[1] for i in multi_lang_general[0]]
         confidence_general=list(multi_lang_general[1])
         lang_confidence_general=list(zip(languages_general,confidence_general))
-        
-        if(lang_confidence_general[0][0] == 'en'):
+        lang_textblob = TextBlob(text).detect_language()
+        if(is_ascii(text)):
             model_hinglish = fasttext.load_model('model1.bin')
             multi_lang_hinglish=model_hinglish.predict(text, k=1) # top 1 matching languages
             languages_hinglish=[i.split('__label__')[1] for i in multi_lang_hinglish[0]]
@@ -125,10 +129,12 @@ def lang_detect(text):
             return lang_confidence_hinglish[0][0]
         
         else:
-#             print(lang_confidence_general)
-            return lang_confidence_general[0][0]
-    except:
-        return 'en'
+            # print(lang_confidence_general)
+            return lang_textblob
+            # return lang_confidence_general[0][0]
+    except Exception as e:
+
+        return e
         
     
 #  examples for language detection
@@ -139,6 +145,36 @@ def lang_detect(text):
 #           ही मुझे लोन चाहिए प्लीज अर्रंगे कर दोना
 #           ही मुझे लोन chahiye please kar dona bhai
 #           నాకు రుణం మాత్రమే కావాలి దయచేసి చేయండి
-        
-   
 
+def get_number(text,detected_lang):
+    from ner_v2.detectors.numeral.number.number_detection import NumberDetector
+    detector = NumberDetector(entity_name='number', language=detected_lang)
+    number = detector.detect_entity(text)
+    return number
+
+def get_currency(text,detected_lang):
+    from ner_v2.detectors.numeral.number.number_detection import NumberDetector
+    detector = NumberDetector(entity_name='number', language=detected_lang,unit_type='currency')
+    number = detector.detect_entity(text)
+    return number
+
+def get_phone(text,detected_lang):
+    from ner_v2.detectors.pattern.phone_number.phone_number_detection import PhoneDetector      
+    detector = PhoneDetector(language=detected_lang, entity_name='phone_number', locale='en-IN')
+    return detector.detect_entity(text)
+   
+def get_date(text,detected_lang):
+    from ner_v2.detectors.temporal.date.date_detection import DateDetector
+    detector = DateDetector(entity_name='date', language=detected_lang)  # here language will be ISO 639-1 code
+    return detector.detect_entity(text)
+
+def get_time(text,detected_lang):
+    from ner_v2.detectors.temporal.time.time_detection import TimeDetector
+    detector = TimeDetector(entity_name='time', language=detected_lang)  # here language will be ISO 639-1 code
+    return detector.detect_entity(text)
+
+def get_num_range(text,detected_lang):
+    from ner_v2.detectors.numeral.number_range.number_range_detection import NumberRangeDetector
+    detector = NumberRangeDetector(entity_name='number_range', language=detected_lang)  # here language will be ISO 639-1 code
+    return detector.detect_entity(text)   
+     

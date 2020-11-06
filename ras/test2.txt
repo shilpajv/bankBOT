@@ -1,0 +1,141 @@
+__label__english  How  to  apply  for  home  loan
+__label__english  what  are  the  Documents  that  are  required  for  home  loan  
+__label__english  What  Is  the  Interest  Rate  and  Annual  Percentage  Rate
+__label__english  Is  There  a  Prepayment  Penalty
+__label__english  How  Much  Time  Do  You  Need  to  Fund
+__label__english  Home  loan  eligibility
+__label__english  How  to  check  my  monthly  emi
+__label__english  How  does  tenure  affect  cost  of  loan
+__label__english  What  security  will  i  have  to  provide
+__label__english  maximum  tenure  for  home  loan
+__label__english  will  i  get  tax  benefit  on  the  loan
+__label__english  Can  I  get  instant  digital  approval
+__label__english  Types  of  home  loans  available  
+__label__english  Average  tenure  for  home  loan
+__label__english  How  is  the  EMI  calculated
+__label__english  How  to  check  my  credit  score  
+__label__english  What  do  banks  consider  when  granting  a  home  loan
+__label__english  Can  I  apply  for  a  joint  loan  with  my  friend
+__label__english  Who  can  be  joint  borrowers  in  case  of  a  home  loan
+__label__english  What  is  the  maximum  number  of  joint  borrowers  for  a  home  loan
+__label__english  How  do  I  repay  my  home  loan
+__label__english  Is  prepayment  of  home  loan  allowed
+__label__english  What  are  the  key  charges  associated  with  a  home  loan  process
+__label__english  Can  I  have  a  co-applicant  when  I  sign  up  for  a  home  loan
+__label__english  Is  having  a  good  credit  record  important  in  case  of  a  home  loan
+__label__english  How  long  is  the  home  loan  pre-approval  valid
+__label__english  What  is  EMI
+__label__english  When  do  i  start  repaying  the  principal  amount
+__label__english  Can  i  repay  my  loan  ahead  of  schedule
+__label__english  How  to  apply  for  credit  card
+__label__english  penalty  on  late  payment
+__label__english  Can  I  choose  my  payment  due  date
+__label__english  How  to  increase  my  card  limit
+__label__english  how  to  check  offers  on  my  card
+__label__english  Lost  my  credit  card
+__label__english  how  to  upgrade  my  card
+__label__english  how  to  convert  my  bill  to  EMI
+__label__english  How  to  change  credit  card  pin  
+__label__english  How  to  block  my  credit  card
+__label__english  where  can  i  get  credit  card  statement  
+__label__english  How  to  link  my  account  with  my  card
+__label__english  How  o  activate  my  card
+__label__english  is  there  a  processing  fee
+__label__english  Will  you  lower  my  interest  rate?
+__label__english  Which credit score do you  use
+__label__english  Does  your  card  offer  any  promotional  rates
+__label__english  Does  your  card  offer  any  unique  benefits
+__label__english  how  to  change  address  connected  to  card
+__label__english  how  fraud  transactions  are  avoided  
+__label__english  What  Is  Your  Policy  on  Credit  Card  Fraud
+__label__english  how  to  change  my  phone  number  connected  to  card
+__label__english  what  is  the  withdrawl  limit  for  credit  card
+__label__hindi  hom  loan  ke  liye  apply  kyse  kare
+__label__hindi  hom  loan  ke  liye  jaruri  document  kya  hai
+__label__hindi  interest  rate  or  annual  percentage  rate  kya  hai
+__label__hindi  kya  koi  pre  payment  penalty  vi  hai
+__label__hindi  aapko  loan  dene  me  kitna  time  lagega
+__label__hindi  hom  loan  ke  liye  eligibility  criteria  kya  hai
+__label__hindi  mai  apna  monthly  emi  kyse  check  kar  sakta  hu
+__label__hindi  Tenure  loan  ke  cost  ko  kyse  affect  karta  hai
+__label__hindi  Mujhe  konsi  suraksha  di  jayegi
+__label__hindi  home  loan  ka  maximum  tenure  kya  hai
+__label__hindi  kya  mujhe  loan  pe  tax  benefit  milega
+__label__hindi  kya  mujhe  jald  digital  approval  mil  sakta  hai
+__label__hindi  kitne  type  ke  loan  available  hai
+__label__hindi  hom  loan  ka  average  tenure  kya  hai
+__label__hindi  emi  kyse  calculate  krte  hai
+__label__hindi  mai  credit  score  kyse  check  kar  sakta  hu
+__label__hindi  hom  loan  grant  krte  time  bank  kya  consider  karte  hai
+__label__hindi  kya  mai  apne  friend  ke  sath  joint  loan  ke  liye  apply  kar  sakta  hu
+__label__hindi  hom  loan  ke  liye  joint  borrowers  kon  ho  sakta  hai
+__label__hindi  hom  loan  ke  liye  maximum  joint  borrowers  kitne  ho  sakte  hai
+__label__hindi  mai  apna  hom  loan  kyse  dunga
+__label__hindi  kya  hom  loan  ka  prepayment  allowed  hai
+__label__hindi  hom  loan  ke  hidden  changes  kya  hai
+__label__hindi  kya  mai  co-applicant  ho  sakta  hu  ,  jab  mai  hom  loan  ke  liye  apply  karu
+__label__hindi  kya  acha  credit  record  jaruri  hai  hom  loan  ke  liye
+__label__hindi  hom  loan  ka  pre-approval  kab  tak  valid  rahega
+__label__hindi  emi  kya  hai
+__label__hindi  mai  kab  principal  ammount  ka  repayment  start  kr  sakta  hu
+__label__hindi  kya  mai  loan  ka  payment  loan  schedule  hone  se  pahle  start  kr  sakta  hu
+__label__hindi  credit  card  ke  liye  kyse  apply  karte  hai
+__label__hindi  late  payment  pe  kya  penalty  hai
+__label__hindi  kya  mai  apna  payment  dene  ka  din  choose  kr  sakta  hu
+__label__hindi  apne  card  ka  limit  kyse  increase  karte  hai
+__label__hindi  card  pe  offer  kyse  check  karte  hai
+__label__hindi  mera  credit  card  kho  gya  hai
+__label__hindi  credit  card  ko  upgrage  kyse  kare
+__label__hindi  apne  bill  ko  emi  me  kase  convert  kare
+__label__hindi  credit  card  ka  pin  kyse  check  karu
+__label__hindi  credit  card  ko  kyse  block  kar  sakta  hu
+__label__hindi  credit  card  ka  statement  kaha  milega
+__label__hindi  apna  account  ko  credit  card  se  link  kyse  krte  hai
+__label__hindi  card  activate  kyse  karte  hai
+__label__hindi  kya  koi  processing  fee  hai
+__label__hindi  kya  aap  mera  interest  rate  kam  kar  sakte  ho
+__label__hindi  aap  konsa  credit  score  use  krte  ho
+__label__hindi  kya  aapka  card  koi  promotional  rates  offer  karta  hai
+__label__hindi  kya  aaoka  card  koi  unique  benefits  offer  karta  hai
+__label__hindi  apna  address  kyse  change  kar  sakte  hai
+__label__hindi  fraud  transactions  se  kyse  bacha  jata  hai
+__label__hindi  credit  card  fraud  ko  lekr  aapki  policy  kya  hai
+__label__hindi  card  se  connected  phone  number  kyse  change  kr  sakte  hai
+__label__hindi  credit  card  ki  withdrawl  limit  kya  hai
+__label__hindi  home  loan  ka  madad  chahiye
+__label__hindi  home  lone  ke  documents  batao
+__label__english  interest  rate  annual  percentage  s  bad
+__label__hindi  mera  app  na  chalta  fail    ho  raha  login
+__label__hindi  muje  refund  chahye
+__label__hindi  home  loan  ka  eligibility  pata  lagana  hai
+__label__english  can  open  account  in  your  bank
+__label__english  want  to  do  biometric  verification  
+__label__hindi  fund  transfer  ni  ho  Raha  sir  jee
+__label__hindi  mujhe  naya  ATM  card  chahye
+__label__hindi  mere  paas  wala  branch  location  kya  hai
+__label__english  home  loan    types  
+__label__english  Average  tenure  for  home  loan
+__label__english  how  to  calculate  EMI
+__label__english  how  to  add    payee
+__label__hindi  personal  loan  ka  process  kaha  se  pata  chalega
+__label__hindi    joint  home  loan  apply  hota  maloom  nai
+__label__hindi  y  my  card    is  not  activated
+__label__hindi  upi  pin  set  karne  mein  diikkat  aa  rahi  hai
+__label__hindi  hello  sir  kya  aap  meri  madad  karenge
+__label__english  EMI  how  much
+__label__hindi  amount  deduct  ho  gaya    refund  na  mila
+__label__hindi  credit  card  kho  gaya  kaise  block  karu
+__label__hindi  mere  credt  card  se  kisine  paise  transfer  kia
+__label__hindi  branch  manager  se  baat  ho  na  pa  raha
+__label__english  credit  card  limit    to  be  max
+__label__english  credit  card  offers  are  good
+__label__english  credit  card  pin  changed
+__label__hindi  credit  card  statement    kaha  se  download  karein
+__label__english  card    card  activate  failed
+__label__english  processing  fee    not  low
+__label__english  unique  benefits  are  there
+__label__hindi  address  badalna  hai
+__label__hindi  fraud  transaction  report  hoga  ya  na
+__label__english  credit  card  fraud  policy  maloom  na  hain
+__label__hindi  phone  number  change  ho  gye  mera
+__label__english  debt  card  withdrawal  limit

@@ -121,7 +121,7 @@ def lang_detect(text):
             languages_hinglish=[lang_dict[i] for i in languages_hinglish]
             confidence_hinglish=list(multi_lang_hinglish[1])
             lang_confidence_hinglish=list(zip(languages_hinglish,confidence_hinglish))
-#             print(lang_confidence_hinglish)
+            print('second level for Hinglish',lang_confidence_hinglish)
             return lang_confidence_hinglish[0][0]
         
         else:

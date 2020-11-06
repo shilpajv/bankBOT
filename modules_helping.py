@@ -118,7 +118,7 @@ def lang_detect(text):
             model_hinglish = fasttext.load_model('model1.bin')
             multi_lang_hinglish=model_hinglish.predict(text, k=1) # top 1 matching languages
             languages_hinglish=[i.split('__label__')[1] for i in multi_lang_hinglish[0]]
-#             languages_hinglish=[lang_dict[i] for i in languages_hinglish]
+            languages_hinglish=[lang_dict[i] for i in languages_hinglish]
             confidence_hinglish=list(multi_lang_hinglish[1])
             lang_confidence_hinglish=list(zip(languages_hinglish,confidence_hinglish))
 #             print(lang_confidence_hinglish)

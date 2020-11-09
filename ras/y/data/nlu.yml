@@ -109,6 +109,7 @@ nlu:
     - please repeat
     - how can you help me
     - can u answer my question
+    - go to start
 
 
 
@@ -135,7 +136,7 @@ nlu:
     - KYC VERIFICATION KARNA HAI
     - फिंगरप्रिंट सत्यापन
     - फिंगरप्रिंट जाँच
-    - digiSavings account not operational
+    
 
 - intent: account_opening
   examples: |

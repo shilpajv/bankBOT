@@ -207,6 +207,10 @@ nlu:
     - lost my phone
     - card ghum gaya
     - mera card kho gaya hai
+    - What is the procedure to block/stolen Debit Card
+    - Kaise Debit card ko Block kaise karu 
+    - Block Debit Card urgently
+    
 
 
 - intent: credit card
@@ -226,6 +230,8 @@ nlu:
     - मैं कितनी बार [ATM](card_type) निकासी कर सकता हूं?
     - what are fees for ATM withdrawal
     - plz tell the charges for atm transactn
+    - Charges on ATM Usage
+
 
 - intent: activate_debit
   examples: |
@@ -236,6 +242,9 @@ nlu:
     - set Pin for card
     - generate OTP TO CREATE PASSWORD OF DEBIT CARD
     - card activate kyse karte hai
+    - How do generate Debit card pin from ATM 
+    - 
+
 
 - intent: rate query
   examples: |
@@ -315,6 +324,7 @@ nlu:
     - my credit card  credentials stolen
     - मेरा क्रेडिट कार्ड क्रेडेंशियल्स चोरी हो गया
     - mera bank se kisine 5000 [inr](currency) nikal diye, complaint karna hai
+    - Wrong Transaction on Debit Card 
 
 
 - intent: close_account

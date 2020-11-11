@@ -185,7 +185,7 @@ stories:
 - story: car_loan_application
   steps:
      - intent: car_loan_application
-    - action: utter_car_loan_application
+     - action: utter_car_loan_application
     
  - story: car_loan_collateral
   steps:

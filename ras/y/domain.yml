@@ -30,6 +30,35 @@ intents:
   - check_sa_balance
   - investment_options
   - lang_supported
+  - car_loan_application
+  - car_loan_collateral
+  - car_loan_eligibility
+  - car_loan_finance
+  - car_loan_interest
+  - car_loan_repayment
+  - education_loan_application
+  - education_loan_eligibility
+  - education_loan_interest
+  - education_loan_repayment
+  - education_loan_security
+  - education_loan_tenure
+  - home_loan_application
+  - home_loan_eligibility
+  - home_loan_interest
+  - home_loan_repayment
+  - home_loan_security
+  - home_loan_tenure
+  - loan_application
+  - loan_emi
+  - loan_interest
+  - loan_repayment
+  - loan_security
+  - personal_loan_collateral
+  - personal_loan_interest
+  - personal_loan_repayment
+  - process_time
+
+  
 
 entities:
   - address
@@ -170,7 +199,7 @@ responses:
 
   utter_loan_offered:
     - text: " There are two types of loans provided by our bank. They are:
-           1. Home Loan.\n2. Personal Loan."
+           1. Home Loan.\n2. Personal Loan. \n3.Education loan \n4. car Loan
 
   utter_home_loan_about:
     - text: "An home loan is designed to financially aid the applicant in affording the cost of home.\
@@ -208,7 +237,85 @@ responses:
   utter_lang:
     - text: " I understand hindi and english "
 
+ utter_car_loan_application:
+   - text : "Please refer our website for car loan application related queries"
 
+ utter_car_loan_collateral:
+  - text: " Please refer our website for car loan collateral related queries "
+  
+  utter_car_loan_eligibility:
+  - text: " Please refer our website for car loan eligibility related queries"
+  utter_car_loan_finance:
+  - text : 'Please refer our website for car loan finance related queries'
+  
+  utter_car_loan_interest:
+  - text : 'Please refer our website for car loan interest rates. The interest rate for home loan ranges from 8.40% to 8.50% pa.'
+ 
+  utter_car_loan_repayment:
+  - text : 'Please refer our website for education loan application queries'
+
+ 
+  utter_education_loan_application:
+  - text : 'Please refer our website for education loan eligibility queries'
+
+  utter_education_loan_eligibility:
+  - text : ' Please refer our website for education loan eligibility queries'
+  utter_education_loan_interest:
+  - text : 'Please refer our website for education loan interest rates queries'
+
+  utter_education_loan_repayment:
+  - text : ' Please refer our website for education loan collateral/security queries'
+  utter_education_loan_security:
+  - text: 'Please refer our website for education loan for guarantor and securty qs'
+
+  utter_education_loan_tenure:
+    - text : 'Please refer our website for education loan tenure queries'
+  
+  utter_home_loan_application:
+  - text : 'You could collect an application form from our nearest office or simply download it from our website and submit it yourself along with the supporting documents and the processing fee cheque at any HDFC office that is convenient to you.'
+  
+  utter_home_loan_eligibility:
+  - text : 'Eligibility depends on various parameters such as age, income, type of employment etc. To check your eligibility, please click here.'
+  
+  utter_home_loan_interest:
+   - text: 'Home Loans are available starting from an interest rate of 6.95%. Please click here'
+  
+  utter_home_loan_repayment:
+  - text : 'For your convenience, bank offers various modes for repayment of the home loan. You may issue standing instructions to your banker to pay the installments through ECS (Electronic Clearing System), opt for direct deduction of monthly installments by your employer or issue post-dated cheques from your salary account.'
+  utter_home_loan_security:
+  - text : 'You credit rating and worthiness determines your eligibility for a home loan without collateral. It helps if you are a long-standing customer of the bank.'
+
+utter_process_time:
+  - text : 'Once you submit your application form and the required documents as per Bank''s criteria, you can expect our approval and disbursal within 7 working days, provided everything is in order.
+ \n All loan approvals are at the sole discretion of the bank'
+  
+utter_home_loan_tenure:
+ - text : ' Tenure will be based on customer's age, subject to a maximum tenure of 30 years. The applicable tenure for the customer will be displayed while availing of sanction. Customer can also avail for lower tenure, if required.'
+ 
+utter_loan_application:
+  - text : 'You could collect an application form from our nearest office or simply download it from our website and submit it yourself along with the supporting documents and the processing fee cheque at any of our office that is convenient to you.'
+  
+ utter_loan_emi:
+  - text  : " EMI refers to the Equated Monthly Installment. Once we receive your request for disbursement, we will disburse the loan in full or in installments, which usually do not exceed in number."
+ 
+ utter_loan_interest:
+   
+   -text : ' You can visit website for information regarding interest rates '
+ utter_loan_repayment:
+  - text : 'For your convenience, bank offers various modes for repayment of the home loan. \
+           \ You may issue standing instructions to your banker to pay the installments through ECS (Electronic Clearing System), \
+            \ opt for direct deduction of monthly installments by your employer or issue post-dated cheques from your salary account. "
+  utter_loan_security:
+  - text : 'You can visit website for information regarding collateral '
+
+  utter_personal_loan_interest :
+  - text : ' Please click here to view the Personal Loan Interest Rates '
+   
+  utter_personal_loan_repayment :
+ - text:  'Please refer our website for personal loan repayment queries'
+
+  utter_personal_loan_collateral :
+ - text : 'Please refer our website for personal loan collateral queries'
 
 session_config:
   session_expiration_time: 60

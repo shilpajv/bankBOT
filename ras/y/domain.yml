@@ -304,7 +304,8 @@ utter_loan_application:
  utter_loan_repayment:
   - text : 'For your convenience, bank offers various modes for repayment of the home loan. \
            \ You may issue standing instructions to your banker to pay the installments through ECS (Electronic Clearing System), \
-            \ opt for direct deduction of monthly installments by your employer or issue post-dated cheques from your salary account. "
+            \ opt for direct deduction of monthly installments by your employer or issue post-dated cheques from your salary account. '
+  
   utter_loan_security:
   - text : 'You can visit website for information regarding collateral '
 

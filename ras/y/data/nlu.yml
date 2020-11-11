@@ -469,7 +469,13 @@ nlu:
     - auto loan par byaaj dar kya he or kya yah tay yaa asthaayee he?
     - न्यूनतम ब्याज दर क्या है मैं कार ऋण प्राप्त कर सकता हूं
     - nunatam byaaj dar kya he main car loan praapt kar saktaa hum
-  
+    
+    
+  - intent: process_time
+    examples: |
+    - how much time  it take for my  loan to be processed?
+    - loan processing takes how much time?
+    - when can i expect my loan approved?
   - intent: car_loan_repayment
     examples: |
     - sell my car before I repay my loan?

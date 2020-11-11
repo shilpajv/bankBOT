@@ -7,13 +7,13 @@ pipeline:
     model_name: "albert"
   - name: LanguageModelTokenizer
   - name: LanguageModelFeaturizer
-  - name: RegexFeaturizer
-  - name: LexicalSyntacticFeaturizer
-  - name: CountVectorsFeaturizer
-  - name: CountVectorsFeaturizer
-    analyzer: char_wb
-    min_ngram: 1
-    max_ngram: 4
+  # - name: RegexFeaturizer
+  # - name: LexicalSyntacticFeaturizer
+  # - name: CountVectorsFeaturizer
+  #   analyzer: char_wb
+  #   min_ngram: 1
+  #   max_ngram: 4
+  - name: component_ner.NERv2
   - name: DIETClassifier
     epochs: 100
   - name: EntitySynonymMapper

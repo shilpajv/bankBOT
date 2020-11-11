@@ -10,7 +10,7 @@ standard = {'aap':'aap','bal':'balance','min':'minimum','asap':'as soon as possi
             'txns':'transaction','hallo':'hello','muje':'I','gv':'give','mane':'I','ac':'account','acount':'account','devit':'debit',\
             'avi':'now','kyu':'why','kb':'when','mene':'i','benefissor':'benificiary','benefissear':'benificiary','bnk':'bank',\
 'tranjection':'transaction','sevng':'saving','seving':"saving",'aacound':'account','हज़ार':"thousand" ,"सौ":"Hundred" ,'pasa':"paise",\
-            'तरीका':"process", "लाख":"lakh" ,'dont': "do not" ,"knw" : "know","acc":"account","pls":"please"}
+            'तरीका':"process", "लाख":"lakh" ,'dont': "do not" ,"knw" : "know","acc":"account","pls":"please",'pass':'password','pwd':'password','a/c':'account'}
 
 def stand(msg):
     try:

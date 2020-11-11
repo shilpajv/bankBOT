@@ -1,0 +1,9 @@
+entities:
+  - address
+  - app
+  - account_type
+  - Bank
+  - product
+  - loan_type
+  - card_type
+  - ID

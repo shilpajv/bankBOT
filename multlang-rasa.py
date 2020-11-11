@@ -32,7 +32,7 @@ while message.lower() != "bye" :
         lang = 'en' if lang not in ['hi','en','te'] else lang
         #NER
             #NUmber
-        user_values['account_number'] = re.findall(r'[0-9]{10,16}',message)
+        user_values['account_number'] = re.findall(r'[0-9]{11,16}',message)
         #print(user_values['account_number'][1])
         #print('-----------')
         #for i,phonenumber in enumerate(user_values['account_number'][1]): 
@@ -74,9 +74,10 @@ while message.lower() != "bye" :
         message2=num2numeric(message1)
         user_values['numbers_in_message']=message2
         
-        r = requests.post('http://localhost:5000/webhooks/rest/webhook',json={"message": message2})
-
+        r = requests.post('http://localhost:5005/webhooks/rest/webhook',json={"message": message2})
+        print('----------------------------------')
         print("You said : {}".format(message2))
+        print('\n')
         print("Bot says, ", end=' ')
         for i in r.json():
             bot_message = i['text']
@@ -87,7 +88,11 @@ while message.lower() != "bye" :
         print(e)
 
     finally:
-        print(user_values)
+        for sub in user_values: 
+            print(sub , ':' , user_values[sub])
+            
+            
+        
 
 
 

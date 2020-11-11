@@ -3,8 +3,9 @@ language: en
 
 pipeline:
   - name: HFTransformersNLP
-    model_weights: "/drive/My Drive/Projects/Rasa_Chatbot/rasa_ft/indic-bert-v1"
-    model_name: "albert"
+    #model_weights: "/C:/Users/aksha.LAPTOP-KKEAULMJ/OneDrive/Documents/Python/gitpro/AI/Chatbot/bot/bankBOT/data/indic-bert-v1"
+    model_weights: 'bert-base-multilingual-uncased'
+    model_name: "bert"
   - name: LanguageModelTokenizer
   - name: LanguageModelFeaturizer
   - name: RegexFeaturizer

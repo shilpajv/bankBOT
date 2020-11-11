@@ -199,7 +199,7 @@ responses:
 
   utter_loan_offered:
     - text: " There are two types of loans provided by our bank. They are:
-           1. Home Loan.\n2. Personal Loan. \n3.Education loan \n4. car Loan
+           1. Home Loan.\n2. Personal Loan. \n3.Education loan \n4. car Loan "
 
   utter_home_loan_about:
     - text: "An home loan is designed to financially aid the applicant in affording the cost of home.\

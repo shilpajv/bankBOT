@@ -260,3 +260,5 @@ responses:
                 \n 12.Report Fraud
                 \n 13.Interest Rate
                 \n 14.Account  Features "
+  utter_home_repayment:
+      - text: 'Please refer our website for home loan collateral queries'

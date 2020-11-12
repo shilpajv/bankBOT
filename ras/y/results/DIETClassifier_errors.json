@@ -1,40 +1,5 @@
 [
   {
-    "text": "How do  login to my digibank account",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "account_type",
-        "start": 20,
-        "end": 28,
-        "confidence_entity": 0.8877311944961548,
-        "value": "digibank",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
-    "text": "how to apply for credt card?",
-    "entities": [
-      {
-        "start": 17,
-        "end": 27,
-        "value": "credt card",
-        "entity": "card_type"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "card_type",
-        "start": 17,
-        "end": 22,
-        "confidence_entity": 0.9805281758308411,
-        "value": "credt",
-        "extractor": "DIETClassifier"
-      }
-    ]
-  },
-  {
     "text": "what is the interest rate for home loan?",
     "entities": [
       {
@@ -44,6 +9,35 @@
         "entity": "loan_type"
       }
     ],
-    "predicted_entities": []
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 0,
+        "value": "en",
+        "extractor": "NERv2"
+      }
+    ]
+  },
+  {
+    "text": "\u092e\u0948\u0902 \u092a\u0939\u0932\u0947 \u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0917\u0924 \u090b\u0923 \u091a\u0941\u0915\u093e\u0924\u093e \u0939\u0942\u0902?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "language",
+        "start": 0,
+        "end": 0,
+        "value": "hi",
+        "extractor": "NERv2"
+      },
+      {
+        "entity": "loan_type",
+        "start": 9,
+        "end": 18,
+        "confidence_entity": 0.7635329961776733,
+        "value": "\u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0917\u0924",
+        "extractor": "DIETClassifier"
+      }
+    ]
   }
 ]

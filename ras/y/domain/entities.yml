@@ -7,3 +7,10 @@ entities:
   - loan_type
   - card_type
   - ID
+  - amount
+  - currency
+  - amount_range
+  - date
+  - language
+  - phone_number
+  - time

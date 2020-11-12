@@ -1,4 +1,6 @@
 import typing
+import datetime
+
 from typing import Any, Optional, Text, Dict, List, Type
 
 from rasa.nlu.components import Component
@@ -52,23 +54,95 @@ class NERv2(EntityExtractor):
     ) -> None:
         
         pass
-        
 
     def process(self, message: Message, **kwargs: Any) -> None:
         
         text = message.get('text',[])
-        print("text:",text)
-        user_values = get_user_values(text)
-        print("user_values:",user_values)
+                
         entities = []
-        entities.append(
-                    {
-                        ENTITY_ATTRIBUTE_TYPE: 'abc',
-                        ENTITY_ATTRIBUTE_START: None,
-                        ENTITY_ATTRIBUTE_END: None,
-                        ENTITY_ATTRIBUTE_VALUE: None,
-                        EXTRACTOR : None,
-                    })
+
+        #lang
+        try:
+            lang_a=lang_detect(text)
+            lang = 'en' if lang_a not in ['hi','en','te'] else lang_a
+            entities.append(get_entity_format('language',None,None,lang_a,"NER-Language"))
+        except:
+            print('lang')
+            pass    
+        #amount 
+        try:
+            currency = get_currency(text,lang)
+            if len(currency[0]) != 0 :
+                for i in currency[0]:
+                    amount = i['value']
+                    curr = i['unit']
+                    print("curr123",curr)
+                    entities.append(get_entity_format('currency',None,None,curr,'NER-Currency'))
+                    entities.append(get_entity_format('amount',None,None,amount,'NER-Currency'))
+        except: 
+            print("curr")
+            
+            pass             
+        #amount range
+        try:
+            amt_range = get_num_range(text,lang)
+            
+            if len(amt_range[0]) != 0 :
+                for i in amt_range[0]:
+                    rng = i['min_value']+"-"+i['max_value']
+                    entities.append(get_entity_format('amount_range',None,None,rng,'NER-Range'))
+        except:
+            print('range')
+            
+            pass            
+        #date
+        try:
+            date = get_date(text,lang)
+            if len(date[0]) != 0 :
+                for i in date[0]:
+                    d=i['dd']
+                    m=i['mm']
+                    y=i['yy']
+                    date_obj = datetime.datetime(y,m,d)
+                    entities.append(get_entity_format('date',None,None,date,'NER-Date'))
+        except: 
+            print('date')
+            
+            pass  
+        #phone_number
+        try:
+            phno = get_phone(text,lang)
+            if len(phno[0]) != 0 :
+                for i,phonenumber in enumerate(phno[1]): 
+                    if len(phonenumber) ==10:
+                        entities.append(get_entity_format('phone_number',None,None,phonenumber,'NER-Phone_Number'))
+        except: 
+            print("pno:")
+
+            
+            pass            
+                
+        #time
+        try:
+            time = get_time(text,lang)
+            if len(time[0]) != 0:
+                for i in time[0]:
+                    h=i['hh']
+                    m=i['mm']
+                    s=i['nn']
+
+                    time = datetime.time(int(h),int(m),int(s))
+                    entities.append(get_entity_format('time',None,None,time,'NER-Time'))
+        except: 
+            print("Time:")
+            
+            pass  
+        try:
+            message.set(
+                ENTITIES, message.get(ENTITIES, []) + entities, add_to_output=True
+            )
+        except:
+            pass
         pass
 
     def persist(self, file_name: Text, model_dir: Text) -> Optional[Dict[Text, Any]]:

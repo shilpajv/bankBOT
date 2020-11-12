@@ -3,7 +3,7 @@ language: en
 
 pipeline:
   - name: HFTransformersNLP
-    model_weights: "/drive/My Drive/Projects/Rasa_Chatbot/rasa_ft/indic-bert-v1"
+    model_weights: "/drive/My Drive/Projects/Rasa_Chatbot/bankBOT/ras/y/indic-bert-v1"
     model_name: "albert"
   - name: LanguageModelTokenizer
   - name: LanguageModelFeaturizer

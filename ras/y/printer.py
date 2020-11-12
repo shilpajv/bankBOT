@@ -52,7 +52,8 @@ class Printer(Component):
             elif isinstance(v, np.ndarray):
                 print(f"{k}: Dense array with shape {v.shape}")
             else:
-                print(f"{k}: {v.__repr__()}")
+                # print(f"{k}: {v.__repr__()}")
+                pass
 
     def persist(self, file_name: Text, model_dir: Text) -> Optional[Dict[Text, Any]]:
         pass

@@ -1,26 +1,53 @@
 version: "2.0"
 stories:
-- story: sad path 2 (/tmp/tmplxeoq0ab/ce4b960603544b6387fb143b096e228e_test_stories.yml)
+- story: happy path 1 (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
   steps:
-  - intent: greet
+  - intent: greet  # predicted: greet: []{"entity": "language", "value": "en"}hello there!
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_great  # predicted: mood_great: []{"entity": "language", "value": "en"}amazing
+  - action: utter_happy
+- story: happy path 2 (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: greet: []{"entity": "language", "value": "en"}hello there!
+  - action: utter_greet
+  - intent: mood_great  # predicted: mood_great: []{"entity": "language", "value": "en"}amazing
+  - action: utter_happy
+  - intent: goodbye  # predicted: goodbye: []{"entity": "language", "value": "en"}bye-bye!
+  - action: utter_goodbye
+- story: sad path 1 (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
+  steps:
+  - intent: greet  # predicted: greet: []{"entity": "language", "value": "en"}hello
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: mood_unhappy: []{"entity": "language", "value": "en"}not good
   - action: utter_cheer_up
   - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye  # predicted: utter_plz_rephrase
-  - action: action_listen  # predicted: action_default_fallback
-- story: sad path 3 (/tmp/tmplxeoq0ab/ce4b960603544b6387fb143b096e228e_test_stories.yml)
+  - intent: affirm  # predicted: affirm: []{"entity": "language", "value": "en"}yes
+  - action: utter_happy
+- story: sad path 2 (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
   steps:
-  - intent: greet  # predicted: deny: hi
+  - intent: greet  # predicted: greet: []{"entity": "language", "value": "en"}hello
   - action: utter_greet
-  - intent: mood_unhappy
+  - intent: mood_unhappy  # predicted: mood_unhappy: []{"entity": "language", "value": "en"}not good
   - action: utter_cheer_up
   - action: utter_did_that_help
-  - intent: deny
+  - intent: deny  # predicted: deny: []{"entity": "language", "value": "en"}not really
   - action: utter_goodbye  # predicted: utter_plz_rephrase
-  - action: action_listen  # predicted: action_default_fallback
-- story: bot challenge (/tmp/tmplxeoq0ab/ce4b960603544b6387fb143b096e228e_test_stories.yml)
+  - action: action_listen  # predicted: utter_did_that_help
+- story: sad path 3 (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
   steps:
-  - intent: bot_challenge  # predicted: nlu_fallback: are you a bot?
+  - intent: greet  # predicted: nlu_fallback: []{"entity": "language", "value": "Must provide a string with at least 3 characters."}hi
+  - action: utter_greet
+  - intent: mood_unhappy  # predicted: mood_unhappy: []{"entity": "language", "value": "en"}very terrible
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny  # predicted: deny: []{"entity": "language", "value": "Must provide a string with at least 3 characters."}no
+  - action: utter_goodbye  # predicted: utter_plz_rephrase
+  - action: action_listen  # predicted: utter_did_that_help
+- story: say goodbye (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
+  steps:
+  - intent: goodbye  # predicted: goodbye: []{"entity": "language", "value": "en"}bye-bye!
+  - action: utter_goodbye
+- story: bot challenge (/tmp/tmp9u6ai7e0/cae106c159fc40e9baa10369e2e8a2a8_test_stories.yml)
+  steps:
+  - intent: bot_challenge  # predicted: main menu: []{"entity": "language", "value": "en"}are you a bot?
   - action: utter_iamabot

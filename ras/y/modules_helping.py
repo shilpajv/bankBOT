@@ -220,3 +220,22 @@ def get_user_values(text):
     user_values['numbers_in_message']=message2
 
     return user_values
+
+from rasa.shared.nlu.constants import (
+    ENTITIES,
+    ENTITY_ATTRIBUTE_VALUE,
+    ENTITY_ATTRIBUTE_START,
+    ENTITY_ATTRIBUTE_END,
+    TEXT,
+    ENTITY_ATTRIBUTE_TYPE,
+    EXTRACTOR
+)
+
+def get_entity_format(a,b,c,d,e):
+        return {
+                    ENTITY_ATTRIBUTE_TYPE: a,
+                    ENTITY_ATTRIBUTE_START: 0,
+                    ENTITY_ATTRIBUTE_END: 0,
+                    ENTITY_ATTRIBUTE_VALUE: d,
+                    EXTRACTOR : "NERv2",
+                }

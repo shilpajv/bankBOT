@@ -2,6 +2,7 @@ version: "2.0"
 
 intents:
   - greet
+    #  - use entities : []
   - goodbye
   - affirm
   - deny
@@ -24,40 +25,42 @@ intents:
   - close_account
   - new_debit_card
   - transfer_fail
-  - loan_offered
-  - home_loan_about
+  #- loan/loan_offered
+  #- loan/home_loan_about
   - block card
   - check_sa_balance
   - investment_options
   - lang_supported
-  - car_loan_application
-  - car_loan_collateral
-  - car_loan_eligibility
-  - car_loan_finance
-  - car_loan_interest
-  - car_loan_repayment
-  - education_loan_application
-  - education_loan_eligibility
-  - education_loan_interest
-  - education_loan_repayment
-  - education_loan_security
-  - education_loan_tenure
-  - home_loan_application
-  - home_loan_eligibility
-  - home_loan_interest
-  - home_loan_repayment
-  - home_loan_security
-  - home_loan_tenure
-  - loan_application
-  - loan_emi
-  - loan_interest
-  - loan_repayment
-  - loan_security
-  - personal_loan_collateral
-  - personal_loan_interest
-  - personal_loan_repayment
+  #- loan/car_loan_application
+  #- loan/car_loan_collateral
+  #- loan/car_loan_eligibility
+  #- loan/car_loan_finance
+  #- loan/car_loan_interest
+  #- loan/car_loan_repayment
+  #- loan/education_loan_application
+  #- loan/education_loan_eligibility
+  #- loan/education_loan_interest
+  #- loan/education_loan_repayment
+  #- loan/education_loan_security
+  #- loan/education_loan_tenure
+  #- loan/home_loan_application
+  #- loan/home_loan_eligibility
+  #- loan/home_loan_interest
+  #- loan/home_loan_repayment
+  #- loan/home_loan_security
+  #- loan/home_loan_tenure
+  #- loan/loan_application
+  #- loan/loan_emi
+  #- loan/loan_interest
+  #- loan/loan_repayment
+  #- loan/loan_security
+  #- loan/personal_loan_collateral
+  #- loan/personal_loan_interest
+  #- loan/personal_loan_repayment
+  #- loan/personal_loan_application
   - process_time
   - fraud_dispute
   - rate query
   - main menu
-  - personal_loan_application
+  - loan
+  

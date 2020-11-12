@@ -1,17 +1,6 @@
-version: '2.0'
-intents: [greet, goodbye, affirm, deny, mood_great, mood_unhappy, bot_challenge, branch_info,
-  account_opening, login issues, credit card, transaction queries, reg_DG, Biometrics,
-  activate_debit, upi_query, FD, RD, PL apply, add_fund, close_account, new_debit_card,
-  transfer_fail, loan_offered, home_loan_about, block card, check_sa_balance, investment_options,
-  lang_supported, car_loan_application, car_loan_collateral, car_loan_eligibility,
-  car_loan_finance, car_loan_interest, car_loan_repayment, education_loan_application,
-  education_loan_eligibility, education_loan_interest, education_loan_repayment, education_loan_security,
-  education_loan_tenure, home_loan_application, home_loan_eligibility, home_loan_interest,
-  home_loan_repayment, home_loan_security, home_loan_tenure, loan_application, loan_emi,
-  loan_interest, loan_repayment, loan_security, personal_loan_collateral, personal_loan_interest,
-  personal_loan_repayment, process_time, fraud_dispute, rate query, main menu, personal_loan_application]
 entities: [address, app, account_type, Bank, product, loan_type, card_type, ID, amount,
   currency, amount_range, date, language, phone_number, time]
+session_config: {session_expiration_time: 60, carry_over_slots_to_new_session: true}
 responses:
   utter_greet:
   - {text: 'Hey! Iam a DIGIBOT ,How CAN I help you?'}
@@ -122,10 +111,10 @@ responses:
       \ with prominent landmark. \u2022You will receive the AWB tracking number in\
       \ 2-3 working days via SMS once the card is dispatched and debit card will be\
       \ delivered to you in 7 - 10 days from the day the card is requested"}
-  utter_loan_offered:
+  utter_loan/loan_offered:
   - {text: " There are two types of loans provided by our bank. They are: 1. Home\
       \ Loan.\n2. Personal Loan. \n3.Education loan \n4. car Loan "}
-  utter_home_loan_about:
+  utter_loan/home_loan_about:
   - {text: "An home loan is designed to financially aid the applicant in affording\
       \ the cost of home.The interest rate for home loan ranges from 8.40% to 8.50%\
       \ pa.The following documents are required for an home loan:\n1. Proof of ID.\
@@ -161,48 +150,48 @@ responses:
       of mutual funds on digibank}
   utter_lang:
   - {text: ' I understand hindi and english '}
-  utter_car_loan_application:
+  utter_loan/car_loan_application:
   - {text: Please refer our website for car loan application related queries}
-  utter_car_loan_collateral:
+  utter_loan/car_loan_collateral:
   - {text: ' Please refer our website for car loan collateral related queries '}
-  utter_car_loan_eligibility:
+  utter_loan/car_loan_eligibility:
   - {text: ' Please refer our website for car loan eligibility related queries'}
-  utter_car_loan_finance:
+  utter_loan/car_loan_finance:
   - {text: Please refer our website for car loan finance related queries}
-  utter_car_loan_interest:
+  utter_loan/car_loan_interest:
   - {text: Please refer our website for car loan interest rates. The interest rate
       for home loan ranges from 8.40% to 8.50% pa.}
-  utter_car_loan_repayment:
+  utter_loan/car_loan_repayment:
   - {text: Please refer our website for education loan application queries}
-  utter_education_loan_application:
+  utter_loan/education_loan_application:
   - {text: Please refer our website for education loan eligibility queries}
-  utter_education_loan_eligibility:
+  utter_loan/education_loan_eligibility:
   - {text: ' Please refer our website for education loan eligibility queries'}
-  utter_education_loan_interest:
+  utter_loan/education_loan_interest:
   - {text: Please refer our website for education loan interest rates queries}
-  utter_education_loan_repayment:
+  utter_loan/education_loan_repayment:
   - {text: ' Please refer our website for education loan collateral/security queries'}
-  utter_education_loan_security:
+  utter_loan/education_loan_security:
   - {text: Please refer our website for education loan for guarantor and securty qs}
-  utter_education_loan_tenure:
+  utter_loan/education_loan_tenure:
   - {text: Please refer our website for education loan tenure queries}
-  utter_home_loan_application:
+  lutter_loan/home_loan_application:
   - {text: You could collect an application form from our nearest office or simply
       download it from our website and submit it yourself along with the supporting
       documents and the processing fee cheque at any HDFC office that is convenient
       to you.}
-  utter_home_loan_eligibility:
+  utter_loan/home_loan_eligibility:
   - {text: 'Eligibility depends on various parameters such as age, income, type of
       employment etc. To check your eligibility, please click here.'}
-  utter_home_loan_interest:
+  utter_loan/home_loan_interest:
   - {text: Home Loans are available starting from an interest rate of 6.95%. Please
       click here}
-  utter_home_loan_repayment:
+  utter_loan/home_loan_repayment:
   - {text: 'For your convenience, bank offers various modes for repayment of the home
       loan. You may issue standing instructions to your banker to pay the installments
       through ECS (Electronic Clearing System), opt for direct deduction of monthly
       installments by your employer or issue post-dated cheques from your salary account.'}
-  utter_home_loan_security:
+  utter_loan/home_loan_security:
   - {text: You credit rating and worthiness determines your eligibility for a home
       loan without collateral. It helps if you are a long-standing customer of the
       bank.}
@@ -211,33 +200,33 @@ responses:
       Bank''s criteria, you can expect our approval and disbursal within 7 working
       days, provided everything is in order. \n All loan approvals are at the sole
       discretion of the bank'}
-  utter_home_loan_tenure:
+  utter_loan/home_loan_tenure:
   - {text: 'Tenure will be based on customer''s age, subject to a maximum tenure of
       30 years. The applicable tenure for the customer will be displayed while availing
       of sanction. Customer can also avail for lower tenure, if required.'}
-  utter_loan_application:
+  utter_loan/loan_application:
   - {text: You could collect an application form from our nearest office or simply
       download it from our website and submit it yourself along with the supporting
       documents and the processing fee cheque at any of our office that is convenient
       to you.}
-  utter_loan_emi:
+  utter_loan/loan_emi:
   - {text: ' EMI refers to the Equated Monthly Installment. Once we receive your request
       for disbursement, we will disburse the loan in full or in installments, which
       usually do not exceed in number.'}
-  utter_loan_interest:
+  utter_loan/loan_interest:
   - {text: ' You can visit website for information regarding interest rates '}
-  utter_loan_repayment:
+  utter_loan/loan_repayment:
   - {text: 'For your convenience, bank offers various modes for repayment of the home
       loan. \ \ You may issue standing instructions to your banker to pay the installments
       through ECS (Electronic Clearing System), \ \ opt for direct deduction of monthly
       installments by your employer or issue post-dated cheques from your salary account. '}
-  utter_loan_security:
+  utter_loan/loan_security:
   - {text: 'You can visit website for information regarding collateral '}
-  utter_personal_loan_interest:
+  lutter_loan/personal_loan_interest:
   - {text: ' Please click here to view the Personal Loan Interest Rates '}
-  utter_personal_loan_repayment:
+  utter_loan/personal_loan_repayment:
   - {text: Please refer our website for personal loan repayment queries}
-  utter_personal_loan_collateral:
+  utter_loan/personal_loan_collateral:
   - {text: Please refer our website for personal loan collateral queries}
   utter_fraud:
   - {text: 'We''re here to help you. If you''ve been a victim of fraud, please chat
@@ -255,4 +244,9 @@ responses:
       \ options \n 12.Report Fraud \n 13.Interest Rate \n 14.Account  Features "}
   utter_home_repayment:
   - {text: Please refer our website for home loan collateral queries}
-session_config: {session_expiration_time: 60, carry_over_slots_to_new_session: true}
+version: '2.0'
+intents: [greet, goodbye, affirm, deny, mood_great, mood_unhappy, bot_challenge, branch_info,
+  account_opening, login issues, credit card, transaction queries, reg_DG, Biometrics,
+  activate_debit, upi_query, FD, RD, PL apply, add_fund, close_account, new_debit_card,
+  transfer_fail, block card, check_sa_balance, investment_options, lang_supported,
+  process_time, fraud_dispute, rate query, main menu, loan]

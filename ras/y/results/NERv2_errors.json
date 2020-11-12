@@ -21,7 +21,7 @@
         "entity": "address",
         "start": 21,
         "end": 30,
-        "confidence_entity": 0.9700347185134888,
+        "confidence_entity": 0.7834942936897278,
         "value": "Hyderabad",
         "extractor": "DIETClassifier"
       }
@@ -49,7 +49,7 @@
         "entity": "Bank",
         "start": 9,
         "end": 12,
-        "confidence_entity": 0.9846200346946716,
+        "confidence_entity": 0.9558545351028442,
         "value": "DBS",
         "extractor": "DIETClassifier"
       }
@@ -77,7 +77,7 @@
         "entity": "Bank",
         "start": 0,
         "end": 3,
-        "confidence_entity": 0.9752537608146667,
+        "confidence_entity": 0.8746099472045898,
         "value": "DBS",
         "extractor": "DIETClassifier"
       }
@@ -105,7 +105,7 @@
         "entity": "Bank",
         "start": 6,
         "end": 9,
-        "confidence_entity": 0.9797829985618591,
+        "confidence_entity": 0.9424021244049072,
         "value": "DBS",
         "extractor": "DIETClassifier"
       }
@@ -133,7 +133,7 @@
         "entity": "ID",
         "start": 0,
         "end": 6,
-        "confidence_entity": 0.98748779296875,
+        "confidence_entity": 0.6833678483963013,
         "value": "Aadhar",
         "extractor": "DIETClassifier",
         "processors": [
@@ -164,7 +164,7 @@
         "entity": "ID",
         "start": 12,
         "end": 18,
-        "confidence_entity": 0.992824912071228,
+        "confidence_entity": 0.8354285359382629,
         "value": "Aadhar",
         "extractor": "DIETClassifier",
         "processors": [
@@ -195,7 +195,7 @@
         "entity": "account_type",
         "start": 33,
         "end": 36,
-        "confidence_entity": 0.9522501826286316,
+        "confidence_entity": 0.8046621084213257,
         "value": "app",
         "extractor": "DIETClassifier"
       }
@@ -223,7 +223,7 @@
         "entity": "account_type",
         "start": 0,
         "end": 3,
-        "confidence_entity": 0.9783490300178528,
+        "confidence_entity": 0.9136725664138794,
         "value": "app",
         "extractor": "DIETClassifier"
       }
@@ -251,7 +251,7 @@
         "entity": "account_type",
         "start": 27,
         "end": 35,
-        "confidence_entity": 0.9859616160392761,
+        "confidence_entity": 0.6546307802200317,
         "value": "digibank",
         "extractor": "DIETClassifier"
       }
@@ -279,7 +279,7 @@
         "entity": "account_type",
         "start": 0,
         "end": 3,
-        "confidence_entity": 0.9706622958183289,
+        "confidence_entity": 0.8523502945899963,
         "value": "app",
         "extractor": "DIETClassifier"
       }
@@ -327,7 +327,7 @@
         "entity": "amount",
         "start": 15,
         "end": 18,
-        "confidence_entity": 0.9730218052864075,
+        "confidence_entity": 0.9119863510131836,
         "value": "100",
         "extractor": "DIETClassifier"
       },
@@ -335,7 +335,7 @@
         "entity": "currency",
         "start": 19,
         "end": 21,
-        "confidence_entity": 0.9902659058570862,
+        "confidence_entity": 0.940954327583313,
         "value": "rs",
         "extractor": "DIETClassifier"
       }
@@ -363,7 +363,7 @@
         "entity": "currency",
         "start": 0,
         "end": 4,
-        "confidence_entity": 0.9373167157173157,
+        "confidence_entity": 0.6957420110702515,
         "value": "\u092a\u0948\u0938\u0947",
         "extractor": "DIETClassifier"
       }
@@ -391,7 +391,7 @@
         "entity": "card_type",
         "start": 8,
         "end": 11,
-        "confidence_entity": 0.9895650148391724,
+        "confidence_entity": 0.9393879175186157,
         "value": "ATM",
         "extractor": "DIETClassifier"
       }
@@ -419,7 +419,7 @@
         "entity": "card_type",
         "start": 0,
         "end": 5,
-        "confidence_entity": 0.9721554517745972,
+        "confidence_entity": 0.77415531873703,
         "value": "\u0915\u093e\u0930\u094d\u0921",
         "extractor": "DIETClassifier"
       }
@@ -447,7 +447,7 @@
         "entity": "card_type",
         "start": 15,
         "end": 26,
-        "confidence_entity": 0.8954861760139465,
+        "confidence_entity": 0.7512427568435669,
         "value": "credit card",
         "extractor": "DIETClassifier"
       }
@@ -475,7 +475,7 @@
         "entity": "card_type",
         "start": 17,
         "end": 27,
-        "confidence_entity": 0.8995712399482727,
+        "confidence_entity": 0.8417935967445374,
         "value": "credit card",
         "extractor": "DIETClassifier",
         "processors": [
@@ -506,7 +506,7 @@
         "entity": "card_type",
         "start": 14,
         "end": 25,
-        "confidence_entity": 0.9170180559158325,
+        "confidence_entity": 0.5742297172546387,
         "value": "credit card",
         "extractor": "DIETClassifier"
       }
@@ -534,7 +534,7 @@
         "entity": "card_type",
         "start": 24,
         "end": 27,
-        "confidence_entity": 0.9587892293930054,
+        "confidence_entity": 0.60472571849823,
         "value": "ATM",
         "extractor": "DIETClassifier"
       }
@@ -581,7 +581,7 @@
         "entity": "card_type",
         "start": 16,
         "end": 19,
-        "confidence_entity": 0.9684334993362427,
+        "confidence_entity": 0.5327635407447815,
         "value": "ATM",
         "extractor": "DIETClassifier"
       }
@@ -609,7 +609,7 @@
         "entity": "card_type",
         "start": 14,
         "end": 17,
-        "confidence_entity": 0.9875097274780273,
+        "confidence_entity": 0.8704533576965332,
         "value": "ATM",
         "extractor": "DIETClassifier"
       }
@@ -637,7 +637,7 @@
         "entity": "account_type",
         "start": 49,
         "end": 51,
-        "confidence_entity": 0.9939767122268677,
+        "confidence_entity": 0.9657784700393677,
         "value": "FD",
         "extractor": "DIETClassifier",
         "processors": [
@@ -668,7 +668,7 @@
         "entity": "account_type",
         "start": 14,
         "end": 27,
-        "confidence_entity": 0.981124758720398,
+        "confidence_entity": 0.9146100878715515,
         "value": "FD",
         "extractor": "DIETClassifier",
         "processors": [
@@ -699,7 +699,7 @@
         "entity": "account_type",
         "start": 14,
         "end": 16,
-        "confidence_entity": 0.984375536441803,
+        "confidence_entity": 0.9220544695854187,
         "value": "FD",
         "extractor": "DIETClassifier",
         "processors": [
@@ -730,7 +730,7 @@
         "entity": "account_type",
         "start": 49,
         "end": 51,
-        "confidence_entity": 0.9943487048149109,
+        "confidence_entity": 0.9763195514678955,
         "value": "RD",
         "extractor": "DIETClassifier",
         "processors": [
@@ -761,7 +761,7 @@
         "entity": "account_type",
         "start": 14,
         "end": 16,
-        "confidence_entity": 0.9842042326927185,
+        "confidence_entity": 0.8628562092781067,
         "value": "RD",
         "extractor": "DIETClassifier",
         "processors": [
@@ -792,7 +792,7 @@
         "entity": "account_type",
         "start": 27,
         "end": 44,
-        "confidence_entity": 0.9820044636726379,
+        "confidence_entity": 0.9857931733131409,
         "value": "RD",
         "extractor": "DIETClassifier",
         "processors": [
@@ -818,17 +818,6 @@
         "end": 0,
         "value": "en",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 22,
-        "end": 35,
-        "confidence_entity": 0.5053221583366394,
-        "value": "personal loan",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
       }
     ]
   },
@@ -854,7 +843,7 @@
         "entity": "loan_type",
         "start": 6,
         "end": 9,
-        "confidence_entity": 0.8825938701629639,
+        "confidence_entity": 0.7609440088272095,
         "value": "\u0932\u094b\u0928",
         "extractor": "DIETClassifier"
       }
@@ -882,7 +871,7 @@
         "entity": "loan_type",
         "start": 10,
         "end": 12,
-        "confidence_entity": 0.9779393076896667,
+        "confidence_entity": 0.9117054343223572,
         "value": "personal loan",
         "extractor": "DIETClassifier",
         "processors": [
@@ -913,7 +902,7 @@
         "entity": "loan_type",
         "start": 6,
         "end": 19,
-        "confidence_entity": 0.7420600056648254,
+        "confidence_entity": 0.500676155090332,
         "value": "personal loan",
         "extractor": "DIETClassifier",
         "processors": [
@@ -972,14 +961,6 @@
           ]
         ],
         "extractor": "NERv2"
-      },
-      {
-        "entity": "currency",
-        "start": 25,
-        "end": 28,
-        "confidence_entity": 0.9881330132484436,
-        "value": "inr",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -1005,7 +986,7 @@
         "entity": "account_type",
         "start": 5,
         "end": 9,
-        "confidence_entity": 0.967480480670929,
+        "confidence_entity": 0.8726612329483032,
         "value": "\u0916\u093e\u0924\u093e",
         "extractor": "DIETClassifier"
       }
@@ -1039,7 +1020,7 @@
         "entity": "account_type",
         "start": 11,
         "end": 26,
-        "confidence_entity": 0.9371952414512634,
+        "confidence_entity": 0.7494242191314697,
         "value": "savings account",
         "extractor": "DIETClassifier"
       },
@@ -1047,7 +1028,7 @@
         "entity": "account_number",
         "start": 34,
         "end": 45,
-        "confidence_entity": 0.8985497355461121,
+        "confidence_entity": 0.8545665144920349,
         "value": "55479944210",
         "extractor": "DIETClassifier"
       }
@@ -1075,7 +1056,7 @@
         "entity": "card_type",
         "start": 17,
         "end": 27,
-        "confidence_entity": 0.9455351233482361,
+        "confidence_entity": 0.6533289551734924,
         "value": "ATM",
         "extractor": "DIETClassifier",
         "processors": [
@@ -1101,17 +1082,6 @@
         "end": 0,
         "value": "hi",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "card_type",
-        "start": 4,
-        "end": 15,
-        "confidence_entity": 0.8198903203010559,
-        "value": "ATM",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
       }
     ]
   },
@@ -1137,7 +1107,7 @@
         "entity": "card_type",
         "start": 11,
         "end": 14,
-        "confidence_entity": 0.9956014156341553,
+        "confidence_entity": 0.9846863746643066,
         "value": "ATM",
         "extractor": "DIETClassifier"
       }
@@ -1165,7 +1135,7 @@
         "entity": "product",
         "start": 10,
         "end": 21,
-        "confidence_entity": 0.9326431751251221,
+        "confidence_entity": 0.4705221951007843,
         "value": "mutual fund",
         "extractor": "DIETClassifier"
       }
@@ -1207,7 +1177,7 @@
         "entity": "amount",
         "start": 3,
         "end": 8,
-        "confidence_entity": 0.9721150398254395,
+        "confidence_entity": 0.8002017736434937,
         "value": "40000",
         "extractor": "DIETClassifier"
       }
@@ -1233,10 +1203,10 @@
       },
       {
         "entity": "loan_type",
-        "start": 10,
+        "start": 15,
         "end": 19,
-        "confidence_entity": 0.7554991841316223,
-        "value": "home loan",
+        "confidence_entity": 0.518667995929718,
+        "value": "loan",
         "extractor": "DIETClassifier"
       }
     ]
@@ -1278,14 +1248,6 @@
         "end": 0,
         "value": "en",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 15,
-        "end": 24,
-        "confidence_entity": 0.6736437082290649,
-        "value": "home loan",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -1311,7 +1273,7 @@
         "entity": "currency",
         "start": 20,
         "end": 22,
-        "confidence_entity": 0.9809651970863342,
+        "confidence_entity": 0.9489439725875854,
         "value": "Rs",
         "extractor": "DIETClassifier"
       }
@@ -1334,14 +1296,6 @@
         "end": 0,
         "value": "en",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 52,
-        "end": 60,
-        "confidence_entity": 0.6576358079910278,
-        "value": "Car Loan",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -1362,14 +1316,6 @@
         "end": 0,
         "value": "en",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 50,
-        "end": 64,
-        "confidence_entity": 0.9265316128730774,
-        "value": "education loan",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -1390,14 +1336,6 @@
         "end": 0,
         "value": "en",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 47,
-        "end": 61,
-        "confidence_entity": 0.8537487387657166,
-        "value": "education loan",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -1418,14 +1356,6 @@
         "end": 0,
         "value": "en",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 30,
-        "end": 44,
-        "confidence_entity": 0.7865162491798401,
-        "value": "Education loan",
-        "extractor": "DIETClassifier"
       }
     ]
   },
@@ -1446,14 +1376,6 @@
         "end": 0,
         "value": "hi",
         "extractor": "NERv2"
-      },
-      {
-        "entity": "loan_type",
-        "start": 9,
-        "end": 18,
-        "confidence_entity": 0.9691471457481384,
-        "value": "\u0935\u094d\u092f\u0915\u094d\u0924\u093f\u0917\u0924",
-        "extractor": "DIETClassifier"
       }
     ]
   }

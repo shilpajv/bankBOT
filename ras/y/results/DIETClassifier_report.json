@@ -1,37 +1,9 @@
 {
-  "card_type": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 16,
-    "confused_with": {}
-  },
   "address": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 1,
-    "confused_with": {}
-  },
-  "ID": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2,
-    "confused_with": {}
-  },
-  "amount": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 2,
-    "confused_with": {}
-  },
-  "account_type": {
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1-score": 1.0,
-    "support": 15,
     "confused_with": {}
   },
   "Bank": {
@@ -41,11 +13,25 @@
     "support": 3,
     "confused_with": {}
   },
-  "product": {
+  "amount": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
     "support": 2,
+    "confused_with": {}
+  },
+  "card_type": {
+    "precision": 1.0,
+    "recall": 0.875,
+    "f1-score": 0.9333333333333333,
+    "support": 16,
+    "confused_with": {}
+  },
+  "account_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 15,
     "confused_with": {}
   },
   "account_number": {
@@ -55,36 +41,50 @@
     "support": 1,
     "confused_with": {}
   },
-  "currency": {
+  "product": {
     "precision": 1.0,
     "recall": 1.0,
     "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "currency": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
     "support": 4,
     "confused_with": {}
   },
+  "ID": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
   "loan_type": {
-    "precision": 0.95,
-    "recall": 0.9047619047619048,
-    "f1-score": 0.9268292682926829,
+    "precision": 1.0,
+    "recall": 0.23809523809523808,
+    "f1-score": 0.3846153846153846,
     "support": 21,
     "confused_with": {}
   },
   "micro avg": {
-    "precision": 0.9848484848484849,
-    "recall": 0.9701492537313433,
-    "f1-score": 0.9774436090225564,
+    "precision": 1.0,
+    "recall": 0.7164179104477612,
+    "f1-score": 0.8347826086956522,
     "support": 67
   },
   "macro avg": {
-    "precision": 0.9949999999999999,
-    "recall": 0.9904761904761905,
-    "f1-score": 0.9926829268292682,
+    "precision": 1.0,
+    "recall": 0.8863095238095238,
+    "f1-score": 0.9175091575091576,
     "support": 67
   },
   "weighted avg": {
-    "precision": 0.9843283582089553,
-    "recall": 0.9701492537313433,
-    "f1-score": 0.9770658900618857,
+    "precision": 1.0,
+    "recall": 0.7164179104477612,
+    "f1-score": 0.7826690722213112,
     "support": 67
   }
 }

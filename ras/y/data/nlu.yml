@@ -316,7 +316,7 @@ nlu:
     - can i start mutual fund
     - क्या मैं म्यूचुअल फंड शुरू कर सकता हूं ?
     - me [40000](amount) rs daal sakta hu MF(product) me?
-- intent: loan_offered
+- intent: loan/loan_offered
   examples: |
     - what are the different types of loans?
     - how many types of loans are there?
@@ -334,7 +334,7 @@ nlu:
     - लोन के लिए आवेदन कैसे कर सकता हूं
     - need Loan
     - loan chahye
-- intent: home_loan_about
+- intent: loan/home_loan_about
   examples: |
     - tell me about home bank loans
     - what is a [home loan](loan_type)?
@@ -377,7 +377,7 @@ nlu:
     - आप किन भाषाओं में उत्तर दे सकते हैं ?
     - can u speak in bengali
  
-- intent: car_loan_application
+- intent: loan/car_loan_application
   examples: |
     - to main car ke khilaaf loan kaise praapt karun?
     - पूर्व स्वामित्व वाले कार ऋण के लिए ऋण की प्रक्रिया में कितना समय लगेगा?
@@ -403,7 +403,7 @@ nlu:
     - purv swaamitv vaale car loan ke liye loan kii prakriya main kitna samay lagegaa?
     - Do I need a co-applicant for a New Car Loan?
     - तो मैं कार के खिलाफ ऋण कैसे प्राप्त करूं?
-- intent: car_loan_collateral
+- intent: loan/car_loan_collateral
   examples: |
     - Do I need to pledge anything or give collateral to get a car loan?
     - क्या मुझे नई कार ऋण के लिए एक गारंटर की आवश्यकता है?
@@ -412,7 +412,7 @@ nlu:
     - kya mujhe nai car loan ke liye ek guaranter kii aavashyaktaa he?
     - kya mujhe car loan lene ke liye kuch bhi girvee rakhane yaa jamaanat dene kii jarurat he?
     
-- intent: car_loan_eligibility
+- intent: loan/car_loan_eligibility
   examples: |
     - बैंक नई कार ऋण के साथ मैं अधिकतम कितनी राशि उधार ले सकता हूं?
     - bank nai car loan ke saath main adhiktam kitni raashi udhaar le saktaa hum?
@@ -420,7 +420,7 @@ nlu:
     - bank nai car loan kaa laabh koun uthaa saktaa he?
     - Who can avail of Bank New Car Loans?
     - What is the maximum amount I can borrow with an Bank New Car Loans?
-- intent: car_loan_finance
+- intent: loan/car_loan_finance
   examples: |
     - Which cars can be financed for New Car Loans?
     - How much finance can I avail of on New Car Loans?
@@ -429,7 +429,7 @@ nlu:
     - nai car loan ke liye kin kaaron ko vittposhit kiya ja saktaa he?
     - main nai car loan par kitna vitt praapt kar saktaa hum?
  
-- intent: car_loan_interest
+- intent: loan/car_loan_interest
   examples: |
     - ऑटो ऋण पर ब्याज दर क्या है और क्या यह तय या अस्थायी है?
     - What is the rate of interest on Auto Loans and is it fixed or floating?
@@ -453,7 +453,7 @@ nlu:
     - अपना ऋण चुकाने से पहले अपनी कार बेच दूं?
     - apana loan chukaane se pehle apni car bech duun?
    
-- intent: education_loan_application
+- intent: loan/education_loan_application
   examples: |
     - शिक्षा लोन के लिए कौन आवेदन कर सकता है?
     - Who should opt/apply for an education loan and why?
@@ -467,7 +467,7 @@ nlu:
     - क्या मुझे शिक्षा लोन के लिए सह-आवेदक की आवश्यकता है?
     - शिक्षा लोन के लिए किसे चुनना / आवेदन करना चाहिए और क्यों?
     - shiksha loan ke liye kise chunanaa / aavedan karnaa chahie or kyon?
-- intent: education_loan_eligibility
+- intent: loan/education_loan_eligibility
   examples: |
     - videsh main padhai ke liye mujhe adhiktam kitni loan raashi mil sakati he?
     - main kin paathyakramon ke liye shiksha loan le saktaa hum?
@@ -493,7 +493,7 @@ nlu:
     - How do I know if I am eligible for the education loan for Indian education?
     - What is the maximum loan amount I can get for studies in India?
     - Which courses can I take an Education Loan for?
-- intent:  education_loan_interest
+- intent:  loan/education_loan_interest
   examples: |
     - kam byaaj dar par shiksha loan kaise praapt karen
     - ajukeshan loan lene ke liye kam se kam byaaj dar kitni he
@@ -505,7 +505,7 @@ nlu:
     - How much is the least interest rate for taking education loan
     - How to get education loan at less interest rates
      
-- intent: education_loan_repayment
+- intent: loan/education_loan_repayment
   examples: |
     - अध्ययन लोन चुकाने में मुझे कितना समय लग सकता है
     - ajukeshan loan chukaane main mujhe kitna samay lag saktaa he
@@ -513,7 +513,7 @@ nlu:
     - How much Time I can take to repay the education loan
     - How much Time I can take to repay the study loan
     - adhyayan loan chukaane main mujhe kitna samay lag saktaa he
-- intent: education_loan_security
+- intent: loan/education_loan_security
   examples: |
     - What kind of collateral security is required for  [education loan](loan_type)?
     - Do I need to provide collateral to avail of an [education loan](loan_type)
@@ -522,7 +522,7 @@ nlu:
     - क्या मुझे शिक्षा लोन लेने के लिए संपार्श्विक प्रदान करने की आवश्यकता है
     - शिक्षा लोन के लिए किस तरह की संपार्श्विक सुरक्षा आवश्यक है?
       
-- intent: education_loan_tenure
+- intent: loan/education_loan_tenure
   examples: |
     - शिक्षा लोन के लिए मैं अधिकतम कितनी / न्यूनतम राशि ले सकता हूं
     - How much is the maximum/minimum amount I can take for education loan
@@ -530,7 +530,7 @@ nlu:
     - shiksha loan ke liye main adhiktam kitni / nunatam raashi le saktaa hum
     - ajukeshan loan kii avadhi kitni he
     - एजुकेशन लोन की अवधि कितनी है
-- intent: home_loan_application
+- intent: loan/home_loan_application
   examples: |
     - What is a Commercial Property Loan ?
     - Can my spouse be a co applicant in a home loan?
@@ -557,7 +557,7 @@ nlu:
     - Can i get a higher loan through my existing loan account to buy a new property?
     - How to apply Home Improvement Loan ?
      
-- intent: home_loan_eligibility
+- intent: loan/home_loan_eligibility
   examples: |
     - क्या मैं व्यावसायिक संपत्ति के लिए संपत्ति (एलएपी) के खिलाफ लोन प्राप्त कर सकता हूं?
     - संपत्ति के विरुद्ध लोन (LAP) का लाभ कौन उठा सकता है?
@@ -566,7 +566,7 @@ nlu:
     - Who can avail a Loan Against Property (LAP) ?
     - sampatti ke viruddh loan (LAP) kaa laabh koun uthaa saktaa he?
   
-- intent: home_loan_interest
+- intent: loan/home_loan_interest
   examples: |
     - Are the interest rates of a Home Improvement Loan higher than that of a Home Loan ?
     - kya grih sudhaar loan kii byaaj daren home loan kii tulana main adhik hai?
@@ -580,7 +580,7 @@ nlu:
     - What are the interest rates for home loan
     - home ekstansion loan kii byaaj daren home loan kii tulana main adhik hai?
     - home loan ke liye byaaj daren kya hai
-- intent: home_loan_repayment
+- intent: loan/home_loan_repayment
   examples: |
     - How do I repay a home loan ?
     - What happens to my property if I fail to repay home loan
@@ -589,7 +589,7 @@ nlu:
     - मैं होम लोन कैसे चुकाऊंगा?
     - main home loan kaise chukaayuungaa?
       
-- intent: home_loan_security
+- intent: loan/home_loan_security
   examples: |
     - एक संपत्ति के सुरक्षित मूल्य का कितना प्रतिशत मुझे गृह लोन के रूप में मिलेगा
     - होम लोन के लिए मैं सिक्योरिटी के तौर पर क्या रख सकता हूं
@@ -598,7 +598,7 @@ nlu:
     - How much percentage of secured value of a property I will get as home loan
     - What can I put as security for home loan
     
-- intent: home_loan_tenure
+- intent: loan/home_loan_tenure
   examples: |
     - होम लोन निपटाने के लिए न्यूनतम या अधिकतम समय क्या है
     - अधिकतम अवधि क्या है जिसके लिए मैं होम लोन ले सकता हूं?
@@ -606,7 +606,7 @@ nlu:
     - adhiktam avadhi kya he jiske liye main home loan le saktaa hum?
     - What is the maximum term for which I can avail a Home Loan ?
     - home loan nipataane ke liye nunatam yaa adhiktam samay kya he
-- intent: loan_application
+- intent: loan/loan_application
   examples: |
     - What are the documents required for a  loan ?
     - Do I need a co-applicant for the loan?
@@ -624,7 +624,7 @@ nlu:
     - loan ke liye koun se dastavej aavashyak hai?
     - kya mujhe loan ke liye sah-aavedak kii aavashyaktaa he?
     
-- intent: loan_emi
+- intent: loan/loan_emi
   examples: |
     - When do I start paying my EMI?
     - In how many installments can you disburse the loan to me?
@@ -635,7 +635,7 @@ nlu:
     - EMI का क्या मतलब है?
     - aap mujhe kitni kishton main loan vitarit kar sakate hai?
     - main apni iemai kaa bhugtan kab karnaa shuru karuunga?
-- intent: loan_interest
+- intent: loan/loan_interest
   examples: |
     - Who is responsible for payment of interest and other charges in case of cancellation of loan?
     - बैंक द्वारा दिए जाने वाले ब्याज क्या हैं
@@ -643,7 +643,7 @@ nlu:
     - bank dwaara die jane vaale byaaj kya hai
     - loan ko radd karne ke maamle main byaaj ke bhugtan or anya shulkon ke liye koun jimmedaar he?
     - लोन को रद्द करने के मामले में ब्याज के भुगतान और अन्य शुल्कों के लिए कौन जिम्मेदार है?
-- intent: loan_repayment
+- intent: loan/loan_repayment
   examples :  |
     - Are there any additional charges for loan repayment?
     - How can I change the mode of repayment/ account for my loan?
@@ -666,7 +666,7 @@ nlu:
     - main mul raashi kab chukaana shuru karuun?
     - yadi main apane loan ke liye punarbhugtan / khate ke mod ko badalane kaa anurodh karata hum, to post dated check ke saath kya kiya jayega?
     - kya mujhe sthagan avadhi ke dauraan koi punarbhugtan karnaa hoga
-- intent: loan_security
+- intent: loan/loan_security
   examples: |
     - लोन के लिए किस तरह की संपार्श्विक सुरक्षा की आवश्यकता है?
     - What security will i have to provide?
@@ -674,7 +674,7 @@ nlu:
     - loan ke liye kis tarah kii samparshvik suraksha kii aavashyaktaa he?
     - मुझे क्या सुरक्षा प्रदान करनी होगी?
     - mujhe kya suraksha pradaan kerani hogi?
-- intent: personal_loan_application
+- intent: loan/personal_loan_application
   examples: |
     - mere vyaktigat loan ko sansaadhit hone main kitna samay lagegaa?
     - vetan khaataa mujhe vyaktigat loan praapt karne main kaise madad karata he?
@@ -686,7 +686,7 @@ nlu:
     - वेतन खाता मुझे व्यक्तिगत ऋण प्राप्त करने में कैसे मदद करता है?
     - How does a Salary Account help me get a personal loan?
     
-- intent: personal_loan_collateral
+- intent: loan/personal_loan_collateral
   examples: |
     - kya mujhe bank se vyaktigat loan praapt karne ke liye koi suraksha yaa samparshvik pradaan karne kii aavashyaktaa he?
     - kya main kisi bhi samparshvik / suraksha ke saath vyaktigat loan praapt kar saktaa hum
@@ -694,7 +694,7 @@ nlu:
     - Do I need to provide any security or collateral to obtain a personal loan from Bank?
     - Can I get personal loan with out any collateral/security
     - क्या मुझे बैंक से व्यक्तिगत ऋण प्राप्त करने के लिए कोई सुरक्षा या संपार्श्विक प्रदान करने की आवश्यकता है?
-- intent:  personal_loan_interest
+- intent:  loan/personal_loan_interest
   examples: |
     - What are the interest rates for personal loan
     - How to get personal loan at less interest rates
@@ -705,7 +705,7 @@ nlu:
     - पर्सनल लोन लेने के लिए कम से कम ब्याज दर कितनी है
     - पर्सनल लोन के लिए ब्याज दरें क्या हैं
     - kam byaaj dar par vyaktigat loan kaise praapt karen
-- intent:  personal_loan_repayment
+- intent:  loan/personal_loan_repayment
   examples: |
     - मैं अपना [व्यक्तिगत](loan_type) ऋण कैसे चुका सकता हूं?
     - मुझे अपना व्यक्तिगत ऋण चुकाने में कितना समय लग सकता है?
@@ -719,6 +719,20 @@ nlu:
     - kya personal loan kaa part-prepement anumati he?
     - How long can I take to repay my personal loan?
     - main pehle vyaktigat loan chukaata hum?
+
+- intent: out_of_scope
+  examples: |
+    - ghar kab aaoge
+    - rate
+    - movie ka rating kya he
+    - i want to rate a restaurant
+    - mausam kaisa he
+    - how is the weather outside
+    - tell me train schedule
+    - i want to book a flight
+    - i want to order food on zomato 
+    - what is the cost for pizaa
+    
 - synonym: app
   examples: |
      - aap
@@ -771,6 +785,10 @@ nlu:
     - housng loan
     - गृह ऋण
     - होम लोन
+- synonym: emi
+  examples: |
+    - installments    
+    - kisht
 - lookup: Bank
   examples: |
     - DBS

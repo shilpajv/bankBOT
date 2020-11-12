@@ -21,7 +21,7 @@ pipeline:
     epochs: 100
   - name: FallbackClassifier
     threshold: 0.1
-    ambiguity_threshold: 0.03
+    ambiguity_threshold: 0.01
   - name : printer.Printer  
 
 policies:

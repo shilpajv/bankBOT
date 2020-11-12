@@ -444,7 +444,7 @@ nlu:
     - how much time  it take for my  loan to be processed?
     - loan processing takes how much time?
     - when can i expect my loan approved?
-- intent: car_loan_repayment
+- intent: loan/car_loan_repayment
   examples: |
     - sell my car before I repay my loan?
     - अगर मैं अपनी कार ऋण राशि नहीं चुका पाऊंगा तो क्या होगा

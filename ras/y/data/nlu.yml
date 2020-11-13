@@ -243,7 +243,7 @@ nlu:
     - generate OTP TO CREATE PASSWORD OF DEBIT CARD
     - card activate kyse karte hai
     - How do generate Debit card pin from ATM 
-    - 
+
 
 
 - intent: rate query
@@ -257,10 +257,23 @@ nlu:
 
 - intent : upi_query
   examples: |
-   - i have forgotten the upi pin for my digi accnt
-   - can i set a new pin thru app?
-   - how to setup UPI PIN?
-   - CAN  set UPi
+     - i have forgotten the upi pin for my digi accnt
+     - can i set a new pin thru app?
+     - how to setup UPI PIN?
+     - CAN  set UPi
+     - main apane bank khate ke liye UPI pin kaise set karun
+     - मैं अपने बैंक खाते के लिए UPI पिन कैसे सेट करूं
+     - UPI पिन कैसे सेटअप करें?
+     - main apane diji khate ke liye upi pin bhul gaya hum
+     - मैं अपने डिजी खाते के लिए upi पिन भूल गया हूं
+     - UPI pin kaise seoup karen?
+     - i have forgotten the upi pin for my digi accnt
+     -  can i set a new pin thru app?
+     - how to setup UPI PIN?
+     - HOW DO I SET THE UPI PIN FOR MY BANK ACCOUNT
+     - क्या मैं एक नया पिन थ्रू ऐप सेट कर सकता हूं?
+     - kya main ek nayaa pin thru ap set kar saktaa hum?
+
 
 - intent: FD
   examples: |
@@ -391,7 +404,7 @@ nlu:
     - a loan  to assist in buying a house
     - ghar lene k liye aap home loan dete
     - गृह ऋण lena ha mujhe
-    - होम लोन लेना है मुझे
+    - [होम लोन](loan_type) लेना है मुझे
     - I want to take a home loan
     - mujhe 6 hazar crore [Rs](currency) ka ghar ka loan lena hai
     - home lone ke documents batao
@@ -456,10 +469,10 @@ nlu:
 - intent: car_loan_eligibility
   examples: |
     - बैंक नई कार ऋण के साथ मैं अधिकतम कितनी राशि उधार ले सकता हूं?
-    - bank nai car loan ke saath main adhiktam kitni raashi udhaar le saktaa hum?
+    - bank nai [car loan](loan_type) ke saath main adhiktam kitni raashi udhaar le saktaa hum?
     - बैंक नई कार ऋण का लाभ कौन उठा सकता है?
     - bank nai car loan kaa laabh koun uthaa saktaa he?
-    - Who can avail of Bank New Car Loans?
+    - Who can avail of Bank New [Car Loan](loan_type)?
     - What is the maximum amount I can borrow with an Bank New Car Loans?
 
 - intent: car_loan_finance
@@ -498,14 +511,14 @@ nlu:
 - intent: education_loan_application
   examples: |
     - शिक्षा लोन के लिए कौन आवेदन कर सकता है?
-    - Who should opt/apply for an education loan and why?
+    - Who should opt/apply for an [education loan](loan_type) and why?
     - sabhi ke liye loan kya he - adhyayan or rahanaa yaa sirf adhyayan?
-    - Who can apply for Education Loan?
+    - Who can apply for [Education Loan](loan_type)?
     - shiksha loan ke liye koun aavedan kar saktaa he?
     - Do I need a co-applicant for the education loan?
     - What all is the loan for – study and stay or just study?
     - सभी के लिए लोन क्या है - अध्ययन और रहना या सिर्फ अध्ययन?
-    - kya mujhe shiksha loan ke liye sah-aavedak kii aavashyaktaa he?
+    - kya mujhe [shiksha loan](loan_type) ke liye sah-aavedak kii aavashyaktaa he?
     - क्या मुझे शिक्षा लोन के लिए सह-आवेदक की आवश्यकता है?
     - शिक्षा लोन के लिए किसे चुनना / आवेदन करना चाहिए और क्यों?
     - shiksha loan ke liye kise chunanaa / aavedan karnaa chahie or kyon?
@@ -685,6 +698,7 @@ nlu:
     - EMI का क्या मतलब है?
     - aap mujhe kitni kishton main loan vitarit kar sakate hai?
     - main apni iemai kaa bhugtan kab karnaa shuru karuunga?
+    - tell me about monthly installments
 
 - intent: loan_interest
   examples: |
@@ -777,6 +791,445 @@ nlu:
     - How long can I take to repay my personal loan?
     - main pehle vyaktigat loan chukaata hum?
 
+- intent:  IFSC Code
+  examples: |
+    - kya mujhe NEFT ke liye IFSC code kii aavashyaktaa he?
+    - Do I need IFSC Code for RTGS?
+    - Do I need IFSC Code for NEFT?
+    - kya mujhe RTGS ke liye IFSC code kii aavashyaktaa he?
+    - What is (IFSC) code?
+    - How can I find the IFSC of a bank-branch?
+    - क्या मुझे NEFT के लिए IFSC कोड की आवश्यकता है?
+    - क्या मुझे RTGS के लिए IFSC कोड की आवश्यकता है?
+    - (IFSC) code kya he?
+    - (IFSC) कोड क्या है?
+    - main bank-shakha kaa IFSC kaise khoj saktaa hum?
+    - मैं बैंक-शाखा का IFSC कैसे खोज सकता हूं?
+
+- intent:  NEFT/RTGS_Charges
+  examples: |
+    - NEFT के लिए क्या शुल्क हैं?
+    - मेरा एनईएफटी विफल हो रहा है, सभी विवरण सही हैं
+    - What are the charges for RTGS?
+    - What are the charges for NEFT?
+    - My NEFT is failing thogh all details are correct
+    - RTGS ke liye kya shulk hai?
+    - RTGS के लिए क्या शुल्क हैं?
+    - NEFT ke liye kya shulk hai?
+    - meraa enift vifal ho rahaa he, sabhi vivaran sahi hai
+
+- intent:  NEFT/RTGS_Dispute
+  examples: |
+    - labhaarthi bank dwaara vilambit loan yaa dhan kii vaapasi ke liye dand / kshatipurti kya he?
+    - What are the penalties / compensation for delayed credit or return of funds by beneficiary bank?
+    - What happens if I write wrong account number of beneficiary?
+    - Whom should I approach for raising dispute/complaint related to NEFT transaction?
+    - What happens if funds are not credited to the beneficiary? Or Do I get my money back, if funds are not credited to the beneficiary due to various reasons?
+    - neft lenden se sambandhit vivaad / shikaayat badhaane ke liye mujhe kisase sampark karnaa chahie?
+    - yadi main labhaarthi kii galat khaataa sankhya likhata hum to kya hoga?
+    - एनईएफटी लेनदेन से संबंधित विवाद / शिकायत बढ़ाने के लिए मुझे किससे संपर्क करना चाहिए?
+    - यदि मैं लाभार्थी की गलत खाता संख्या लिखता हूं तो क्या होगा?
+    - agar labhaarthi ko dhanrashi jamaa nahin kii jaati he to kya hoga? yaa kya mujhe apane paise waapas milenge, agar vibhinn kaarnon se dhan labhaarthi ko nahin diya jaataa he?
+    - लाभार्थी बैंक द्वारा विलंबित ऋण या धन की वापसी के लिए दंड / क्षतिपूर्ति क्या है?
+    - अगर लाभार्थी को धनराशि जमा नहीं की जाती है तो क्या होगा? या क्या मुझे अपने पैसे वापस मिलेंगे, अगर विभिन्न कारणों से धन लाभार्थी को नहीं दिया जाता है?
+
+- intent:  NEFT/RTGS_Information
+  examples: |
+    - main apane neft rtgs lenden ko kaise reverse kar saktaa hum?
+    - interbank transfar kya he?
+    - मैं आरटीजीएस करना चाहता हूं कि यह केवल चालू खातों के लिए है या क्या मैं बचत खाते के लिए भी कर सकता हूं?
+    - vir transfar kya he? iskaa matlab he NEFT yaa RTGS?
+    - kya NEFT RTGS karnaa surakshit he?
+    - artijies lenden karte samay kya mujhe apane mobile par soochna milegi?
+    - kya main antarrashtriya khaaton main RTGS yaa nEFT kar saktaa hum?
+    - kya NEFT choubison ghante uplabdh he (24 ghante)?
+    - kya main artijies karne ke liye chaalu khaataa hoon?
+    - NEFT RTGS kaa upyog karne ke kya phaayde hai?
+    - मैं अपने एनईएफटी आरटीजीएस लेनदेन को कैसे रिवर्स कर सकता हूं?
+    - आरटीजीएस लेनदेन करते समय क्या मुझे अपने मोबाइल पर सूचना मिलेगी?
+    - main artijies karnaa chahta hum ki yah keval chaalu khaaton ke liye he yaa kya main bachat khate ke liye bhi kar saktaa hum?
+    - kya praptakarta or preshak donon ke paas lenden karne ke liye RTGS hona chahie?
+    - क्या मैं NEFT प्रणाली के माध्यम से विदेश में रहने वाले अपने रिश्तेदार / मित्र को धन भेज सकता हूं?
+    - क्या एनईएफटी प्रणाली के माध्यम से धन / राशि को निकालने की कोई सीमा है?
+    - फंड ट्रांसफर / रसीद के लिए मैं एनईएफटी प्रणाली का लाभ कैसे उठा सकता हूं?
+    - फंड ट्रांसफर / रसीद के लिए एनईएफटी प्रणाली का लाभ कौन उठा सकता है?
+    - NEFT सिस्टम कैसे काम करता है?
+    - NEFT लेनदेन के लिए ग्राहक सेवा संख्या क्या है
+    - क्या प्राप्तकर्ता और प्रेषक दोनों के पास लेनदेन करने के लिए RTGS होना चाहिए?
+    - NEFT RTGS के लिए संपर्क नंबर क्या है?
+    - एनईएफटी आरटीजीएस लेनदेन करने के लिए क्या विवरण आवश्यक हैं?
+    - क्या NEFT RTGS करना सुरक्षित है?
+    - NEFT RTGS का उपयोग करने के क्या फायदे हैं?
+    - क्या मैं आरटीजीएस करने के लिए चालू खाता हूँ?
+    - वायर ट्रांसफर क्या है? इसका मतलब है NEFT या RTGS?
+    - इंटरबैंक ट्रांसफर क्या है?
+    - क्या NEFT चौबीसों घंटे उपलब्ध है (24 घंटे)?
+    - क्या मैं अंतर्राष्ट्रीय खातों में RTGS या nEFT कर सकता हूं?
+    - क्या मैं दूसरे खाते से धन प्राप्त करने / प्राप्त करने के लिए एक एनईएफटी लेनदेन की उत्पत्ति कर सकता हूं?
+    - क्या RTGS चौबीसों घंटे उपलब्ध है (24 घंटे)?
+    - kya RTGS choubison ghante uplabdh he (24 ghante)?
+    - kya main duusare khate se dhan praapt karne / praapt karne ke liye ek enift lenden kii utpatti kar saktaa hum?
+    - What details are required to do a nEFT RTGS transaction?
+    - How do I reverse my NEFT RTGS transaction?
+    - Is it safe to do NEFT RTGS?
+    - What are the advantages of using NEFT RTGS?
+    - Do I current account to do RTGS?
+    - What is wire transfer? Does it mean NEFT or RTGS?
+    - What is interbank transfer?
+    - Is RTGS available round the clock (24 Houurs)?
+    - enift artijies lenden karne ke liye kya vivaran aavashyak hai?
+    - Can I do RTGS or nEFT to international accounts?
+    - Will I get notification on my mobile while doing RTGS transaction?
+    - Should bothe recipient and sender bank should have RTGS to do the transaction?
+    - fund transfar / raseed ke liye enift pranali kaa laabh koun uthaa saktaa he?
+    - I want to to RTGS is it only for current accounts or can I do for savings account too?
+    - fund transfar / raseed ke liye main enift pranali kaa laabh kaise uthaa saktaa hum?
+    - kya enift pranali ke madhyam se dhan / raashi ko nikaalane kii koi seemaa he?
+    - kya main NEFT pranali ke madhyam se videsh main rahane vaale apane rishtedaar / mitra ko dhan bhej saktaa hum?
+    - Can I originate a NEFT transaction to draw / receive funds from another account?
+    - What is the contact numbers for NEFT  RTGS?
+    - Is NEFT available round the clock (24 hours)?
+    - How does the NEFT system operate?
+    - Is there any limit on funds / amount to be remitted through NEFT system?
+    - NEFT system kaise kaam karata he?
+    - What is the customer service number for NEFT Transactions
+    - NEFT lenden ke liye graahak seva sankhya kya he
+    - How can I avail NEFT system for fund transfer / receipt?
+    - Who can avail NEFT system for fund transfer / receipt?
+    - Can I send funds to my relative / friend residing abroad through NEFT system?
+    - NEFT RTGS ke liye sampark number kya he?
+
+- intent:  NEFT/RTGS_Information_Transfer_Limit
+  examples: |
+    - What is NEFT limit per day?
+    - What is RTGS limit per day?
+    - What is the limit per day to NEFT and RTGS
+    - prati din NEFT seemaa kya he?
+    - NEFT और RTGS में प्रति दिन की सीमा क्या है
+    - NEFT or RTGS main prati din kii seemaa kya he
+    - आरटीजीएस की सीमा प्रति दिन क्या है?
+    - artijies kii seemaa prati din kya he?
+    - प्रति दिन NEFT सीमा क्या है?
+
+- intent:  NEFT/RTGS_Transaction_Issue
+  examples: |
+    - Do I need online accont to do NEFT or RTGS?
+    - My status of NEFT is showing successful but money not credited yet
+    - how to RTGS from branch
+    - enift kii meri sthiti safal dikhaai de rahi he lekin dhan abhi tak jamaa nahin hua he
+    - shakha se artijies kaise karen
+    - kya main apane khate se duusare khate main NEFT kar saktaa hum?
+    - meraa RTGS vifal ho rahaa he, haalanki sabhi vivaran sahi hai
+    - I did RTGS yesterday and still money is not credited? When will it be credited?
+    - My RTGS is failing though all details are correct
+    - kya enift lenden karte samay mujhe apane mobile par soochna mil jaaegi?
+    - What does the error code means while doing the NEFT Transaction?
+    - मेरा RTGS विफल हो रहा है, हालांकि सभी विवरण सही हैं
+    - क्या मैं अपने खाते से दूसरे खाते में NEFT कर सकता हूं?
+    - RTGS lenden karte samay truti code kaa kya matlab he?
+    - NEFT Transaction करते समय त्रुटि कोड का क्या अर्थ है?
+    - RTGS लेनदेन करते समय त्रुटि कोड का क्या मतलब है?
+    - क्या एनईएफटी लेनदेन करते समय मुझे अपने मोबाइल पर सूचना मिल जाएगी?
+    - Can I do NEFT from my account to another account of mine?
+    - शाखा से आरटीजीएस कैसे करें
+    - मैंने कल आरटीजीएस किया था और अभी भी पैसे जमा नहीं हुए हैं? इसे कब क्रेडिट किया जाएगा?
+    - क्या मुझे NEFT या RTGS करने के लिए ऑनलाइन खाते की आवश्यकता है?
+    - kya mujhe NEFT yaa RTGS karne ke liye online khate kii aavashyaktaa he?
+    - maine kal artijies kiya tha or abhi bhi paise jamaa nahin hue hai? ise kab credit kiya jayega?
+    - NEFT Transaction karte samay truti code kaa kya arth he?
+    - Will I get notification on my mobile while doing NEFT transaction?
+    - एनईएफटी की मेरी स्थिति सफल दिखाई दे रही है लेकिन धन अभी तक जमा नहीं हुआ है
+    - What does the error code means while doing RTGS transaction?
+
+- intent:  NEFT/RTGS_about
+  examples: |
+    - NEFT kya he?
+    - RTGS kya he?
+    - What is RTGS?
+    - NEFT, RTGS or Mobilepay main kya antar he?
+    - What is NEFT?
+    - what is the difference between NEFT, RTGS and Mobilepay?
+    - RTGS क्या है?
+    - NEFT क्या है?
+    - NEFT, RTGS और Mobilepay में क्या अंतर है?
+    - NEFT करने की प्रक्रिया क्या है?
+    - NEFT karne kii prakriya kya he?
+    - What is the process for doing nEFT?
+
+- intent:  NEFT/RTGS_fast
+  examples: |
+    - koun sa tej he, enift yaa artijies?
+    - RTGS aarambh hone main kitne ghante lagate hai?
+    - kya RTGS tatkaal sthanantaran he?
+    - How long will it take for NEFT to credit money?
+    - एनईएफटी को धनराशि लेने में कितना समय लगेगा?
+    - enift ko dhanrashi lene main kitna samay lagegaa?
+    - क्या RTGS तत्काल स्थानांतरण है?
+    - RTGS आरंभ होने में कितने घंटे लगते हैं?
+    - Is NEFT instant transfer?
+    - Is RTGS Instant ransfer?
+
+
+
+
+- intent:  NEFT/RTGS_transfer
+  examples: |
+    - क्या NEFT इंस्टेंट ट्रांसफर है?
+    - NEFT करने की प्रक्रिया क्या है?
+    - NEFT karne kii prakriya kya he?
+    - What is the process for doing nEFT?
+    - What are the channels through which I can initiate an NEFT fund transfer?
+    - What is the process to do NEFT from my mobile?
+    - How can I do RTGS transfer?
+    - What is the process to do RTGS transfer?
+    - Can I use NEFT to transfer funds from / to NRE and NRO accounts?
+    - main artijies hastantaran kaise kar saktaa hum?
+    - RTGS transfar karne kii prakriya kya he?
+    - neft ke liye internet banking / mobile banking ke madhyam se len-dein ke kadam kya hai?
+    - kya main eniarti se enarai or enarao khaaton main dhanrashi sthanantarit karne ke liye upyog kar saktaa hum?
+    - ve koun se channel hai jinke madhyam se main enift fund transfar shuru kar saktaa hum?
+    - enift lenden karnaa chaahate hai
+    -  want to perform NEFT transactn
+    - What are the transaction steps for NEFT through Internet Banking/Mobile Banking?
+    - NEFT ko mere mobile se karne kii prakriya kya he?
+    - RTGS ट्रांसफर करने की प्रक्रिया क्या है?
+    - क्या मैं एनईआरटी से एनआरई और एनआरओ खातों में धनराशि स्थानांतरित करने के लिए उपयोग कर सकता हूं?
+    - वे कौन से चैनल हैं जिनके माध्यम से मैं एनईएफटी फंड ट्रांसफर शुरू कर सकता हूं?
+    - एनईएफटी लेनदेन करना चाहते हैं
+    - एनईएफटी के लिए इंटरनेट बैंकिंग / मोबाइल बैंकिंग के माध्यम से लेन-देन के कदम क्या हैं?
+    - NEFT को मेरे मोबाइल से करने की प्रक्रिया क्या है?
+    - मैं आरटीजीएस हस्तांतरण कैसे कर सकता हूं?
+
+- intent: NEFT/RTGS_about
+  examples: |
+    - NEFT kya he?
+    - RTGS kya he?
+    - What is RTGS?
+    - NEFT, RTGS or Mobilepay main kya antar he?
+    - What is NEFT?
+    - what is the difference between NEFT, RTGS and Mobilepay?
+    - RTGS क्या है?
+    - NEFT क्या है?
+    - NEFT, RTGS और Mobilepay में क्या अंतर है?
+
+- intent:  mob_change
+  examples: |
+    - WHAT IF I CHANGE MY HANDSET?
+    - my mobile is changed
+    - kya hoga agar main mere mobile ko badal duun?
+    - meraa mobile badal gaya he
+    - क्या होगा अगर मैं मेरे phone को बदल दूं?
+    - मेरा मोबाइल बदल गया है
+
+- intent:  upi_refund
+  examples: |
+    - jab upi fail kaa maamla saamne aayaa he to refund kab hoga?
+    - kyon meri UPI parivahan vifaltaa he?
+    - WHEN DOES THE REFUND HAPPENS IN CASE OF A FAILED UPI TRANSACTION?
+    - जब एक अपीलीय परिवहन का मामला सामने आया है तो क्या हुआ?
+    - क्यों मेरी UPI परिवहन विफलता है?
+    - WHY IS MY UPI TRANSACTION FAILING?
+
+- intent:  vpa_money_recv
+  examples: |
+    - tell me how to use VPA for receve fund?
+    - how can  get money through vpa?
+    - HOW CAN I RECEIVE MONEY USING A VPA?
+    - kaise vpa ke madhyam se paisa mil saktaa he?
+    - मुझे बताएं कि रसीद निधि के लिए वीपीए का उपयोग कैसे करें?
+    - mujhe bataaen ki raseed nidhi ke liye vipie kaa upyog kaise karen?
+    - कैसे vpa के माध्यम से पैसा मिल सकता है?
+    - मैं एक VPA का उपयोग कैसे कर सकता हूँ?
+    - main ek VPA kaa upyog kaise kar saktaa hoon?
+
+- intent: fixed_deposit_apply
+  examples: |
+    - fixed deposit kaise kholen?
+    - मुझे ऑनलाइन जमा (एफडी) रसीद कैसे मिलेगी?
+    - टैक्स सेविंग अकाउंट के लिए फिक्स्ड डिपॉजिट खोलने के लिए मैं आईसीआईसीआई बैंक से कैसे संपर्क कर सकता हूं?
+    - अगर (फिक्स्ड डिपॉजिट) एफडी बनाई जाए तो कैसे जांचें?
+    - फिक्स्ड डिपॉजिट कैसे खोलें?
+    - tax saving acount ke liye fixed deposit kholane ke liye main isiaisiai bank se kaise sampark kar saktaa hum?
+    - agar (fixed deposit) FD banaai jaae to kaise jaanchen?
+    - ek varisht naagarik ko niyamit fixed deposit kholane ke liye koun se dastavejon kii aavashyaktaa hoti he?
+    - मैंने फिक्स्ड डिपॉजिट (एफडी) खोला है, मुझे अपने एफडी पर ऋण कैसे मिलेगा?
+    - How to open Fixed Deposit?
+    - How to check if (Fixed Deposit) FD is created?
+    - What documents are required to open a senior citizen Regular Fixed Deposit?
+    - How do I get the Fixed Deposit (FD) receipt online?
+    - I have opened an Fixed Deposit (FD), how do I get a loan on my FD?
+    - mujhe online jamaa (FD) raseed kaise milegi?
+    - maine fixed deposit (FD) kholaa he, mujhe apane FD par rin kaise milegaa?
+    - एक वरिष्ठ नागरिक को नियमित फिक्स्ड डिपॉजिट खोलने के लिए कौन से दस्तावेजों की आवश्यकता होती है?
+    - How can I approach ICICI Bank to open an Fixed Deposits for a Tax Savings Account?
+
+- intent: fixed_deposit_calculator
+  examples: |
+    - How do we use the Fixed Deposit (FD) Calculator?
+    - हम फिक्स्ड डिपॉजिट (FD) कैलकुलेटर का उपयोग कैसे करते हैं?
+    - ham fixed deposit (FD) calculator kaa upyog kaise karte hai?
+
+- intent: fixed_deposit_collateral
+  examples: |
+    - How are Bonds different from Fixed Deposits?
+    - बॉन्ड फिक्स्ड डिपॉजिट से कैसे अलग हैं?
+    - bond fixed deposit se kaise alag hai?
+
+- intent: fixed_deposit_enquiry
+  examples: |
+    - बिना पैन के फिक्स्ड डिपॉजिट बुक करने के निहितार्थ क्या हैं?
+    - What is the new policy with regards to PAN to book fixed deposit with our bank?
+    - क्या मैं नियमित फिक्स्ड डिपॉजिट के लिए एक गैर-वरिष्ठ नागरिक के साथ एक संयुक्त खाता खोल सकता हूं?
+    - हमारे बैंक के साथ सावधि जमा बुक करने के लिए पैन के संबंध में नई नीति क्या है?
+    - hamaare bank ke saath saavadhi jamaa book karne ke liye pan ke sambandh main nai niti kya he?
+    - What are the implications of booking fixed deposit without [PAN](loan_type)?
+    - kya main niyamit fixed deposit ke liye ek gaiyr-varisht naagarik ke saath ek sanyukt khaataa khol saktaa hum?
+    - Can I open a joint account with a non-senior citizen for Regular Fixed Deposit?
+    - bina pan ke fixed deposit book karne ke nihitarth kya hai?
+
+
+- intent: fixed_deposit_interest
+  examples: |
+    - What are the Interest rates on Fixed Deposits?
+    - How is the interest on Fixed Deposit (FD) calculated?
+    - fixed deposit par byaaj daren kya hai?
+    - fixed deposit (FD) par byaaj kii gananaa kaise kii jaati he?
+    - meri saavadhi jamaa ke liye mujhe adhiktam byaaj dar kya hogi
+    - फिक्स्ड डिपॉजिट (एफडी) पर ब्याज की गणना कैसे की जाती है?
+    - What is the maximum interest rate I will get for my fixed deposit
+    - मेरी सावधि जमा के लिए मुझे अधिकतम ब्याज दर क्या होगी
+    - फिक्स्ड डिपॉजिट पर ब्याज दरें क्या हैं?
+
+- intent: fixed_deposit_remove
+  examples: |
+    - Can I withdraw partial fixed deposit amount?
+    - main apana fixed deposit kaise bhunaa saktaa hum?
+    - What if I close my fixed deposit
+    - क्या मैं आंशिक सावधि जमा राशि निकाल सकता हूं?
+    - How do I redeem my Fixed Deposit?
+    - अगर मैं अपनी सावधि जमा को बंद कर दूं तो क्या होगा?
+    - kya main aanshik saavadhi jamaa raashi nikaal saktaa hum?
+    - मैं अपना फिक्स्ड डिपॉजिट कैसे भुना सकता हूं?
+    - agar main apni saavadhi jamaa ko band kar duun to kya hoga?
+    - मेरा मौजूदा सावधि जमा (एफडी) खाता कैसे बंद करें।
+    - meraa maujuuda saavadhi jamaa (FD) khaataa kaise band karen.
+    - How to close my existing Fixed Deposit (FD) account.
+
+- intent: fixed_deposit_tds
+  examples: |
+    - When do I become liable for TDS for my fixed deposit?
+    - एक नियमित फिक्स्ड डिपॉजिट धारक के रूप में, मैं टीडीएस पर छूट के लिए कैसे आवेदन कर सकता हूं?
+    - fixed deposit ke liye tds kaise kaata jaataa he?
+    - fixed deposit ke liye online ke madhyam se tds certificate kaise downlod karen?
+    - jab main apane fixed deposit ke liye tds ke liye uttaradaayi ho jaataa hum?
+    - फिक्स्ड डिपॉजिट के लिए टीडीएस कैसे काटा जाता है?
+    - क्या टीडीएस को सावधि जमा के मेरे सिद्धांत से पुनर्प्राप्त किया जा सकता है?
+    - बैंक सावधि जमा के लिए टीडीएस प्रमाणपत्र कब जारी करता है?
+    - क्या टीडीएस मेरी सावधि जमा की परिपक्वता को प्रभावित कर सकता है?
+    - टीडीएस को नियमित सावधि जमा के लिए कब घटाया जाता है?
+    - As a Regular Fixed Deposit holder, How do I apply for an exemption on TDS?
+    - ek niyamit fixed deposit dharak ke rup main, main tds par chhot ke liye kaise aavedan kar saktaa hum?
+    - Will changes to my deposit portfolio affect my TDS liability for fixed deposit?
+    - फिक्स्ड डिपॉजिट के लिए ऑनलाइन के माध्यम से टीडीएस सर्टिफिकेट कैसे डाउनलोड करें?
+    - Can TDS influence the maturity of my fixed deposit?
+    - kya tds meri saavadhi jamaa kii paripakvata ko prabhavit kar saktaa he?
+    - kya tds ko saavadhi jamaa ke mere siddhant se punarprapt kiya ja saktaa he?
+    - bank saavadhi jamaa ke liye tds praaanpatr kab jari karata he?
+    - When is TDS deducted for Regular Fixed Deposit?
+    - kya mere deposit portpholio main badlaav se fixed deposit ke liye meri tds deyta prabhavit hogi?
+    - tds ko niyamit saavadhi jamaa ke liye kab ghataya jaataa he?
+    - How is TDS deducted for fixed deposit?
+    - क्या मेरे डिपॉज़िट पोर्टफोलियो में बदलाव से फिक्स्ड डिपॉज़िट के लिए मेरी टीडीएस देयता प्रभावित होगी?
+    - How to Download TDS Certificate through Online for fixed deposit?
+    - Can TDS be recovered from my principle of the fixed deposit?
+    - When does the Bank issue a TDS Certificate for fixed deposit?
+    - जब मैं अपने फिक्स्ड डिपॉजिट के लिए टीडीएस के लिए उत्तरदायी हो जाता हूं?
+
+- intent: fixed_deposit_tenure
+  examples: |
+    - How many years I should keep my fixed deposite
+    - What is the tenure of Fixed Deposit?
+    - How to change existing fixed deposit account tenure?
+    - कितने वर्षों तक मुझे अपनी सावधि जमा रखनी चाहिए
+    - what is the lock in period for fixed deposit
+    - मौजूदा सावधि जमा खाते के कार्यकाल को कैसे बदलें?
+    - सावधि जमा का कार्यकाल क्या है?
+    - saavadhi jamaa kaa kaarykaal kya he?
+    - maujuuda saavadhi jamaa khate ke kaarykaal ko kaise badalen?
+    - kitne varshon tak mujhe apni saavadhi jamaa rakhni chahie
+    - saavadhi jamaa ke liye avadhi kya he
+    - सावधि जमा के लिए अवधि क्या है
+
+- intent: recurring_deposit_apply
+  examples: |
+    - kya mere recurring deposit ko sanyukt naamon main kholaa ja saktaa he?
+    - What is the maximum deposit amount a Recurring Deposit account can be opened with?
+    - How to open recurring deposit
+    - ek recurring deposit khaataa adhiktam jamaa raashi ke saath kya kholaa ja saktaa he?
+    - recurring deposit kaise kholen?
+    - kya recurring deposit ke liye pehla aavedak naaballig ho saktaa he?
+    - क्या मेरे आवर्ती जमा को संयुक्त नामों में खोला जा सकता है?
+    - recurring deposit kaise kholen
+    - आवर्ती जमा कैसे खोलें?
+    - एक आवर्ती जमा खाता अधिकतम जमा राशि के साथ क्या खोला जा सकता है?
+    - आवर्ती जमा कैसे खोलें
+    - Can my Recurring Deposit be opened in joint names?
+    - Can the first applicant for a Recurring Deposit be a minor?
+    - How to open a Recurring Deposit?
+    - क्या आवर्ती जमा के लिए पहला आवेदक नाबालिग हो सकता है?
+
+- intent: recurring_deposit_enquiry
+  examples: |
+    - How do Recurring Deposits work?
+    - आवर्ती जमा कैसे काम करते हैं?
+    - आवेदन का उपयोग करके ऑनलाइन आवर्ती जमा कैसे खोलें
+    - recurring deposit kaise kaam karte hai?
+    - How to open recurring deposit online using application
+    - aavedan kaa upyog karke online recurring deposit kaise kholen
+
+- intent: recurring_deposit_installment
+  examples: |
+    - क्या मैं आवर्ती जमा के लिए अपनी किस्त की तारीख चुन सकता हूं?
+    - क्या मैं अपने आवर्ती जमा की देय तिथि और किस्त, (ऑटो डेबिट तिथि) को बदल सकता हूँ?
+    - क्या होगा अगर कुछ आवर्ती जमा किश्तों का भुगतान नहीं किया जाता है?
+    - यदि मैं आवर्ती जमा के लिए एक किस्त का भुगतान नहीं करता तो क्या होगा?
+    - What if certain Recurring Deposit installments are not paid?
+    - Can I pay more than one installment at a time for recurring deposite?
+    - क्या मैं आवर्ती जमा के लिए एक बार में एक से अधिक किस्त चुका सकता हूँ?
+    - What happens if I don’t pay an instalment for recurring deposite?
+    - yadi main recurring deposit ke liye ek kist kaa bhugtan nahin karata to kya hoga?
+    - kya main recurring deposit ke liye ek baar main ek se adhik kist chukaa saktaa hoon?
+    - kya hoga agar kuch recurring deposit kishton kaa bhugtan nahin kiya jaataa he?
+    - kya main apane recurring deposit kii dey date or kist, (auto debit date) ko badal saktaa hoon?
+    - kya main recurring deposit ke liye apni kist kii taarikh chun saktaa hum?
+    - Can I change the tenure and installment due date, (auto debit date) of my Recurring Deposit?
+    - Can I choose my instalment date for recurring deposit?
+
+- intent: recurring_deposit_interest
+  examples: |
+    - Is there a monthly or quarterly interest pay-out option for recurring deposit?
+    - How Interest Rate is calculated for premature withdrawal of Recurring Deposit?
+    - What is the maximum interest rate I will get for my recurring deposit
+    - recurring deposit kii samaypurv nikasi ke liye byaaj dar kii gananaa kaise kii jaati he?
+    - kya recurring deposit ke liye masik yaa tremasik byaaj pe-out vikalp he?
+    - मेरी आवर्ती जमा के लिए मुझे अधिकतम ब्याज दर क्या होगी
+    - आवर्ती जमा की समयपूर्व निकासी के लिए ब्याज दर की गणना कैसे की जाती है?
+    - क्या आवर्ती जमा के लिए मासिक या त्रैमासिक ब्याज पे-आउट विकल्प है?
+    - meri recurring deposit ke liye mujhe adhiktam byaaj dar kya hogi
+
+- intent: recurring_deposit_withdraw
+  examples: |
+    - क्या मैं अपने आवर्ती जमा से समय से पहले निकाल सकता हूं?
+    - Can I withdraw prematurely from my [Recurring Deposit](account_type)?
+    - kya recurring deposit par aanshik bhugtan kiya ja saktaa he?
+    - kya main apane recurring deposit se samay se pehle nikaal saktaa hum?
+    - क्या आवर्ती जमा पर आंशिक भुगतान किया जा सकता है?
+
+- intent: recurring_deposit_tenure
+  examples: |
+    - किस अवधि के लिए मैं एक आवर्ती जमा खोल सकता हूं?
+    - kis avadhi ke liye main ek recurring deposit khol saktaa hum?
+    - For what period can I open a Recurring Deposit?
 
 - synonym: app
   examples: |
@@ -839,7 +1292,13 @@ nlu:
     - housng loan
     - गृह ऋण
     - होम लोन
+    - griha
 
+- synonym: education loan
+  examples: |
+    - shiksha
+    - vyaktigat
+    - study loan
 - lookup: Bank
   examples: |
     - DBS
@@ -871,5 +1330,16 @@ nlu:
 - regex: mob_no
   examples: |
     - ^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$
+
+- synonym: RTGS
+  examples: |
+    - artijies
+    - आरटीजीएस
+
+- synonym: NEFT
+  examples: |
+    - enift
+    - एनईएफटी
+
 
 

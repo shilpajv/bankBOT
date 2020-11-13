@@ -310,3 +310,136 @@ stories:
   steps:
    - intent: process_time
    - action: utter_process_time
+
+- story:  IFSC Code
+  steps:
+   - intent: IFSC Code
+   - action: utter_IFSC Code
+
+- story: NEFT/RTGS_Charges
+  steps:
+   - intent: NEFT/RTGS_Charges
+   - action: utter_NEFT/RTGS_Charges
+
+- story: NEFT/RTGS_Dispute
+  steps:
+  - intent: NEFT/RTGS_Dispute
+  - action: utter_NEFT/RTGS_Dispute
+
+- story: NEFT/RTGS_Information
+  steps:
+  - intent: NEFT/RTGS_Information
+  - action: utter_NEFT/RTGS_Information
+
+- story: NEFT/RTGS_Information_Transfer_Limit
+  steps:
+  - intent: NEFT/RTGS_Information_Transfer_Limit
+  - action: utter_NEFT/RTGS_Information_Transfer_Limit
+
+- story: NEFT/RTGS_Transaction_Issue
+  steps:
+  - intent: NEFT/RTGS_Transaction_Issue
+  - action: utter_NEFT/RTGS_Transaction_Issue
+
+- story: NEFT/RTGS_about
+  steps:
+  - intent: NEFT/RTGS_about
+  - action: utter_NEFT/RTGS_about
+
+- story: NEFT/RTGS_fast
+  steps:
+  - intent: NEFT/RTGS_fast
+  - action: utter_NEFT/RTGS_fast
+
+- story: mob_change
+  steps:
+  - intent: mob_change
+  - action: utter_mob_change
+
+- story: mob_change
+  steps:
+  - intent: mob_change
+  - action: utter_mob_change
+
+- story: upi_refund
+  steps:
+  - intent: upi_refund
+  - action: utter_upi_refund
+
+- story: vpa_money_recv
+  steps:
+   - intent:  vpa_money_recv
+   - action: utter_ vpa_money_recv
+
+- story: fixed_deposit_apply
+  steps:
+   - intent: fixed_deposit_apply
+   - action: utter_fixed_deposit_apply
+
+- story: fixed_deposit_calculator
+  steps:
+   - intent: fixed_deposit_calculator
+   - action: utter_fixed_deposit_calculator
+
+- story: fixed_deposit_collateral
+  steps:
+   - intent: fixed_deposit_collateral
+   - action: utter_fixed_deposit_collateral
+
+- story: fixed_deposit_enquiry
+  steps:
+   - intent: fixed_deposit_enquiry
+   - action: utter_fixed_deposit_enquiry
+
+- story: fixed_deposit_interest
+  steps:
+   - intent: fixed_deposit_interest
+   - action: utter_fixed_deposit_interest
+
+- story: fixed_deposit_remove
+  steps:
+   - intent: fixed_deposit_remove
+   - action: utter_fixed_deposit_remove
+
+- story: fixed_deposit_tds
+  steps:
+   - intent: fixed_deposit_tds
+   - action: utter_fixed_deposit_tds
+
+- story: fixed_deposit_tenure
+  steps:
+   - intent: fixed_deposit_tenure
+   - action: utter_fixed_deposit_tenure
+
+- story: recurring_deposit_apply
+  steps:
+   - intent: recurring_deposit_apply
+   - action: utter_recurring_deposit_apply
+
+- story: recurring_deposit_enquiry
+  steps:
+   - intent: recurring_deposit_enquiry
+   - action: utter_recurring_deposit_enquiry
+
+- story: recurring_deposit_installment
+  steps:
+   - intent: recurring_deposit_installment
+   - action: utter_recurring_deposit_installment
+
+- story: recurring_deposit_interest
+  steps:
+   - intent: recurring_deposit_interest
+   - action: utter_recurring_deposit_interest
+
+- story: recurring_deposit_withdraw
+  steps:
+   - intent: recurring_deposit_withdraw
+   - action: utter_recurring_deposit_withdraw
+
+- story: recurring_deposit_tenure
+  steps:
+   - intent: recurring_deposit_tenure
+   - action: utter_recurring_deposit_tenure
+
+
+

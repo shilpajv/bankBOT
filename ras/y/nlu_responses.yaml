@@ -1,0 +1,238 @@
+nlu:
+
+- intent: fixed_deposit_apply
+  examples: |
+    - fixed deposit kaise kholen?
+    - मुझे ऑनलाइन जमा (एफडी) रसीद कैसे मिलेगी?
+    - टैक्स सेविंग अकाउंट के लिए फिक्स्ड डिपॉजिट खोलने के लिए मैं आईसीआईसीआई बैंक से कैसे संपर्क कर सकता हूं?
+    - अगर (फिक्स्ड डिपॉजिट) एफडी बनाई जाए तो कैसे जांचें?
+    - फिक्स्ड डिपॉजिट कैसे खोलें?
+    - tax saving acount ke liye fixed deposit kholane ke liye main isiaisiai bank se kaise sampark kar saktaa hum?
+    - agar (fixed deposit) FD banaai jaae to kaise jaanchen?
+    - ek varisht naagarik ko niyamit fixed deposit kholane ke liye koun se dastavejon kii aavashyaktaa hoti he?
+    - मैंने फिक्स्ड डिपॉजिट (एफडी) खोला है, मुझे अपने एफडी पर ऋण कैसे मिलेगा?
+    - How to open Fixed Deposit?
+    - How to check if (Fixed Deposit) FD is created?
+    - What documents are required to open a senior citizen Regular Fixed Deposit?
+    - How do I get the Fixed Deposit (FD) receipt online?
+    - I have opened an Fixed Deposit (FD), how do I get a loan on my FD?
+    - mujhe online jamaa (FD) raseed kaise milegi?
+    - maine fixed deposit (FD) kholaa he, mujhe apane FD par rin kaise milegaa?
+    - एक वरिष्ठ नागरिक को नियमित फिक्स्ड डिपॉजिट खोलने के लिए कौन से दस्तावेजों की आवश्यकता होती है?
+    - How can I approach ICICI Bank to open an Fixed Deposits for a Tax Savings Account?
+
+- intent: fixed_deposit_calculator
+  examples: |
+    - How do we use the Fixed Deposit (FD) Calculator?
+    - हम फिक्स्ड डिपॉजिट (FD) कैलकुलेटर का उपयोग कैसे करते हैं?
+    - ham fixed deposit (FD) calculator kaa upyog kaise karte hai?
+    
+- intent: fixed_deposit_collateral
+  examples: |
+    - How are Bonds different from Fixed Deposits?
+    - बॉन्ड फिक्स्ड डिपॉजिट से कैसे अलग हैं?
+    - bond fixed deposit se kaise alag hai?  
+
+- intent: fixed_deposit_enquiry
+  examples: |
+    - बिना पैन के फिक्स्ड डिपॉजिट बुक करने के निहितार्थ क्या हैं?
+    - What is the new policy with regards to PAN to book fixed deposit with our bank?
+    - क्या मैं नियमित फिक्स्ड डिपॉजिट के लिए एक गैर-वरिष्ठ नागरिक के साथ एक संयुक्त खाता खोल सकता हूं?
+    - हमारे बैंक के साथ सावधि जमा बुक करने के लिए पैन के संबंध में नई नीति क्या है?
+    - hamaare bank ke saath saavadhi jamaa book karne ke liye pan ke sambandh main nai niti kya he?
+    - What are the implications of booking fixed deposit without PAN ?
+    - kya main niyamit fixed deposit ke liye ek gaiyr-varisht naagarik ke saath ek sanyukt khaataa khol saktaa hum?
+    - Can I open a joint account with a non-senior citizen for Regular Fixed Deposit?
+    - bina pan ke fixed deposit book karne ke nihitarth kya hai?
+  
+  
+- intent: fixed_deposit_interest
+  examples: |
+    - What are the Interest rates on Fixed Deposits?
+    - How is the interest on Fixed Deposit (FD) calculated?
+    - fixed deposit par byaaj daren kya hai?
+    - fixed deposit (FD) par byaaj kii gananaa kaise kii jaati he?
+    - meri saavadhi jamaa ke liye mujhe adhiktam byaaj dar kya hogi
+    - फिक्स्ड डिपॉजिट (एफडी) पर ब्याज की गणना कैसे की जाती है?
+    - What is the maximum interest rate I will get for my fixed deposit
+    - मेरी सावधि जमा के लिए मुझे अधिकतम ब्याज दर क्या होगी
+    - फिक्स्ड डिपॉजिट पर ब्याज दरें क्या हैं?
+  
+- intent: fixed_deposit_remove
+  examples: |
+    - Can I withdraw partial fixed deposit amount?
+    - main apana fixed deposit kaise bhunaa saktaa hum?
+    - What if I close my fixed deposit
+    - क्या मैं आंशिक सावधि जमा राशि निकाल सकता हूं?
+    - How do I redeem my Fixed Deposit?
+    - अगर मैं अपनी सावधि जमा को बंद कर दूं तो क्या होगा?
+    - kya main aanshik saavadhi jamaa raashi nikaal saktaa hum?
+    - मैं अपना फिक्स्ड डिपॉजिट कैसे भुना सकता हूं?
+    - agar main apni saavadhi jamaa ko band kar duun to kya hoga?
+    - मेरा मौजूदा सावधि जमा (एफडी) खाता कैसे बंद करें।
+    - meraa maujuuda saavadhi jamaa (FD) khaataa kaise band karen.
+    - How to close my existing Fixed Deposit (FD) account.
+  
+- intent: fixed_deposit_tds
+  examples: |
+    - When do I become liable for TDS for my fixed deposit?
+    - एक नियमित फिक्स्ड डिपॉजिट धारक के रूप में, मैं टीडीएस पर छूट के लिए कैसे आवेदन कर सकता हूं?
+    - fixed deposit ke liye tds kaise kaata jaataa he?
+    - fixed deposit ke liye online ke madhyam se tds certificate kaise downlod karen?
+    - jab main apane fixed deposit ke liye tds ke liye uttaradaayi ho jaataa hum?
+    - फिक्स्ड डिपॉजिट के लिए टीडीएस कैसे काटा जाता है?
+    - क्या टीडीएस को सावधि जमा के मेरे सिद्धांत से पुनर्प्राप्त किया जा सकता है?
+    - बैंक सावधि जमा के लिए टीडीएस प्रमाणपत्र कब जारी करता है?
+    - क्या टीडीएस मेरी सावधि जमा की परिपक्वता को प्रभावित कर सकता है?
+    - टीडीएस को नियमित सावधि जमा के लिए कब घटाया जाता है?
+    - As a Regular Fixed Deposit holder, How do I apply for an exemption on TDS?
+    - ek niyamit fixed deposit dharak ke rup main, main tds par chhot ke liye kaise aavedan kar saktaa hum?
+    - Will changes to my deposit portfolio affect my TDS liability for fixed deposit?
+    - फिक्स्ड डिपॉजिट के लिए ऑनलाइन के माध्यम से टीडीएस सर्टिफिकेट कैसे डाउनलोड करें?
+    - Can TDS influence the maturity of my fixed deposit?
+    - kya tds meri saavadhi jamaa kii paripakvata ko prabhavit kar saktaa he?
+    - kya tds ko saavadhi jamaa ke mere siddhant se punarprapt kiya ja saktaa he?
+    - bank saavadhi jamaa ke liye tds praaanpatr kab jari karata he?
+    - When is TDS deducted for Regular Fixed Deposit?
+    - kya mere deposit portpholio main badlaav se fixed deposit ke liye meri tds deyta prabhavit hogi?
+    - tds ko niyamit saavadhi jamaa ke liye kab ghataya jaataa he?
+    - How is TDS deducted for fixed deposit?
+    - क्या मेरे डिपॉज़िट पोर्टफोलियो में बदलाव से फिक्स्ड डिपॉज़िट के लिए मेरी टीडीएस देयता प्रभावित होगी?
+    - How to Download TDS Certificate through Online for fixed deposit?
+    - Can TDS be recovered from my principle of the fixed deposit?
+    - When does the Bank issue a TDS Certificate for fixed deposit?
+    - जब मैं अपने फिक्स्ड डिपॉजिट के लिए टीडीएस के लिए उत्तरदायी हो जाता हूं? 
+  
+- intent: fixed_deposit_tenure
+  examples: |
+    - How many years I should keep my fixed deposite
+    - What is the tenure of Fixed Deposit?
+    - How to change existing fixed deposit account tenure?
+    - कितने वर्षों तक मुझे अपनी सावधि जमा रखनी चाहिए
+    - what is the lock in period for fixed deposit
+    - मौजूदा सावधि जमा खाते के कार्यकाल को कैसे बदलें?
+    - सावधि जमा का कार्यकाल क्या है?
+    - saavadhi jamaa kaa kaarykaal kya he?
+    - maujuuda saavadhi jamaa khate ke kaarykaal ko kaise badalen?
+    - kitne varshon tak mujhe apni saavadhi jamaa rakhni chahie
+    - saavadhi jamaa ke liye avadhi kya he
+    - सावधि जमा के लिए अवधि क्या है
+
+- intent: recurring_deposit_apply
+  examples: |
+    - kya mere recurring deposit ko sanyukt naamon main kholaa ja saktaa he?
+    - What is the maximum deposit amount a Recurring Deposit account can be opened with?
+    - How to open recurring deposit
+    - ek recurring deposit khaataa adhiktam jamaa raashi ke saath kya kholaa ja saktaa he?
+    - recurring deposit kaise kholen?
+    - kya recurring deposit ke liye pehla aavedak naaballig ho saktaa he?
+    - क्या मेरे आवर्ती जमा को संयुक्त नामों में खोला जा सकता है?
+    - recurring deposit kaise kholen
+    - आवर्ती जमा कैसे खोलें?
+    - एक आवर्ती जमा खाता अधिकतम जमा राशि के साथ क्या खोला जा सकता है?
+    - आवर्ती जमा कैसे खोलें
+    - Can my Recurring Deposit be opened in joint names?
+    - Can the first applicant for a Recurring Deposit be a minor?
+    - How to open a Recurring Deposit?
+    - क्या आवर्ती जमा के लिए पहला आवेदक नाबालिग हो सकता है?
+    
+- intent: recurring_deposit_enquiry
+  examples: |
+    - How do Recurring Deposits work?
+    - आवर्ती जमा कैसे काम करते हैं?
+    - आवेदन का उपयोग करके ऑनलाइन आवर्ती जमा कैसे खोलें
+    - recurring deposit kaise kaam karte hai?
+    - How to open recurring deposit online using application
+    - aavedan kaa upyog karke online recurring deposit kaise kholen
+  
+- intent: recurring_deposit_installment
+  examples: |
+    - क्या मैं आवर्ती जमा के लिए अपनी किस्त की तारीख चुन सकता हूं?
+    - क्या मैं अपने आवर्ती जमा की देय तिथि और किस्त, (ऑटो डेबिट तिथि) को बदल सकता हूँ?
+    - क्या होगा अगर कुछ आवर्ती जमा किश्तों का भुगतान नहीं किया जाता है?
+    - यदि मैं आवर्ती जमा के लिए एक किस्त का भुगतान नहीं करता तो क्या होगा?
+    - What if certain Recurring Deposit installments are not paid?
+    - Can I pay more than one installment at a time for recurring deposite?
+    - क्या मैं आवर्ती जमा के लिए एक बार में एक से अधिक किस्त चुका सकता हूँ?
+    - What happens if I don’t pay an instalment for recurring deposite?
+    - yadi main recurring deposit ke liye ek kist kaa bhugtan nahin karata to kya hoga?
+    - kya main recurring deposit ke liye ek baar main ek se adhik kist chukaa saktaa hoon?
+    - kya hoga agar kuch recurring deposit kishton kaa bhugtan nahin kiya jaataa he?
+    - kya main apane recurring deposit kii dey date or kist, (auto debit date) ko badal saktaa hoon?
+    - kya main recurring deposit ke liye apni kist kii taarikh chun saktaa hum?
+    - Can I change the tenure and installment due date, (auto debit date) of my Recurring Deposit?
+    - Can I choose my instalment date for recurring deposit?
+
+- intent: recurring_deposit_interest
+  examples: |
+    - Is there a monthly or quarterly interest pay-out option for recurring deposit?
+    - How Interest Rate is calculated for premature withdrawal of Recurring Deposit?
+    - What is the maximum interest rate I will get for my recurring deposit
+    - recurring deposit kii samaypurv nikasi ke liye byaaj dar kii gananaa kaise kii jaati he?
+    - kya recurring deposit ke liye masik yaa tremasik byaaj pe-out vikalp he?
+    - मेरी आवर्ती जमा के लिए मुझे अधिकतम ब्याज दर क्या होगी
+    - आवर्ती जमा की समयपूर्व निकासी के लिए ब्याज दर की गणना कैसे की जाती है?
+    - क्या आवर्ती जमा के लिए मासिक या त्रैमासिक ब्याज पे-आउट विकल्प है?
+    - meri recurring deposit ke liye mujhe adhiktam byaaj dar kya hogi
+
+- intent: recurring_deposit_withdraw
+  examples: |
+    - क्या मैं अपने आवर्ती जमा से समय से पहले निकाल सकता हूं?
+    - Can I withdraw prematurely from my Recurring Deposit?
+    - kya recurring deposit par aanshik bhugtan kiya ja saktaa he?
+    - kya main apane recurring deposit se samay se pehle nikaal saktaa hum?
+    - क्या आवर्ती जमा पर आंशिक भुगतान किया जा सकता है?
+  
+ - intent: recurring_deposit_tenure
+  examples: |
+    - किस अवधि के लिए मैं एक आवर्ती जमा खोल सकता हूं?
+    - kis avadhi ke liye main ek recurring deposit khol saktaa hum?
+    - For what period can I open a Recurring Deposit?
+    
+    
+    
+responses:
+
+  utter_fixed_deposit_apply:
+  - text : Please refer our website for fixed deposit apply related queries
+  
+  utter_fixed_deposit_calculator:
+  - text : Please refer our website for fixed deposit calculator related queries
+  
+  utter_fixed_deposit_collateral:
+  - text : Please refer our website for fixed deposit collateral related queries
+  
+  utter_fixed_deposit_enquiry:
+  - text : Please refer our website for fixed deposit enquiry related queries
+  
+  utter_fixed_deposit_interest:
+  - text : Please refer our website for fixed deposit interest related queries
+  
+  utter_fixed_deposit_remove:
+  - text : Please refer our website for fixed deposit remove related queries
+  
+  utter_fixed_deposit_tds:
+  - text : Please refer our website for fixed deposit tds related queries
+  
+  utter_fixed_deposit_tenure:
+  - text : Please refer our website for fixed deposit tenure related queries
+  
+  
+  utter_recurring_deposit_apply:
+  - text : Please refer our website for recurring deposit apply related queries
+  
+  utter_recurring_deposit_enquiry:
+  - text : Please refer our website for recurring deposit enquiry related queries
+  
+  utter_recurring_deposit_installment:
+  - text : Please refer our website for recurring deposit installment related queries
+  
+  utter_recurring_deposit_interest:
+  - text : Please refer our website for recurring deposit interest related queries
+  
+  utter_recurring_deposit_withdraw:
+  - text : Premature withdrawals are allowed, but remember that partial withdrawal is not permitted.
+  
+  utter_recurring_deposit_tenure:
+  - text : Please refer our website for recurring deposit tenure related queries
+  

@@ -28,6 +28,7 @@ intents:
   - home_loan_about
   - block card
   - check_sa_balance
+  - fraud_dispute
   - investment_options
   - lang_supported
   - car_loan_application
@@ -57,9 +58,35 @@ intents:
   - personal_loan_interest
   - personal_loan_repayment
   - process_time
-  - fraud_dispute
   - rate query
   - main menu
+  - IFSC Code
+  - NEFT/RTGS_Charges
+  - NEFT/RTGS_Dispute
+  - NEFT/RTGS_Information
+  - NEFT/RTGS_Information_Transfer_Limit
+  - NEFT/RTGS_Transaction_Issue
+  - NEFT/RTGS_about
+  - NEFT/RTGS_fast
+  - NEFT/RTGS_transfer
+  - mob_change
+  - upi_refund
+  - vpa_money_recv
+  - fixed_deposit_apply
+  - fixed_deposit_calculator
+  - fixed_deposit_collateral
+  - fixed_deposit_enquiry
+  - fixed_deposit_interest
+  - fixed_deposit_remove
+  - fixed_deposit_tds
+  - fixed_deposit_tenure
+  - recurring_deposit_apply
+  - recurring_deposit_enquiry
+  - recurring_deposit_installment
+  - recurring_deposit_interest
+  - recurring_deposit_withdraw
+  - recurring_deposit_tenure
+
 
 entities:
   - address
@@ -94,7 +121,7 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_branch:
-  - text: "The branch name in Hyderabad is Somajiguda "
+  - text: "The branch name in Hyderabad is Somajiguda .V "
 
   utter_account_open:
   - text: "Account opening is simple. You only need Aadhar card and no paperwork "
@@ -336,8 +363,104 @@ responses:
                 \n 12.Report Fraud
                 \n 13.Interest Rate
                 \n 14.Account  Features "
+  utter_IFSC Code:
+    - text : 'Please refer to branch locator and code searcher  of our website to know more details'
+
+  utter_NEFT/RTGS_Charges:
+    - text : 'Please refer to NEFT/RTGS Charges section of our website to know more details'
+  utter_NEFT/RTGS_Dispute:
+    - text : 'Please refer to NEFT/RTGS Dispute section of our website to know more details'
+  utter_NEFT/RTGS_Information:
+    - text : 'Please refer to NEFT/RTGS section of our website to know more details'
+  utter_NEFT/RTGS_Information_Transfer_Limit :
+    - text : "The RTGS system has been designed for large value transactions.\
+              \ Minimum amount for remittance through RTGS: Rs.2 lakh '
+        \ Maximum remittance: At branch - There is no upper limit. Through NetBanking - Rs.25 lakh per Customer "
+
+  utter_NEFT/RTGS_Transaction_Issue:
+    - text : "Please follow the rules mentioned in site to do transaction "
+
+  utter_NEFT/RTGS_about :
+    - text : " NEFT is an electronic payment system, used to transfer funds to any part of India. \
+               \  It works on net settlement, unlike RTGS that works on gross settlement, and EFT which is restricted to only 15 centres. "
+
+  utter_NEFT/RTGS_fast:
+    - text : " The transaction will be settled to your beneficiary as per the RBI batch which ideally takes 30 mins to 4 hours. "
+  utter_NEFT/RTGS_transfer:
+    - text : "Steps to make your neft/RTGS funds transfer online are as follows:\n \
+    Go to Funds Transfer tab, and select ‘Transfer to other bank (RTGS)’ \
+    Select account, beneficiary, and enter the relevant details \
+    Accept the Terms and Conditions\
+    Review the details, and, if all is correct, confirm to complete the process"
+
+  utter_NEFT/RTGS_how :
+    - text : " Visit our website "
+  utter_mob_change:
+    - text : "If you change your handset, you will need to:1. Download the Bharat Interface for Money app again 2. Login with your mobile number and password & do OTP VERFCATN "
+
+  utter_upi_refund :
+    - text : "To avoid transaction failures - \
+
+    \ Ensure that the UPI PIN is entered correctly \
+    \ If the receiver is not on Bharat Interface for Money choose to pay via IFSC instead of mobile number check  and support section for refund"
+
+  utter_vpa_money_recv :
+    - text:  "In iMobile \
+
+    Login to iMobile and click on UPI. \
+    Click on UPI and then choose Collect via UPI \
+    Enter the details of the transaction such as the VPA of the person you would like to collect from, amount and remarks. \
+    \ If you have multiple accounts/virtual payment addresses, you can choose the VPA you would like to credit. You can also choose if you would like to receive the money immediately or in the next 7 days. Click on Submit \
+    \ Please review the next screen carefully to ensure you have filled all details correctly. \
+    \ Click on Submit to initiate a Collect payment via UPI. When the person you have requested money from authorises the transaction and money is credited into your account, you will be notified."
+
+  utter_fixed_deposit_apply:
+    - text: "Please refer our website for fixed deposit apply related queries "
+
+  utter_fixed_deposit_calculator:
+    - text: "Please refer our website for fixed deposit calculator related queries "
+
+  utter_fixed_deposit_collateral:
+    - text: "Please refer our website for fixed deposit collateral related queries"
+
+  utter_fixed_deposit_enquiry:
+    - text: "Please refer our website for fixed deposit enquiry related queries "
+
+  utter_fixed_deposit_interest:
+    - text: " Please refer our website for fixed deposit interest related queries "
+
+  utter_fixed_deposit_remove:
+    - text: "Please refer our website for fixed deposit remove related queries "
+
+  utter_fixed_deposit_tds:
+    - text: "Please refer our website for fixed deposit tds related queries"
+
+  utter_fixed_deposit_tenure:
+    - text: "Please refer our website for fixed deposit tenure related queries"
+
+
+  utter_recurring_deposit_apply:
+    - text: "Please refer our website for recurring deposit apply related queries"
+
+  utter_recurring_deposit_enquiry:
+    - text: "Please refer our website for recurring deposit enquiry related queries"
+
+  utter_recurring_deposit_installment:
+    - text: " Please refer our website for recurring deposit installment related queries"
+
+  utter_recurring_deposit_interest:
+    - text: "Please refer our website for recurring deposit interest related queries"
+
+  utter_recurring_deposit_withdraw:
+    - text: "Premature withdrawals are allowed, but remember that partial withdrawal is not permitted. "
+
+  utter_recurring_deposit_tenure:
+    - text:  "Please refer our website for recurring deposit tenure related queries "
 
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+
+
